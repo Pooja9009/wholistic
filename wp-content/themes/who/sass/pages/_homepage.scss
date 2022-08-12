@@ -1,0 +1,109 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px; 
+    color: black;
+    position: relative; 
+}
+.site-header {
+    background-color: #FCD0C3;
+     position: sticky;
+    top: 0px;
+    left: 0px;
+    height: 193px;
+    /* background: transparent url(img/Component 23 – 1.png) 0% 0% no-repeat padding-box; */
+    opacity: 1;
+    z-index: 1;
+}    
+.nav-menu {
+    display: flex;
+    justify-content: center;  
+}
+.nav-menu * {
+    align-items: center;
+    padding-top: 80px;
+}
+.nav-menu :nth-child(3) {
+    order: 2;
+}
+.nav-menu li a{
+    padding : 5px;
+    margin: 8px;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.nav-menu li a:hover{
+    color:rgb(250, 234, 234);
+    border-bottom: 1px solid rgb(218, 96, 16);
+}
+.wholistic-logo {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+.site-title a, .entry-title a{
+    text-decoration: none;
+}
+// img{
+   
+// }
+button {
+    background-color: orangered;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.image {
+    position:realtive;
+    margin-bottom: 0;
+    width: 100%;
+}
+.borderLine {
+    margin-top: 0;
+    border-bottom:8px solid orangered;
+}
+.textInPic {
+   position:absolute;
+    top: 250px;
+   left: 120px;
+   color:white;
+ }
+.paragraph {
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+
+align-items: center;
+padding: 50px;
+ }
+ .paragraph :nth-child(1){
+    margin-bottom: 10px;
+ }
+ .paragraph :nth-child(3){
+    color: #F14946;
+ }
+ .next-content {
+    display:flex;
+ }
+ .next-content :first-of-type {
+    align-items: center; 
+ }
+
+ .testimonials-content {
+    display:flex;
+    background-color: #FCD0C3;
+    justify-content: center;
+ }
+ .testimonials-content *{
+    align-items: center;
+ }
+
+
+ 
