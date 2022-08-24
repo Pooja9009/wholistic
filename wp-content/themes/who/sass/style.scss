@@ -50,8 +50,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 
-// Import variables and mixins.
+// Import variables, font and mixins.
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin,latin-ext&display=swap');
 @import "abstracts/abstracts";
 
 /*--------------------------------------------------------------
@@ -102,6 +103,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 @import "utilities/alignments";
 
+/*header*/
+//
 /* Pages */
 
 @import "pages/homepage";
@@ -110,6 +113,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import "pages/contactpage";
 
+@import "pages/productpage";
+
+@import "pages/thesciencepage";
+
+@import "pages/wheretobuypage";
+
 @import "pages/footer";
 
-@import "pages/header"
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import "pages/header";
+
+
+
+* {
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+}

@@ -16,12 +16,36 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<p>Hi this is contact</p>
-
-	</main><!-- #main -->
-
+    <body id="contact-page">
+        <div class="contact-banner"
+            style="background-image:url('<?php bloginfo("template_directory"); ?>/img/contactBannerImg.png')">
+            <div class="contact-form">
+                <h1>CONTACT US</h1>
+                <form>
+                    <div class="name-info">
+                        <label for="fname"></label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                  
+                        <label for="lname"></label>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    </div>
+                    <div class="mail-contact-info">
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="Email Address">
+                    
+                        <label for="phone"></label>
+                        <input type="number" id="phone" name="phone" placeholder="Phone Number">
+                    </div>
+                    <textarea rows="4" cols="30" placeholder="Message"></textarea>
+                    <div class=submit>
+                        <input type="submit" id="send-button" value="Send">
+                    </div>
+            </form>
+        </div>
+        </div>
+    </body>
+</main><!-- #main -->
 <?php
-
 get_footer();

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
 Theme Name: who
 Theme URI: http://underscores.me/
@@ -49,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin,latin-ext&display=swap");
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -61,6 +61,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -936,17 +937,702 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+/*header*/
 /* Pages */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+#home-page body {
+	font-size: 40px;
+	color: black;
 }
 
-body {
-	font-size: 20px;
+#home-page .banner-img-block {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 990px;
+	display: flex;
+	flex-direction: column;
+	padding: 8rem 0 0 8rem;
+	flex-wrap: wrap;
+}
+
+#home-page .banner-img-block h1 {
+	color: white;
+	font-size: 88px;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+	font-weight: 400;
+	color: #ffece5;
+	line-height: 103px;
+	text-align: left;
+	text-shadow: 0.08em 0.04em 0.11em rgba(0, 0, 0, 0.4);
+}
+
+#home-page .banner-img-block .browse-button {
+	margin-top: -1rem;
+}
+
+#home-page .banner-img-block .browse-button button {
+	color: #fcd0c3;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+	border-radius: 50px;
+	background-color: #f14946;
+	border-width: 0px;
+	padding: 13px;
+	font-weight: 500;
+	text-align: center;
+}
+
+#home-page .banner-img-block .browse-button .banner-img-block:hover {
+	background-size: 135% auto;
+	transition: 0.7s ease-in-out;
+}
+
+#home-page .banner-img-block .browse-button button:hover {
+	background-color: #fcd0c3;
 	color: black;
-	position: relative;
+	cursor: pointer;
+}
+
+#home-page .borderLine {
+	margin-top: 0;
+	border-bottom: 8px solid #f14946;
+}
+
+#home-page .paragraph {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 5% 4%;
+	width: 96%;
+}
+
+#home-page .paragraph p {
+	padding: 0 15%;
+	margin-bottom: 0.5rem;
+}
+
+#home-page .paragraph #bold {
+	color: #f14946;
+	padding: 0 2%;
+}
+
+#home-page .paragraph img {
+	align-self: center;
+	margin-bottom: 0.3rem;
+}
+
+#home-page .curve-image-wrapper {
+	background-position-x: 50%;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	padding-bottom: 10rem;
+}
+
+#home-page .curve-image-wrapper .curve-image {
+	display: flex;
+	width: 49%;
+	align-items: center;
+	margin-left: 23%;
+}
+
+#home-page .testimonials-content {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 2rem;
+}
+
+#home-page .testimonials-content .testimonials-heading {
+	text-align: center;
+	font-size: 35px;
+	color: #f14946;
+	font-weight: 450;
+}
+
+#home-page .testimonials-content .testimonials-column-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#home-page .testimonials-content .testimonials-column-wrapper .testimonials-column {
+	width: 250px;
+	text-align: center;
+}
+
+#home-page .testimonials-content .testimonials-column-wrapper .testimonials-column p {
+	font-weight: 300;
+}
+
+#home-page .testimonials-content .testimonials-column-wrapper .testimonials-column .name-title {
+	color: #f14946;
+}
+
+#home-page .homepage-card {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 4rem;
+	padding: 4rem 0;
+}
+
+#home-page .cards {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid grey;
+	border-radius: 8px;
+	box-shadow: 8px 8px #fcd0c3;
+	width: 300px;
+	height: auto;
+	text-align: center;
+}
+
+#home-page .cards h3 {
+	color: #f14946;
+}
+
+#home-page .cards .card-img {
+	width: 100%;
+}
+
+#home-page .cards .card-button {
+	border-radius: 50px;
+	background-color: #f14946;
+	border-width: 0px;
+	padding: 13px;
+	width: 90%;
+	margin-bottom: 0.5rem;
+	margin-left: 0.5rem;
+	color: #fcd0c3;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+	#home-page .banner-img-block {
+		padding-left: 0rem;
+	}
+}
+
+@media (max-width: 770px) {
+	#home-page .banner-img-block h1 {
+		font-size: 70px;
+	}
+	#home-page .curve-image-wrapper {
+		background-size: inherit;
+		padding-bottom: 2rem;
+	}
+	#home-page .curve-image-wrapper .curve-image {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 330px) {
+	#home-page .curve-image p {
+		width: 125%;
+	}
+	#home-page .curve-image img {
+		width: 15rem;
+	}
+}
+
+@media (max-width: 770px) {
+	#home-page * {
+		font-size: 16px;
+	}
+}
+
+#aboutPage .about-banner {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#aboutPage h1 {
+	align-self: center;
+	font-size: 4rem;
+	font-weight: 500;
+	color: #ffece5;
+}
+
+#aboutPage .borderLine {
+	margin-top: -5px;
+	border-bottom: 8px solid #f14946;
+}
+
+#aboutPage .paragraph {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5rem 0;
+}
+
+#aboutPage .about-background {
+	display: flex;
+	flex-wrap: wrap;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 9rem 0;
+}
+
+#aboutPage .about-background .row {
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+}
+
+#aboutPage .about-background .row .content {
+	text-align: center;
+	padding: 0 7rem 6rem 3rem;
+}
+
+#aboutPage .about-background .row h3 {
+	font-size: 35px;
+	color: #f14946;
+	font-weight: 450;
+}
+
+#aboutPage .about-background .row .image {
+	height: 20rem;
+	box-shadow: 8px 8px #fcd0c3;
+	border-radius: 8px;
+}
+
+#aboutPage .about-background .flex-reverse {
+	flex-direction: row-reverse;
+}
+
+#aboutPage .about-second-banner {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 950px;
+	padding: 2rem 10rem;
+}
+
+#aboutPage .about-second-banner .about-second-bannerContent {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+#aboutPage .about-second-banner .about-second-bannerContent h3 {
+	font-size: 35px;
+	color: white;
+	font-weight: 450;
+}
+
+@media (max-width: 500px) {
+	#aboutPage .about-second-banner {
+		padding: 2rem 2rem;
+		background-position: left 38% center;
+	}
+	#aboutPage .about-background .row .content {
+		padding: 0 1rem 1rem 1rem;
+	}
+}
+
+#aboutPage .last-block-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#aboutPage .last-block-wrapper .last-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 53%;
+	padding-top: 3rem;
+}
+
+#aboutPage .last-block-wrapper .last-block h2 {
+	font-size: 35px;
+	color: #f14946;
+	font-weight: 450;
+}
+
+#aboutPage .last-block-wrapper .last-block img {
+	width: fit-content;
+	align-self: center;
+}
+
+@media (max-width: 770px) {
+	#aboutPage .about-background .row {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+}
+
+#contact-page .contact-banner {
+	display: flex;
+	flex-wrap: wrap;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 60rem;
+	margin-bottom: -3rem;
+}
+
+#contact-page h1 {
+	text-align: center;
+	color: #F14946;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+#contact-page #fname, #contact-page #lname, #contact-page #email, #contact-page #phone, #contact-page textarea {
+	padding: 0.6rem 0.4rem;
+	border-radius: 10px 10px 10px 10px;
+	overflow: hidden;
+	border-width: 1px;
+	border-color: #fcd0c3;
+	margin-right: 0.5rem;
+}
+
+#contact-page ::placeholder {
+	padding-left: 0.4rem;
+	font-size: 13px;
+	font-family: 'Oswald', sans-serif;
+}
+
+#contact-page .contact-form {
+	padding-left: 9rem;
+	padding-top: 4rem;
+}
+
+#contact-page .name-info, #contact-page .mail-contact-info {
+	margin-bottom: 0.5rem;
+}
+
+#contact-page #send-button {
+	float: right;
+	background-color: #F14946;
+	color: #FCD0C3;
+	border-radius: 2rem;
+	padding: 0.8rem  3rem;
+}
+
+@media (max-width: 425px) {
+	#contact-page .contact-form {
+		padding-left: 2rem;
+		width: 80%;
+	}
+	#contact-page .contact-form #fname, #contact-page .contact-form #lname, #contact-page .contact-form #email, #contact-page .contact-form #phone {
+		margin: 0.2rem 0;
+		width: 100%;
+	}
+	#contact-page .contact-form .name-info {
+		padding-top: 0.2rem;
+		margin-bottom: -0.01rem;
+	}
+}
+
+#product-page .product-banner-img {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	height: 550px;
+}
+
+#product-page h1 {
+	align-self: center;
+	font-size: 5rem;
+	color: white;
+	font-size: 4rem;
+	font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+	font-weight: 400;
+}
+
+#product-page .borderLine {
+	border-bottom: 8px solid orangered;
+}
+
+#product-page .curved-product-bg {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	height: 440px;
+	padding-bottom: 3rem;
+}
+
+#product-page .curved-product-bg .search-bar {
+	width: 70%;
+	padding: 0.5rem;
+}
+
+#product-page button {
+	background-color: #FFFFFF;
+	border-radius: 8px;
+}
+
+#product-page .all-products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#the-science-page .science-banner {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 590px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#the-science-page h1 {
+	align-self: center;
+	font-size: 4rem;
+	font-weight: 400;
+	color: #ffece5;
+}
+
+#the-science-page .borderLine {
+	border-bottom: 8px solid #f14946;
+}
+
+#the-science-page .first-block {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 3rem 11rem;
+}
+
+#the-science-page .second-block {
+	padding: 4rem 0;
+}
+
+#the-science-page .second-block .logo {
+	text-align: center;
+}
+
+#the-science-page .second-block h3 {
+	text-align: center;
+	font-size: 36px;
+	color: #f14946;
+	margin: 0.4rem;
+	font-weight: 500;
+}
+
+#the-science-page .second-block .science-card {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 4rem;
+	padding: 2rem 0;
+}
+
+#the-science-page .second-block .science-card .card {
+	width: 300px;
+	border: 1px solid grey;
+	border-radius: 8px;
+	box-shadow: 8px 8px #fcd0c3;
+	width: 300px;
+	text-align: center;
+}
+
+#the-science-page .second-block .science-card .card img {
+	width: 100%;
+}
+
+#the-science-page .second-block .science-card .card h2 {
+	color: #f14946;
+}
+
+#the-science-page .second-block .more-pages {
+	text-align: center;
+}
+
+#the-science-page .second-block .more-pages button {
+	padding: 0.2rem 0.4rem;
+	border-color: #f0f0f0;
+	box-shadow: 1px 1px 0px 0px;
+}
+
+#the-science-page .third-block {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+#the-science-page .third-block h3 {
+	text-align: center;
+	font-size: 36px;
+	color: #f14946;
+	margin: 0.4rem;
+	font-weight: 500;
+}
+
+#the-science-page .third-block .third-block-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 3rem;
+	padding: 2rem 0;
+}
+
+#the-science-page .third-block .card {
+	border: 1px solid grey;
+	border-radius: 8px;
+	box-shadow: 8px 8px #fcd0c3;
+	width: 356px;
+	text-align: center;
+	background-color: white;
+}
+
+#the-science-page .third-block .card img {
+	width: 100%;
+}
+
+#the-science-page .third-block .card h2 {
+	color: #f14946;
+}
+
+#the-science-page .third-block .more-pages {
+	text-align: center;
+}
+
+#the-science-page .third-block .more-pages button {
+	padding: 0.2rem 0.4rem;
+}
+
+#the-science-page .fourth-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 3rem;
+	flex-wrap: wrap;
+}
+
+#the-science-page .fourth-block h3 {
+	font-size: 36px;
+	color: #f14946;
+	font-weight: 500;
+}
+
+#the-science-page .fourth-block .browse button {
+	color: #fcd0c3;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+	font-weight: 500;
+	border-radius: 50px;
+	background-color: #f14946;
+	border-width: 0px;
+	padding: 0.8rem;
+}
+
+@media (max-width: 350px) {
+	#the-science-page .first-block {
+		padding: 3rem 6rem;
+	}
+}
+
+#where-to-buy .where-banner {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 590px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#where-to-buy h1 {
+	align-self: center;
+	color: white;
+	font-size: 4rem;
+	font-weight: 500;
+	color: #ffece5;
+}
+
+#where-to-buy .borderLine {
+	border-bottom: 8px solid orangered;
+}
+
+#where-to-buy .last-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 3rem;
+	flex-wrap: wrap;
+	background-color: #FFECE5;
+}
+
+#where-to-buy .last-block h3 {
+	font-size: 36px;
+	color: #f14946;
+	font-weight: 500;
+}
+
+#where-to-buy .last-block .browse button {
+	color: #fcd0c3;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+	font-weight: 500;
+	border-radius: 50px;
+	background-color: #f14946;
+	border-width: 0px;
+	padding: 0.8rem;
+}
+
+.site-footer {
+	background-color: #F14946;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+.site-footer .footer-heading {
+	padding: 3rem 0 0rem 4rem;
+}
+
+.site-footer .footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.site-footer hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+	width: 100%;
+}
+
+.site-footer .second-content-footer {
+	display: flex;
+	gap: 1.5rem;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 980px) {
+	.site-footer .footer-content {
+		flex-direction: column;
+		padding-left: 3.5rem;
+	}
+	.site-footer .second-content-footer {
+		justify-content: center;
+	}
 }
 
 .site-header {
@@ -955,9 +1641,15 @@ body {
 	top: 0px;
 	left: 0px;
 	height: 193px;
-	/* background: transparent url(img/Component 23 – 1.png) 0% 0% no-repeat padding-box; */
+	font-weight: 500;
 	opacity: 1;
 	z-index: 1;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .nav-menu {
@@ -967,19 +1659,13 @@ body {
 
 .nav-menu * {
 	align-items: center;
-	padding-top: 80px;
-}
-
-.nav-menu :nth-child(3) {
-	order: 2;
 }
 
 .nav-menu li a {
-	padding: 5px;
-	margin: 8px;
+	padding: 1.8rem;
+	font-size: 20px;
 	color: black;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: small;
+	font: normal normal 300 21px/22px Oswald;
 }
 
 .nav-menu li a:hover {
@@ -987,84 +1673,53 @@ body {
 	border-bottom: 1px solid #da6010;
 }
 
-.wholistic-logo {
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-	width: 0;
+.menu-icon {
+	font-size: 1.5rem !important;
+	color: red;
 }
 
-.site-title a, .entry-title a {
-	text-decoration: none;
-}
-
-button {
-	background-color: orangered;
-	padding: 10px 15px;
-	border-radius: 20px;
-}
-
-.image {
-	position: realtive;
-	margin-bottom: 0;
-	width: 100%;
-}
-
-.borderLine {
-	margin-top: 0;
-	border-bottom: 8px solid orangered;
-}
-
-.textInPic {
-	position: absolute;
-	top: 250px;
-	left: 120px;
-	color: white;
-}
-
-.paragraph {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	padding: 50px;
-}
-
-.paragraph :nth-child(1) {
-	margin-bottom: 10px;
-}
-
-.paragraph :nth-child(3) {
-	color: #F14946;
-}
-
-.next-content {
+.search-btn {
 	display: flex;
 }
 
-.next-content :first-of-type {
-	align-items: center;
+.search-btn:before {
+	content: "\f179";
+	color: #da6010;
+	font-family: dashicons;
+	transform: rotateY(180deg);
+	font-weight: 100;
+	padding-right: 0.5rem;
 }
 
-.testimonials-content {
-	display: flex;
-	background-color: #FCD0C3;
-	justify-content: center;
+.search-btn a {
+	visibility: hidden;
 }
 
-.testimonials-content * {
-	align-items: center;
+@media (max-width: 770px) {
+	.menu-menu-1-container {
+		width: 87%;
+		position: absolute;
+		top: 154px;
+		background-color: #fcd0c3;
+	}
+	.menu-menu-1-container .nav-menu li {
+		padding-top: 0;
+	}
+	.menu-menu-1-container .nav-menu li a {
+		padding: 0.4rem;
+	}
+	.menu-menu-1-container .search-btn {
+		display: none;
+	}
 }
 
-body {
-	background-color: white;
+#page {
+	margin-top: -2rem;
 }
 
-.site-footer {
-	background-color: #F14946;
-	color: white;
-	display: flex;
+* {
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

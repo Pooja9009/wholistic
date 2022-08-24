@@ -27,7 +27,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<!-- <?php
+			<?php 
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
@@ -42,14 +42,24 @@
 			if ( $who_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $who_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?> -->
+			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			 <div class="wholistic-logo">
-              <img src="wp-content\themes\who\img\Wholistic---RGB-Colour-Logo2.png" alt="wholistic Logo" width="232" height="300">
-			</div>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'who' ); ?></button>
+			 <a class="wholistic-logo" href="/who" style="width:150px; height:165px; padding1rem">
+              <img src="<?php echo get_bloginfo('template_url') ?>/img/wholisticLogo.png" alt="wholistic Logo">
+			</a>
+	         <!-- <span class="search-btn"></span>
+			  <span class ="dashicons dashicons-search">
+			 </span> -->
+
+			<!-- <button class="search-icon" style="font-size:0.5rem">Button <i class="fa fa-search"></i></button> -->
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'who' ); ?> -->
+			
+			 <span class="dashicons dashicons-menu menu-icon menu-toggle" aria-expanded="false"></span>
+			
+		<!-- </button> -->
+		
 			<?php
 			wp_nav_menu(
 				array(
@@ -58,5 +68,8 @@
 				)
 			);
 			?>
+			
+			
 		</nav><!-- #site-navigation -->
+		
 	</header><!-- #masthead -->

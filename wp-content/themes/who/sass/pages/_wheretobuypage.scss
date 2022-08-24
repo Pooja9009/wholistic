@@ -1,0 +1,49 @@
+#where-to-buy {
+    .where-banner {
+        display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 590px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h1 {
+        align-self: center;
+        color: white;
+        font-size: 4rem;
+        font-weight: 500;
+        color: #ffece5;
+    }
+
+    .borderLine {
+        border-bottom: 8px solid orangered;
+    }
+    // .map-block {
+
+    // }
+
+
+    .last-block {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem;
+        flex-wrap: wrap;
+        background-color: #FFECE5;
+        h3 {
+            font-size: 36px;
+            color: #f14946;
+            font-weight: 500;
+        }
+        .browse button{
+            color: #fcd0c3;
+            font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+            font-weight: 500;
+            border-radius: 50px;
+            background-color: #f14946;
+              border-width: 0px;
+              padding: 0.8rem;
+        }
+    }
+}
