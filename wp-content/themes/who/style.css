@@ -1135,12 +1135,6 @@ textarea {
 	}
 }
 
-@media (max-width: 770px) {
-	#home-page * {
-		font-size: 16px;
-	}
-}
-
 #aboutPage .about-banner {
 	display: flex;
 	background-position: center;
@@ -1299,7 +1293,7 @@ textarea {
 
 #contact-page ::placeholder {
 	padding-left: 0.4rem;
-	font-size: 13px;
+	font-size: 15px;
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -1310,6 +1304,14 @@ textarea {
 
 #contact-page .name-info, #contact-page .mail-contact-info {
 	margin-bottom: 0.5rem;
+}
+
+#contact-page .name-info input:focus, #contact-page .mail-contact-info input:focus {
+	background-color: #dabfc3;
+}
+
+#contact-page .name-info input:active, #contact-page .mail-contact-info input:active {
+	border-color: #fcd0c3;
 }
 
 #contact-page #send-button {
@@ -1606,8 +1608,8 @@ textarea {
 .site-footer .footer-content {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1rem;
-	justify-content: center;
+	gap: 2rem;
+	justify-content: space-evenly;
 }
 
 .site-footer hr {
@@ -1652,6 +1654,10 @@ textarea {
 	align-items: center;
 }
 
+.main-navigation li {
+	padding: 2rem 2rem 0 2rem;
+}
+
 .nav-menu {
 	display: flex;
 	justify-content: center;
@@ -1662,15 +1668,14 @@ textarea {
 }
 
 .nav-menu li a {
-	padding: 1.8rem;
 	font-size: 20px;
 	color: black;
 	font: normal normal 300 21px/22px Oswald;
 }
 
 .nav-menu li a:hover {
-	color: #faeaea;
-	border-bottom: 1px solid #da6010;
+	color: #535151;
+	border-bottom: 0.2px solid #da6010;
 }
 
 .menu-icon {
@@ -1713,13 +1718,15 @@ textarea {
 	}
 }
 
-#page {
-	margin-top: -2rem;
-}
-
 * {
 	font-family: 'Oswald', sans-serif;
-	font-size: 24px;
+	font-size: 20px;
+}
+
+@media (min-width: 770px) {
+	.hide-above-sm {
+		display: none !important;
+	}
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,25 +24,27 @@
     }
     ::placeholder {
         padding-left:0.4rem;
-       font-size: 13px;
+       font-size: 15px;
        font-family: 'Oswald', sans-serif;
     }
-    // #fname {
-    //     background-color: grey;
-    // }
+//    input:focus {
+//     background-color: grey;
+//     border-color: #fcd0c3;
+//    }
     .contact-form {
         padding-left: 9rem;
         padding-top: 4rem;
     }
     .name-info,.mail-contact-info{
         margin-bottom: 0.5rem;
-       // width: 100%;
+        input:focus {
+            background-color: rgb(218, 191, 195);
+           }
+           input:active {
+            border-color: #fcd0c3;
+           }
     }
-    // .mail-info,.contact-info {
-    //     #email,#phone{
-    //        width: 100%;
-    //     }
-    // }
+    
     #send-button{
         float:right;
         background-color:#F14946;

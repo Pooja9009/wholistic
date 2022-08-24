@@ -130,5 +130,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 * {
 	font-family: 'Oswald', sans-serif;
-	font-size: 24px;
+	font-size: 20px;
+}
+
+@media (min-width:770px) {
+    .hide-above-sm {
+        display: none !important;
+    }
 }

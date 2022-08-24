@@ -3,6 +3,7 @@
         font-size: 40px;
         color: black;
     }
+
     // .banner-img-block: hover {
     //     transition: .5s ease;
     // }
@@ -23,34 +24,37 @@
             font-weight: 400;
             color: #ffece5;
             line-height: 103px;
-             text-align: left;
-             text-shadow: 0.08em 0.04em 0.11em rgba(0, 0, 0, 0.4);
+            text-align: left;
+            text-shadow: 0.08em 0.04em 0.11em rgba(0, 0, 0, 0.4);
         }
 
-         .browse-button {
+        .browse-button {
             margin-top: -1rem;
+
             button {
                 color: #fcd0c3;
                 font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
                 border-radius: 50px;
                 background-color: #f14946;
-                border-width: 0px ;
+                border-width: 0px;
                 padding: 13px;
                 font-weight: 500;
                 text-align: center;
-    }
-    .banner-img-block:hover {
-     background-size: 135% auto;
-     transition: 0.7s ease-in-out;
-    }
-    button:hover {
-        background-color: #fcd0c3;
-        color: black;
-        cursor: pointer;
-    }
-         }
-        
+            }
+
+            .banner-img-block:hover {
+                background-size: 135% auto;
+                transition: 0.7s ease-in-out;
+            }
+
+            button:hover {
+                background-color: #fcd0c3;
+                color: black;
+                cursor: pointer;
+            }
         }
+
+    }
 
     .borderLine {
         margin-top: 0;
@@ -86,13 +90,14 @@
         background-repeat: no-repeat;
         background-size: 70%;
         padding-bottom: 10rem;
+
         .curve-image {
             display: flex;
             width: 49%;
             align-items: center;
             margin-left: 23%;
         }
-}
+    }
 
     .testimonials-content {
         background-position: center;
@@ -106,6 +111,7 @@
             color: #f14946;
             font-weight: 450;
         }
+
         .testimonials-column-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -114,13 +120,15 @@
             .testimonials-column {
                 width: 250px;
                 text-align: center;
+
                 p {
                     font-weight: 300;
-                    
+
                 }
+
                 .name-title {
-                    color:#f14946
-                    }
+                    color: #f14946
+                }
             }
         }
     }
@@ -135,20 +143,23 @@
 
     .cards {
         display: flex;
-    flex-direction: column;
-    //justify-content: space-between;
-    border: 2px solid grey;
+        flex-direction: column;
+        //justify-content: space-between;
+        border: 2px solid grey;
         border-radius: 8px;
         box-shadow: 8px 8px #fcd0c3;
         width: 300px;
         height: auto;
         text-align: center;
+
         h3 {
-            color:#f14946
+            color: #f14946
         }
+
         .card-img {
             width: 100%;
         }
+
         .card-button {
             border-radius: 50px;
             background-color: #f14946;
@@ -161,37 +172,43 @@
             font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
         }
     }
+
     @media only screen and (max-width:400px) {
         .banner-img-block {
-                padding-left:0rem; 
-         }
+            padding-left: 0rem;
+        }
     }
+
     @media (max-width: 770px) {
         .banner-img-block h1 {
             font-size: 70px;
         }
+
         .curve-image-wrapper {
-          background-size: inherit;
-          padding-bottom: 2rem;
-           .curve-image {
-            flex-direction:column;
-           }
+            background-size: inherit;
+            padding-bottom: 2rem;
+
+            .curve-image {
+                flex-direction: column;
+            }
         }
     }
+
     @media (max-width: 330px) {
         .curve-image {
             p {
                 width: 125%;
             }
+
             img {
                 width: 15rem;
             }
         }
     }
+
     //decreasing the font-size
-    @media (max-width:770px) {
-        * {
-            font-size: 16px;
-        }
-    }
+
+    // * {
+    //     font-size: 16px;
+    // }
 }

@@ -16,7 +16,7 @@
 		<div class="footer-content">
 			<p><img src="<?php bloginfo("template_directory"); ?>/img/phoneIcon.png"/> 1-800-387-0177</p>
 			<p><img src="<?php bloginfo("template_directory"); ?>/img/emailIcon.png"/>info@wholisticbyaor.ca</p>
-			<p><img src=""/>3900 – 12 Street NE Calgary,AB Canada T2E 8H9</p>
+			<p><img src=""/>3900 – 12 Street NE Calgary,<br>AB Canada T2E 8H9</p>
 			<p>Enter your email to stay up to date on all news <br>
 			<input type="email" id ="email-id" name="email-id" placeholder="Email"/></p>
 		</div><!-- .site-info -->

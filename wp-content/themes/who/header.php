@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'who' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<!-- <div class="site-branding">
 			<?php 
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -43,10 +43,10 @@
 				?>
 				<p class="site-description"><?php echo $who_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div> -->
 
 		<nav id="site-navigation" class="main-navigation">
-			 <a class="wholistic-logo" href="/who" style="width:150px; height:165px; padding1rem">
+			 <a class="wholistic-logo" href="/who" style="width:148px; height:151px; padding:0.4rem;">
               <img src="<?php echo get_bloginfo('template_url') ?>/img/wholisticLogo.png" alt="wholistic Logo">
 			</a>
 	         <!-- <span class="search-btn"></span>
@@ -56,7 +56,7 @@
 			<!-- <button class="search-icon" style="font-size:0.5rem">Button <i class="fa fa-search"></i></button> -->
 			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'who' ); ?> -->
 			
-			 <span class="dashicons dashicons-menu menu-icon menu-toggle" aria-expanded="false"></span>
+			 <span class="dashicons dashicons-menu menu-icon menu-toggle hide-above-sm" aria-expanded="false"></span>
 			
 		<!-- </button> -->
 		
