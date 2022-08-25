@@ -103,6 +103,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 //
 /* Pages */
 
+@import "pages/aboutpage";
+
 @import "pages/homepage";
 
 
@@ -110,11 +112,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-// @import "pages/header";
+@import "pages/header";
 
 
 
 * {
 	font-family: 'Oswald', sans-serif;
-	font-size: 24px;
+	font-size: 22px;
 }

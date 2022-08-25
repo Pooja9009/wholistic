@@ -18,46 +18,36 @@ get_header();
 <main id="primary" class="site-main">
 
     <body id="home-page">
-
-    <?php
-        $banner = get_field('banner');
-        if ($banner): ?>
-        <div class="banner-img-block">
-        <img src="<?php echo esc_url($banner['banner_image']['url']); ?>"
-                     alt="<?php echo esc_attr($banner['banner_image']['alt']); ?>"/>
-            <h1><?php echo $banner['title']; ?></h1>
+        <div class="banner-img-block"
+            style="background-image:url('<?php bloginfo("template_directory"); ?>/img/banner.png')">
+            <h1>COMPLETE <br> YOUR CARE</h1>
             <div class="browse-button">
                 <button>BROWSE THE GOODS</button>
             </div>
         </div>
         <div class="borderLine">
         </div>
-        <?php endif; ?>
-
-
-    <?php
-        $ads = get_field('ads');
-        if ($ads): ?>
         <div class="paragraph">
-        <img src="<?php echo esc_url($ads['icon']['url']); ?>"
-                     alt="<?php echo esc_attr($ads['icon']['alt']); ?>"/>
-            <p><?php echo $ads['slogan']; ?></p>
-            <p id="bold"><b> <?php echo $ads['question']; ?></b></p>
-            <p><?php echo $ads['ans']; ?></p>
+            <img src="<?php bloginfo("template_directory"); ?>/img/whoLogoSmall.png">
+            <p>It's 7pm Thursday evening and you've popped into your local store to stock up on the supplements that you
+                know you shuold be taking for your helath.You're greeted withe shelves upon shelves of options....</p>
+            <p id="bold"><b>who knew there were so many brands to choose from for just vitamin D alone?</b></p>
+            <p>It's normal to feel overwhelmed,and thst's why we're here for you.</p>
         </div>
-        <?php endif; ?>
 
 
         <div class="curve-image-wrapper" style="background-image:url('<?php bloginfo("template_directory"); ?>/img/curvedHomeBackground.svg');">
-        <?php
-        $commit = get_field('commit');
-        if ($commit): ?>
             <div class="curve-image">
-                <p style="text-align: center; margin-top: 10rem;"><?php echo $commit['commitment']; ?></p>
-                <img style="height: 25rem" src="<?php echo esc_url($commit['bottle_image']['url']); ?>"
-                     alt="<?php echo esc_attr($commit['bottle_image']['alt']); ?>"/>
+                <p style="text-align: center; margin-top: 10rem;">We're committed to creating products that are
+                    trustworthy, steeped in crystal-clear
+                    scientific proof to
+                    give you confidence, clarity and joy in your wellness journey. Whether you have specialized dietary
+                    needs, or your goal is to level up your health, boost your energy levels, prevent injury or illness
+                    or
+                    slow down aging, we got you!
+                </p>
+                <img style="height: 25rem" src="<?php bloginfo("template_directory"); ?>/img/capsule.png" alt="capsule" />
             </div>
-            <?php endif; ?>
         </div>
 
 
@@ -85,8 +75,6 @@ get_header();
                 </div>
             </div>
         </div>
-
-        
         <div class="homepage-card">
             <!-- <div class="cards-wrapper"> -->
             <div class="cards">

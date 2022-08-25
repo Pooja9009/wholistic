@@ -44,7 +44,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Accessibility
 	- Alignments
 --------------------------------------------------------------*/
-
 @import url("https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin,latin-ext&display=swap");
 /*--------------------------------------------------------------
 # Generic
@@ -936,6 +935,136 @@ textarea {
 
 /*header*/
 /* Pages */
+#aboutPage .about-banner {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#aboutPage h1 {
+	align-self: center;
+	font-size: 4rem;
+	font-weight: 500;
+	color: #ffece5;
+}
+
+#aboutPage .borderLine {
+	margin-top: -5px;
+	border-bottom: 8px solid #f14946;
+}
+
+#aboutPage .paragraph {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5rem 0;
+}
+
+#aboutPage .about-background {
+	display: flex;
+	flex-wrap: wrap;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 9rem 0;
+}
+
+#aboutPage .about-background .row {
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+}
+
+#aboutPage .about-background .row .content {
+	text-align: center;
+	padding: 0 7rem 6rem 3rem;
+}
+
+#aboutPage .about-background .row h3 {
+	font-size: 35px;
+	color: #f14946;
+	font-weight: 450;
+}
+
+#aboutPage .about-background .row .image {
+	height: 20rem;
+	box-shadow: 8px 8px #fcd0c3;
+	border-radius: 8px;
+}
+
+#aboutPage .about-background .flex-reverse {
+	flex-direction: row-reverse;
+}
+
+#aboutPage .about-second-banner {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 950px;
+	padding: 2rem 10rem;
+}
+
+#aboutPage .about-second-banner .about-second-bannerContent {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+#aboutPage .about-second-banner .about-second-bannerContent h3 {
+	font-size: 35px;
+	color: white;
+	font-weight: 450;
+}
+
+@media (max-width: 500px) {
+	#aboutPage .about-second-banner {
+		padding: 2rem 2rem;
+		background-position: left 38% center;
+	}
+	#aboutPage .about-background .row .content {
+		padding: 0 1rem 1rem 1rem;
+	}
+}
+
+#aboutPage .last-block-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#aboutPage .last-block-wrapper .last-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 53%;
+	padding-top: 3rem;
+}
+
+#aboutPage .last-block-wrapper .last-block h2 {
+	font-size: 35px;
+	color: #f14946;
+	font-weight: 450;
+}
+
+#aboutPage .last-block-wrapper .last-block img {
+	width: fit-content;
+	align-self: center;
+}
+
+@media (max-width: 770px) {
+	#aboutPage .about-background .row {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+}
+
 #home-page body {
 	font-size: 40px;
 	color: black;
@@ -1027,7 +1156,7 @@ textarea {
 
 #home-page .curve-image-wrapper .curve-image {
 	display: flex;
-	width: 49%;
+	width: 60%;
 	align-items: center;
 	margin-left: 23%;
 }
@@ -1138,56 +1267,94 @@ textarea {
 	}
 }
 
-body {
-	color: #fcd0c3;
+.site-header {
+	background-color: #FCD0C3;
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	height: 193px;
+	font-weight: 500;
+	opacity: 1;
+	z-index: 1;
 }
 
-.site-footer {
-	background-color: 0;
-	font-family: 'Oswald', sans-serif;
-	font-size: 16px;
-	color: white;
-}
-
-.site-footer .footer-heading {
-	padding: 3rem 0 0rem 4rem;
-}
-
-.site-footer .footer-content {
+.main-navigation {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main-navigation li {
+	padding: 2rem 2rem 0 2rem;
+}
+
+.nav-menu {
+	display: flex;
 	justify-content: center;
 }
 
-.site-footer hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
-	width: 100%;
+.nav-menu * {
+	align-items: center;
 }
 
-.site-footer .second-content-footer {
+.nav-menu li a {
+	font-size: 20px;
+	color: black;
+	font: normal normal 300 18px/22px Oswald;
+}
+
+.nav-menu li a:hover {
+	color: #535151;
+	border-bottom: 0.2px solid #da6010;
+}
+
+.menu-icon {
+	font-size: 1.5rem !important;
+	color: red;
+}
+
+.hide-above-sm {
+	color: red;
+}
+
+.search-btn {
 	display: flex;
-	gap: 1.5rem;
-	justify-content: flex-end;
-	flex-wrap: wrap;
 }
 
-@media (max-width: 980px) {
-	.site-footer .footer-content {
-		flex-direction: column;
-		padding-left: 3.5rem;
+.search-btn:before {
+	content: "\f179";
+	color: #da6010;
+	font-family: dashicons;
+	transform: rotateY(180deg);
+	font-weight: 100;
+	padding-right: 0.5rem;
+}
+
+.search-btn a {
+	visibility: hidden;
+}
+
+@media (max-width: 600px) {
+	.menu-menu-1-container {
+		width: 87%;
+		position: absolute;
+		top: 154px;
+		background-color: #FCD0C3;
 	}
-	.site-footer .second-content-footer {
-		justify-content: center;
+	.menu-menu-1-container .nav-menu li {
+		padding-top: 0;
+	}
+	.menu-menu-1-container .nav-menu li a {
+		padding: 0.4rem;
+	}
+	.menu-menu-1-container .search-btn {
+		display: none;
 	}
 }
 
 * {
 	font-family: 'Oswald', sans-serif;
-	font-size: 24px;
+	font-size: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
