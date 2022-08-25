@@ -9,8 +9,13 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	if(defined('WP_LOCAL')){
+		define( '_S_VERSION', time() );
+	} else {
+		define( '_S_VERSION', '1.0.0' );
+	}
 }
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.

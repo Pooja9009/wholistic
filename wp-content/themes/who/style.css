@@ -11,13 +11,10 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: who
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
-
 who is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
@@ -46,8 +43,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
-
 --------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin,latin-ext&display=swap");
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -60,6 +58,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -935,8 +934,260 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
-/* pages
+/*header*/
+/* Pages */
+#home-page body {
+	font-size: 40px;
+	color: black;
+}
 
- */
+#home-page .banner-img-block {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 990px;
+	display: flex;
+	flex-direction: column;
+	padding: 8rem 0 0 8rem;
+	flex-wrap: wrap;
+}
+
+#home-page .banner-img-block h1 {
+	color: white;
+	font-size: 88px;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+	font-weight: 400;
+	color: #ffece5;
+	line-height: 103px;
+	text-align: left;
+	text-shadow: 0.08em 0.04em 0.11em rgba(0, 0, 0, 0.4);
+}
+
+#home-page .banner-img-block .browse-button {
+	margin-top: -1rem;
+}
+
+#home-page .banner-img-block .browse-button button {
+	color: #fcd0c3;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+	border-radius: 50px;
+	background-color: #f14946;
+	border-width: 0px;
+	padding: 13px;
+	font-weight: 500;
+	text-align: center;
+}
+
+#home-page .banner-img-block .browse-button .banner-img-block:hover {
+	background-size: 135% auto;
+	transition: 0.7s ease-in-out;
+}
+
+#home-page .banner-img-block .browse-button button:hover {
+	background-color: #fcd0c3;
+	color: black;
+	cursor: pointer;
+}
+
+#home-page .borderLine {
+	margin-top: 0;
+	border-bottom: 8px solid #f14946;
+}
+
+#home-page .paragraph {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 5% 4%;
+	width: 96%;
+}
+
+#home-page .paragraph p {
+	padding: 0 15%;
+	margin-bottom: 0.5rem;
+}
+
+#home-page .paragraph #bold {
+	color: #f14946;
+	padding: 0 2%;
+}
+
+#home-page .paragraph img {
+	align-self: center;
+	margin-bottom: 0.3rem;
+}
+
+#home-page .curve-image-wrapper {
+	background-position-x: 50%;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	padding-bottom: 10rem;
+}
+
+#home-page .curve-image-wrapper .curve-image {
+	display: flex;
+	width: 49%;
+	align-items: center;
+	margin-left: 23%;
+}
+
+#home-page .testimonials-content {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 2rem;
+}
+
+#home-page .testimonials-content .testimonials-heading {
+	text-align: center;
+	font-size: 35px;
+	color: #f14946;
+	font-weight: 450;
+}
+
+#home-page .testimonials-content .testimonials-column-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#home-page .testimonials-content .testimonials-column-wrapper .testimonials-column {
+	width: 250px;
+	text-align: center;
+}
+
+#home-page .testimonials-content .testimonials-column-wrapper .testimonials-column p {
+	font-weight: 300;
+}
+
+#home-page .testimonials-content .testimonials-column-wrapper .testimonials-column .name-title {
+	color: #f14946;
+}
+
+#home-page .homepage-card {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 4rem;
+	padding: 4rem 0;
+}
+
+#home-page .cards {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid grey;
+	border-radius: 8px;
+	box-shadow: 8px 8px #fcd0c3;
+	width: 300px;
+	height: auto;
+	text-align: center;
+}
+
+#home-page .cards h3 {
+	color: #f14946;
+}
+
+#home-page .cards .card-img {
+	width: 100%;
+}
+
+#home-page .cards .card-button {
+	border-radius: 50px;
+	background-color: #f14946;
+	border-width: 0px;
+	padding: 13px;
+	width: 90%;
+	margin-bottom: 0.5rem;
+	margin-left: 0.5rem;
+	color: #fcd0c3;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+	#home-page .banner-img-block {
+		padding-left: 0rem;
+	}
+}
+
+@media (max-width: 770px) {
+	#home-page .banner-img-block h1 {
+		font-size: 70px;
+	}
+	#home-page .curve-image-wrapper {
+		background-size: inherit;
+		padding-bottom: 2rem;
+	}
+	#home-page .curve-image-wrapper .curve-image {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 330px) {
+	#home-page .curve-image p {
+		width: 125%;
+	}
+	#home-page .curve-image img {
+		width: 15rem;
+	}
+}
+
+@media (max-width: 770px) {
+	#home-page * {
+		font-size: 16px;
+	}
+}
+
+body {
+	color: #fcd0c3;
+}
+
+.site-footer {
+	background-color: 0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+.site-footer .footer-heading {
+	padding: 3rem 0 0rem 4rem;
+}
+
+.site-footer .footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.site-footer hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+	width: 100%;
+}
+
+.site-footer .second-content-footer {
+	display: flex;
+	gap: 1.5rem;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 980px) {
+	.site-footer .footer-content {
+		flex-direction: column;
+		padding-left: 3.5rem;
+	}
+	.site-footer .second-content-footer {
+		justify-content: center;
+	}
+}
+
+* {
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+}
 
 /*# sourceMappingURL=style.css.map */

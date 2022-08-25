@@ -11,13 +11,10 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: who
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
-
 who is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
@@ -47,10 +44,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
-
 --------------------------------------------------------------*/
 
-// Import variables and mixins.
+// Import variables, font and mixins.
+// @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin,latin-ext&display=swap');
 @import "abstracts/abstracts";
 
 /*--------------------------------------------------------------
@@ -100,7 +98,23 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
-/* pages
 
- */
+/*header*/
+//
+/* Pages */
+
 @import "pages/homepage";
+
+
+
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+// @import "pages/header";
+
+
+
+* {
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+}

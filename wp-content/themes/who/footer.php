@@ -11,20 +11,20 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'who' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'who' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'who' ), 'who', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
+<footer id="colophon" class="site-footer">
+		<h4 class="footer-heading">CONTACT US</h4>
+		<div class="footer-content">
+			<p><img src="<?php bloginfo("template_directory"); ?>/img/phoneIcon.png"/> 1-800-387-0177</p>
+			<p><img src="<?php bloginfo("template_directory"); ?>/img/emailIcon.png"/>info@wholisticbyaor.ca</p>
+			<p><img src=""/>3900 – 12 Street NE Calgary,AB Canada T2E 8H9</p>
+			<p>Enter your email to stay up to date on all news <br>
+			<input type="email" id ="email-id" name="email-id" placeholder="Email"/></p>
 		</div><!-- .site-info -->
+		<hr>
+		<div class="second-content-footer">
+			<p>Terms and Condition</p>
+			<p>Privacy Policy</p>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
