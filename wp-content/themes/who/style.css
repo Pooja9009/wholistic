@@ -458,10 +458,6 @@ big {
 
 /* Elements
 --------------------------------------------- */
-body {
-	background: #fff;
-}
-
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -955,9 +951,13 @@ textarea {
 	flex-wrap: wrap;
 }
 
+#home-page .banner-img-block img {
+	width: 100%;
+}
+
 #home-page .banner-img-block h1 {
 	color: white;
-	font-size: 88px;
+	font-size: 80px;
 	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
 	font-weight: 400;
 	color: #ffece5;
@@ -993,8 +993,7 @@ textarea {
 }
 
 #home-page .borderLine {
-	margin-top: 0;
-	border-bottom: 8px solid #f14946;
+	border-bottom: 10px solid #f14946;
 }
 
 #home-page .paragraph {
@@ -1002,7 +1001,7 @@ textarea {
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	padding: 5% 4%;
+	padding: 8% 4%;
 	width: 96%;
 }
 
@@ -1030,9 +1029,19 @@ textarea {
 
 #home-page .curve-image-wrapper .curve-image {
 	display: flex;
-	width: 49%;
+	width: 60%;
 	align-items: center;
 	margin-left: 23%;
+}
+
+#home-page .curve-image-wrapper .curve-image img {
+	position: relative;
+	top: 0;
+	transition: top ease 0.5s;
+}
+
+#home-page .curve-image-wrapper .curve-image img:hover {
+	top: -10px;
 }
 
 #home-page .testimonials-content {
@@ -1183,7 +1192,7 @@ textarea {
 
 #aboutPage .about-background .row .content {
 	text-align: center;
-	padding: 0 7rem 6rem 3rem;
+	padding: 0 4rem 6rem 3rem;
 }
 
 #aboutPage .about-background .row h3 {
@@ -1670,7 +1679,7 @@ textarea {
 .nav-menu li a {
 	font-size: 20px;
 	color: black;
-	font: normal normal 300 21px/22px Oswald;
+	font: normal normal 300 18px/22px Oswald;
 }
 
 .nav-menu li a:hover {
@@ -1680,6 +1689,10 @@ textarea {
 
 .menu-icon {
 	font-size: 1.5rem !important;
+	color: red;
+}
+
+.hide-above-sm {
 	color: red;
 }
 
@@ -1700,7 +1713,7 @@ textarea {
 	visibility: hidden;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 600px) {
 	.menu-menu-1-container {
 		width: 87%;
 		position: absolute;
@@ -1720,7 +1733,7 @@ textarea {
 
 * {
 	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 @media (min-width: 770px) {

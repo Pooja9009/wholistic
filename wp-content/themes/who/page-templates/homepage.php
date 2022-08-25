@@ -19,13 +19,16 @@ get_header();
 
     <body id="home-page">
         <div class="banner-img-block"
-            style="background-image:url('<?php bloginfo("template_directory"); ?>/img/banner.png')">
-            <h1>COMPLETE <br> YOUR CARE</h1>
-            <div class="browse-button">
-                <button>BROWSE THE GOODS</button>
+             style="background-image:url('<?php bloginfo("template_directory"); ?>/img/banner.png')"> 
+        <!-- <div class="banner-img-block">
+            <img src="<?php bloginfo("template_directory"); ?>/img/banner.png">
+            <div class="img-text"> -->
+                <h1 class=>COMPLETE <br> YOUR CARE</h1>
+                <div class="browse-button">
+                    <button>BROWSE THE GOODS</button>
+                </div>
             </div>
-        </div>
-        <div class="borderLine">
+            <div class="borderLine">
         </div>
         <div class="paragraph">
             <img src="<?php bloginfo("template_directory"); ?>/img/whoLogoSmall.png">
@@ -36,9 +39,10 @@ get_header();
         </div>
 
 
-        <div class="curve-image-wrapper" style="background-image:url('<?php bloginfo("template_directory"); ?>/img/curvedHomeBackground.svg');">
+        <div class="curve-image-wrapper"
+            style="background-image:url('<?php bloginfo("template_directory"); ?>/img/curvedHomeBackground.svg');">
             <div class="curve-image">
-                <p style="text-align: center; margin-top: 10rem;">We're committed to creating products that are
+                <p style="text-align: center; margin-top: 7rem;">We're committed to creating products that are
                     trustworthy, steeped in crystal-clear
                     scientific proof to
                     give you confidence, clarity and joy in your wellness journey. Whether you have specialized dietary
@@ -46,7 +50,8 @@ get_header();
                     or
                     slow down aging, we got you!
                 </p>
-                <img style="height: 25rem" src="<?php bloginfo("template_directory"); ?>/img/capsule.png" alt="capsule" />
+                <img style="height: 25rem" src="<?php bloginfo("template_directory"); ?>/img/capsule.png"
+                    alt="capsule" />
             </div>
         </div>
 
@@ -58,20 +63,20 @@ get_header();
                 <div class="testimonials-column">
                     <img src="<?php bloginfo("template_directory"); ?>/img/testimonial1.svg">
                     <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna."</p> 
-                        <p class="name-title">- Name, Title</p>
+                        ut labore et dolore magna."</p>
+                    <p class="name-title">- Name, Title</p>
                 </div>
                 <div class="testimonials-column">
                     <img src="<?php bloginfo("template_directory"); ?>/img/testimonial2.svg">
-                    <p >"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                    <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et dolore magna."</p>
-                        <p class="name-title">- Name, Title</p>
+                    <p class="name-title">- Name, Title</p>
                 </div>
                 <div class="testimonials-column">
                     <img src="<?php bloginfo("template_directory"); ?>/img/testimonial3.svg">
                     <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna."</p> 
-                        <p class="name-title">- Name, Title</p>
+                        ut labore et dolore magna."</p>
+                    <p class="name-title">- Name, Title</p>
                 </div>
             </div>
         </div>
