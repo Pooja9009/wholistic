@@ -36,13 +36,13 @@ get_header();
             <div class="science-card">
                 <div class="card">
                     <img src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
-                    <h2>Curabitur tempor neque vitae magna porta fermentum?</h2>
-                    <p>Aenean efficitur mauris ex, sit amet egestas diam vestibulum sit amet. Cras pretium...</p>
+                    <h2 style="padding:0 0.5rem">Curabitur tempor neque vitae magna porta fermentum?</h2>
+                    <p style="padding:0.5rem 0.5rem">Aenean efficitur mauris ex, sit amet egestas diam vestibulum sit amet. Cras pretium...</p>
                     <p style="float:right; padding: 0 1rem 0 0;">READ MORE ></p>
                 </div>
                 <div class="card">
                     <img src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
-                    <h2>Maecenas nec placerat lectus</h2>
+                    <h2 style="padding: 0 2rem;">Maecenas nec placerat lectus</h2>
                     <p>Fusce nec magna eget dui aliquam feugiat nec eu est. Vivamus finibus arcu nec justo...</p>
                     <!-- <p style="float:right">READ MORE ></p> -->
                      <p style="float:right;padding: 1.2rem 1rem 0 0;">READ MORE ></p>
@@ -50,7 +50,7 @@ get_header();
                 </div>
                 <div class="card">
                     <img src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
-                    <h2>Lorem Ipsum doler</h2>
+                    <h2 style="padding-bottom: 1rem;">Lorem Ipsum doler</h2>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...</p>
                     <!-- <p style="float:right">READ MORE ></p> -->
                     <p style="float:right; padding: 1.2rem 1rem 0 0;">READ MORE ></p>
@@ -74,20 +74,20 @@ get_header();
         <div class="card">
                     <img src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
                     <h2>Ingredient 6</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...</p>
-                    <p style="float:right; padding: 0 1rem 0 0;">READ MORE ></p>
+                    <p style="padding:0rem 0.5rem 0.2rem 0.5rem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...</p>
+                    <p style="float:right; padding: 0.2rem 1rem 0 0;">READ MORE ></p>
                 </div>
                 <div class="card">
                     <img src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
                     <h2>Suspendisse</h2>
-                    <p>Vestibulum porttitor dignissim lectus aliquet blandit. Cras at vestibulum sapien....</p>
-                    <p style="float:right;padding: 1.2rem 1rem 0 0;">READ MORE ></p>
+                    <p style="padding:0rem 0.5rem 0.2rem 0.5rem">Vestibulum porttitor dignissim lectus aliquet blandit. Cras at vestibulum sapien....</p>
+                    <p style="float:right;padding: 0.2rem 1rem 0 0;">READ MORE ></p>
                 </div>
                 <div class="card">
                     <img src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
                     <h2>Curabitur vitae</h2>
-                    <p>Aliquam in risus sit amet ex fringilla tempor ac nec nisi. Fusce eros lacus, molestie...</p>
-                    <p style="float:right;padding: 0 1rem 0 0;">READ MORE ></p>
+                    <p style="padding:0rem 0.5rem 0.2rem 0.5rem">Aliquam in risus sit amet ex fringilla tempor ac nec nisi. Fusce eros lacus, molestie...</p>
+                    <p style="float:right;padding: 0.2rem 1rem 0 0;">READ MORE ></p>
                 </div>
 </div>
 <div class="more-pages">
