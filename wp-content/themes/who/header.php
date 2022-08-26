@@ -46,7 +46,7 @@
 		</div>.site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			 <a class="wholistic-logo" href="/who" style="width:150px; height:165px; padding1rem">
+			 <a class="wholistic-logo" href="/wordpress" style="width:150px; height:165px; padding1rem">
               <img src="<?php echo get_bloginfo('template_url') ?>/img/wholisticLogo.png" alt="wholistic Logo">
 			</a>
 	         <!-- <span class="search-btn"></span>

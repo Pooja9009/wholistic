@@ -1,0 +1,69 @@
+#contact-page {
+    .contact-banner {
+    display: flex;
+    flex-wrap: wrap;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    margin-bottom:-3rem;
+    }
+    h1 {
+        text-align: center;
+        color:#F14946;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    #fname, #lname, #email, #phone,textarea{
+        padding: 0.6rem 0.4rem;
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        border-width: 1px;
+        border-color: #fcd0c3;
+        margin-right: 0.5rem;
+    }
+    ::placeholder {
+        padding-left:0.4rem;
+       font-size: 15px;
+       font-family: 'Oswald', sans-serif;
+    }
+//    input:focus {
+//     background-color: grey;
+//     border-color: #fcd0c3;
+//    }
+    .contact-form {
+        padding-left: 9rem;
+        padding-top: 4rem;
+    }
+    .name-info,.mail-contact-info{
+        margin-bottom: 0.5rem;
+        input:focus {
+            background-color: rgb(218, 191, 195);
+           }
+           input:active {
+            border-color: #fcd0c3;
+           }
+    }
+    
+    #send-button{
+        float:right;
+        background-color:#F14946;
+        color:#FCD0C3;
+        border-radius: 2rem;
+        padding: 0.8rem  3rem;
+    }
+    @media(max-width:425px) {
+        .contact-form {
+            padding-left:2rem;
+            width:80%;
+            #fname,#lname,#email,#phone {
+                margin: 0.2rem 0;
+                width: 100%;
+            }
+            .name-info {
+                padding-top:0.2rem;
+                margin-bottom: -0.01rem;
+            }
+        }
+    }
+}

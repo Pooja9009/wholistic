@@ -103,9 +103,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 //
 /* Pages */
 
+@import "pages/homepage";
+
 @import "pages/aboutpage";
 
-@import "pages/homepage";
+@import "pages/contactpage";
+
+// @import "pages/productpage";
+
+@import "pages/thesciencepage";
+
+// @import "pages/wheretobuypage";
+
+@import "pages/footer";
 
 
 

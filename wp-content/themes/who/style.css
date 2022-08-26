@@ -509,7 +509,6 @@ figure {
 }
 
 table {
-	margin: 0 0 1.5em;
 	width: 100%;
 }
 
@@ -935,136 +934,6 @@ textarea {
 
 /*header*/
 /* Pages */
-#aboutPage .about-banner {
-	display: flex;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 800px;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-#aboutPage h1 {
-	align-self: center;
-	font-size: 4rem;
-	font-weight: 500;
-	color: #ffece5;
-}
-
-#aboutPage .borderLine {
-	margin-top: -5px;
-	border-bottom: 8px solid #f14946;
-}
-
-#aboutPage .paragraph {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 5rem 0;
-}
-
-#aboutPage .about-background {
-	display: flex;
-	flex-wrap: wrap;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 9rem 0;
-}
-
-#aboutPage .about-background .row {
-	display: flex;
-	width: 80%;
-	margin-left: 10%;
-}
-
-#aboutPage .about-background .row .content {
-	text-align: center;
-	padding: 0 7rem 6rem 3rem;
-}
-
-#aboutPage .about-background .row h3 {
-	font-size: 35px;
-	color: #f14946;
-	font-weight: 450;
-}
-
-#aboutPage .about-background .row .image {
-	height: 20rem;
-	box-shadow: 8px 8px #fcd0c3;
-	border-radius: 8px;
-}
-
-#aboutPage .about-background .flex-reverse {
-	flex-direction: row-reverse;
-}
-
-#aboutPage .about-second-banner {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 950px;
-	padding: 2rem 10rem;
-}
-
-#aboutPage .about-second-banner .about-second-bannerContent {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	flex-wrap: wrap;
-}
-
-#aboutPage .about-second-banner .about-second-bannerContent h3 {
-	font-size: 35px;
-	color: white;
-	font-weight: 450;
-}
-
-@media (max-width: 500px) {
-	#aboutPage .about-second-banner {
-		padding: 2rem 2rem;
-		background-position: left 38% center;
-	}
-	#aboutPage .about-background .row .content {
-		padding: 0 1rem 1rem 1rem;
-	}
-}
-
-#aboutPage .last-block-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#aboutPage .last-block-wrapper .last-block {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	width: 53%;
-	padding-top: 3rem;
-}
-
-#aboutPage .last-block-wrapper .last-block h2 {
-	font-size: 35px;
-	color: #f14946;
-	font-weight: 450;
-}
-
-#aboutPage .last-block-wrapper .last-block img {
-	width: fit-content;
-	align-self: center;
-}
-
-@media (max-width: 770px) {
-	#aboutPage .about-background .row {
-		flex-wrap: wrap-reverse;
-		justify-content: center;
-	}
-}
-
 #home-page body {
 	font-size: 40px;
 	color: black;
@@ -1264,6 +1133,410 @@ textarea {
 @media (max-width: 770px) {
 	#home-page * {
 		font-size: 16px;
+	}
+}
+
+#aboutPage .about-banner {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#aboutPage h1 {
+	align-self: center;
+	font-size: 4rem;
+	font-weight: 500;
+	color: #ffece5;
+}
+
+#aboutPage .borderLine {
+	margin-top: -5px;
+	border-bottom: 8px solid #f14946;
+}
+
+#aboutPage .paragraph {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5rem 0;
+}
+
+#aboutPage .about-background {
+	display: flex;
+	flex-wrap: wrap;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 9rem 0;
+}
+
+#aboutPage .about-background .row {
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+}
+
+#aboutPage .about-background .row .content {
+	text-align: center;
+	padding: 0 7rem 6rem 3rem;
+}
+
+#aboutPage .about-background .row h3 {
+	font-size: 35px;
+	color: #f14946;
+	font-weight: 450;
+}
+
+#aboutPage .about-background .row .image {
+	height: 20rem;
+	box-shadow: 8px 8px #fcd0c3;
+	border-radius: 8px;
+}
+
+#aboutPage .about-background .flex-reverse {
+	flex-direction: row-reverse;
+}
+
+#aboutPage .about-second-banner {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 950px;
+	padding: 2rem 10rem;
+}
+
+#aboutPage .about-second-banner .about-second-bannerContent {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+#aboutPage .about-second-banner .about-second-bannerContent h3 {
+	font-size: 35px;
+	color: white;
+	font-weight: 450;
+}
+
+@media (max-width: 500px) {
+	#aboutPage .about-second-banner {
+		padding: 2rem 2rem;
+		background-position: left 38% center;
+	}
+	#aboutPage .about-background .row .content {
+		padding: 0 1rem 1rem 1rem;
+	}
+}
+
+#aboutPage .last-block-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#aboutPage .last-block-wrapper .last-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 53%;
+	padding-top: 3rem;
+}
+
+#aboutPage .last-block-wrapper .last-block h2 {
+	font-size: 35px;
+	color: #f14946;
+	font-weight: 450;
+}
+
+#aboutPage .last-block-wrapper .last-block img {
+	width: fit-content;
+	align-self: center;
+}
+
+@media (max-width: 770px) {
+	#aboutPage .about-background .row {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+}
+
+#contact-page .contact-banner {
+	display: flex;
+	flex-wrap: wrap;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 60rem;
+	margin-bottom: -3rem;
+}
+
+#contact-page h1 {
+	text-align: center;
+	color: #F14946;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+#contact-page #fname, #contact-page #lname, #contact-page #email, #contact-page #phone, #contact-page textarea {
+	padding: 0.6rem 0.4rem;
+	border-radius: 10px 10px 10px 10px;
+	overflow: hidden;
+	border-width: 1px;
+	border-color: #fcd0c3;
+	margin-right: 0.5rem;
+}
+
+#contact-page ::placeholder {
+	padding-left: 0.4rem;
+	font-size: 15px;
+	font-family: 'Oswald', sans-serif;
+}
+
+#contact-page .contact-form {
+	padding-left: 9rem;
+	padding-top: 4rem;
+}
+
+#contact-page .name-info, #contact-page .mail-contact-info {
+	margin-bottom: 0.5rem;
+}
+
+#contact-page .name-info input:focus, #contact-page .mail-contact-info input:focus {
+	background-color: #dabfc3;
+}
+
+#contact-page .name-info input:active, #contact-page .mail-contact-info input:active {
+	border-color: #fcd0c3;
+}
+
+#contact-page #send-button {
+	float: right;
+	background-color: #F14946;
+	color: #FCD0C3;
+	border-radius: 2rem;
+	padding: 0.8rem  3rem;
+}
+
+@media (max-width: 425px) {
+	#contact-page .contact-form {
+		padding-left: 2rem;
+		width: 80%;
+	}
+	#contact-page .contact-form #fname, #contact-page .contact-form #lname, #contact-page .contact-form #email, #contact-page .contact-form #phone {
+		margin: 0.2rem 0;
+		width: 100%;
+	}
+	#contact-page .contact-form .name-info {
+		padding-top: 0.2rem;
+		margin-bottom: -0.01rem;
+	}
+}
+
+#the-science-page .science-banner {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 590px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#the-science-page h1 {
+	align-self: center;
+	font-size: 4rem;
+	font-weight: 400;
+	color: #ffece5;
+}
+
+#the-science-page .borderLine {
+	border-bottom: 8px solid #f14946;
+}
+
+#the-science-page .first-block {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 3rem 11rem;
+}
+
+#the-science-page .second-block {
+	padding: 4rem 0;
+}
+
+#the-science-page .second-block .logo {
+	text-align: center;
+}
+
+#the-science-page .second-block h3 {
+	text-align: center;
+	font-size: 36px;
+	color: #f14946;
+	margin: 0.4rem;
+	font-weight: 500;
+}
+
+#the-science-page .second-block .science-card {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 4rem;
+	padding: 2rem 0;
+}
+
+#the-science-page .second-block .science-card .card {
+	width: 300px;
+	border: 1px solid grey;
+	border-radius: 8px;
+	box-shadow: 8px 8px #fcd0c3;
+	width: 300px;
+	text-align: center;
+}
+
+#the-science-page .second-block .science-card .card img {
+	width: 100%;
+}
+
+#the-science-page .second-block .science-card .card h2 {
+	color: #f14946;
+}
+
+#the-science-page .second-block .more-pages {
+	text-align: center;
+}
+
+#the-science-page .second-block .more-pages button {
+	padding: 0.2rem 0.4rem;
+	border-color: #f0f0f0;
+	box-shadow: 1px 1px 0px 0px;
+}
+
+#the-science-page .third-block {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+#the-science-page .third-block h3 {
+	text-align: center;
+	font-size: 36px;
+	color: #f14946;
+	margin: 0.4rem;
+	font-weight: 500;
+}
+
+#the-science-page .third-block .third-block-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 3rem;
+	padding: 2rem 0;
+}
+
+#the-science-page .third-block .card {
+	border: 1px solid grey;
+	border-radius: 8px;
+	box-shadow: 8px 8px #fcd0c3;
+	width: 356px;
+	text-align: center;
+	background-color: white;
+}
+
+#the-science-page .third-block .card img {
+	width: 100%;
+}
+
+#the-science-page .third-block .card h2 {
+	color: #f14946;
+}
+
+#the-science-page .third-block .more-pages {
+	text-align: center;
+}
+
+#the-science-page .third-block .more-pages button {
+	padding: 0.2rem 0.4rem;
+}
+
+#the-science-page .fourth-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 3rem;
+	flex-wrap: wrap;
+}
+
+#the-science-page .fourth-block h3 {
+	font-size: 36px;
+	color: #f14946;
+	font-weight: 500;
+}
+
+#the-science-page .fourth-block .browse button {
+	color: #fcd0c3;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+	font-weight: 500;
+	border-radius: 50px;
+	background-color: #f14946;
+	border-width: 0px;
+	padding: 0.8rem;
+}
+
+@media (max-width: 350px) {
+	#the-science-page .first-block {
+		padding: 3rem 6rem;
+	}
+}
+
+.site-footer {
+	background-color: #f14946;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+.site-footer .footer-heading {
+	padding: 3rem 0 0rem 4rem;
+}
+
+.site-footer .footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: space-evenly;
+}
+
+.site-footer hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+	width: 100%;
+}
+
+.site-footer .second-content-footer {
+	display: flex;
+	gap: 1.5rem;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 980px) {
+	.site-footer .footer-content {
+		flex-direction: column;
+		padding-left: 3.5rem;
+	}
+	.site-footer .second-content-footer {
+		justify-content: center;
 	}
 }
 

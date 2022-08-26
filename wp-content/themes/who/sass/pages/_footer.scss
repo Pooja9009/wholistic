@@ -1,0 +1,45 @@
+.site-footer {
+    background-color: #f14946;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: white;
+    .footer-heading {
+        padding: 3rem 0 0rem 4rem;
+    }
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-evenly;
+    }
+    hr {
+        background-color: #ccc;
+        border: 0;
+        height: 1px;
+        margin-bottom: 1.5em;
+        width: 100%;
+}
+    .second-content-footer {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    @media(max-width:980px) {
+        .footer-content {
+            flex-direction:column;
+            padding-left: 3.5rem;
+        }
+        .second-content-footer {
+            justify-content:center;
+        }
+    }
+    // @media(max-width:380px) {
+    //    .site-footer {
+    //     .footer-content {
+    //         padding-right: 2rem;
+    //      }
+    //    }
+    // }
+    
+}
