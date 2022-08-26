@@ -109,20 +109,50 @@ get_header();
                             endwhile; endif;
                         endwhile; endif;
                         ?></h3>
-                <p>Products to help you discover joy in your wellness journey.</p>
+
+                <p><?php
+                        if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                            if (have_rows('box1')): while (have_rows('box1')) : the_row();
+                                the_sub_field('text');
+                            endwhile; endif;
+                        endwhile; endif;
+                        ?></p>
                 <button class="card-button">BROWSE PRODUCTS</button>
             </div>
             <div class="cards">
                 <img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/homepageSecondcard.png">
-                <h3>Why Supplement?</h3>
-                <p>Find out why supplements are a key piece of the wellness pie. Learn the ins and outs of
-                    supplementation.</p>
+                <h3><?php
+                        if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                            if (have_rows('box2')): while (have_rows('box2')) : the_row();
+                                the_sub_field('title');
+                            endwhile; endif;
+                        endwhile; endif;
+                        ?></h3>
+                <p><?php
+                        if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                            if (have_rows('box2')): while (have_rows('box2')) : the_row();
+                                the_sub_field('text');
+                            endwhile; endif;
+                        endwhile; endif;
+                        ?></p>
                 <button class="card-button">LEARN MORE</button>
             </div>
             <div class="cards">
                 <img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
-                <h3>Find Wholistic Products</h3>
-                <p>Browse Wholistic retailers near you.</p>
+                <h3><?php
+                        if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                            if (have_rows('box3')): while (have_rows('box3')) : the_row();
+                                the_sub_field('title');
+                            endwhile; endif;
+                        endwhile; endif;
+                        ?></h3>
+                <p><?php
+                        if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                            if (have_rows('box3')): while (have_rows('box3')) : the_row();
+                                the_sub_field('text');
+                            endwhile; endif;
+                        endwhile; endif;
+                        ?></p>
                 <button class="card-button">FIND US</button>
             </div>
         </div>

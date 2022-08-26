@@ -18,61 +18,66 @@ get_header();
     <main id="primary" class="site-main">
 
         <body id="aboutPage">
+        <?php
+        $banner = get_field('banner');
+        if ($banner): ?>
+
         <div class="about-banner"
-             style="background-image:url('<?php bloginfo("template_directory"); ?>/img/aboutBanner.png')">
-            <h1>WHO ARE WE?</h1>
+             style="background-image:url('<?php echo esc_url($banner['image']['url']); ?>')">
+            <h1><?php echo $banner['title']; ?></h1>
         </div>
+
+
         <div class="borderLine">
         </div>
         <div class="paragraph">
-            <p>We know that navigating the supplement sphere can feel overwhelming with all the lotions,potions,pills
-                and<br> powders available.But wellness doesn't have to be complicated!</p>
+            <p><?php echo $banner['phrase']; ?></p>
         </div>
+
+        <?php endif; ?>
+
+
+        <?php
+        $root = get_field('root');
+        if ($root): ?>
         <div class="about-background"
              style="background-image:url('<?php bloginfo("template_directory"); ?>/img/aboutBackground.png')">
             <div class="row">
                 <div class="content">
 
-                    <h3>OUR ROOTS</h3>
-                    <p>
-                        Our sister company, Advanced Orthomolecular Research (AOR), has created
-                        one-of-a-kind,
-                        evidence-based formulas for over three decades. As part of this, AOR has partnered with over 30+
-                        universities worldwide to research and develop award-winning nutritional supplements. In the
-                        90s, AOR founder Dr. Traj Nibber spotted a need for filler-free therapeutic-grade vitamin and
-                        mineral supplements. His clean compounding approach led to high-dose nutrient formulas that
-                        offered better options to maximize quality of life and lifespan for the AIDS community. Dr. Traj
-                        made these therapies free of charge for four years, at which point he opened Holistic
-                        International Inc. to manufacture and distribute premium nutraceuticals.</p>
+                    <h3><?php echo $root['text_title']; ?></h3>
+                    <p><?php echo $root['content']; ?></p>
                 </div>
-                <img class="image" src="<?php bloginfo("template_directory"); ?>/img/zincTablet.png"/>
+                <img class="image" src="<?php echo esc_url($root['image']['url']); ?>"/>
             </div>
             <div class="row flex-reverse">
                 <div class="content">
 
-                    <p>Dr. Traj created Wholistic as a nod to where we began – it’s founded on the belief
-                        that
-                        individuals and communities thrive with proper nutritional nourishment. To simplify the science,
-                        we offer evidence-based natural health products to keep your cells happy and performing their
-                        best.</p>
-                    <p>We want you to know what it feels like to feel great from the inside out.
-                    <h3> We’re Wholistic
-                        – it’s lovely to meet you.</h3></p>
+                    <p><?php echo $root['content2']; ?></p>
+                    
+                    <h3><?php echo $root['text_title_2']; ?></h3>
                 </div>
-                <img class="image" src="<?php bloginfo("template_directory"); ?>/img/zincTablet2.png"/>
+                <img class="image" src="<?php echo esc_url($root['image2']['url']); ?>"/>
             </div>
         </div>
+
+        <?php endif; ?>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+
+        <?php
+        $achieve = get_field('achieve');
+        if ($achieve): ?>
         <div class="about-second-banner"
-             style="background-image:url('<?php bloginfo("template_directory"); ?>/img/aboutBanner2.png')">
+             style="background-image:url('<?php echo esc_url($achieve['background_image']['url']); ?>')">
             <div class="about-second-bannerContent">
-                <h3>ACHIEVING WHOL(ISTIC) WELLNESS</h3>
-                <p>Countless reasons can lead you to the beginning of your supplement journey: injury or illness
-                    prevention, slowing down the effects of aging, boosting energy levels or supplementing specialized
-                    dietary needs. Or it might simply be to level-up your health! </p>
-                <p>Whatever brought you to us – Wholistic is here to help you complete your wellness journey and
-                    experience better health from within.</p>
-            </div>
+                <h3><?php echo $achieve['title']; ?></h3>
+                <p><?php echo $achieve['text']; ?></p>
+                </div>
         </div>
+
+        <?php endif; ?>
+
         <div class="last-block-wrapper">
             <div class="last-block">
                 <img src="<?php bloginfo("template_directory"); ?>/img/whoLogoSmall.png">
