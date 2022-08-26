@@ -1,55 +1,81 @@
 #product-page {
-    .product-banner-img{
-    display: flex;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    height: 550px;
+    .product-banner-img {
+        display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        height: 550px;
     }
+
     h1 {
         align-self: center;
         font-size: 5rem;
         color: white;
         font-size: 4rem;
-        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+        font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
         font-weight: 400;
     }
+
     .borderLine {
-        border-bottom: 8px solid orangered;
-    }
-    .curved-product-bg {
-        display: flex;
-        flex-wrap:wrap;
-        flex-direction: column;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    height: 440px;
-    padding-bottom: 3rem;
-    .search-bar {
-        width: 70%;
-    padding: 0.5rem;
-    }
+        border-bottom: 8px solid #f14946;
     }
 
-//     .filter-buttons{
-//         display:flex;
-// }
-button{
-    background-color: #FFFFFF;
-    border-radius: 8px;
-   
+    .curved-product-bg {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        height: 440px;
+        padding-bottom: 3rem;
+
+        .search-bar {
+            width: 70%;
+            padding: 0.5rem;
+        }
+    }
+
+    //     .filter-buttons{
+    //         display:flex;
+    // }
+    .filter-buttons {
+        display:flex;
+    button {
+        background-color: #FFFFFF;
+        border-radius: 8px;
+    
+    }
 }
+
     // .screen-reader-text {
     //     width:100%;
     // }
-    .all-products
-    {
+    .all-products {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        padding: 3rem;
+
+        .product {
+            width: 17rem;
+
+            .product-text {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 32px;
+            }
+            .star-icon {
+                font-size: 15px;
+            }
+            .product-content:hover {
+                background-image: url('/img/capsule.png');
+                
+
+            }
+        }
     }
 }

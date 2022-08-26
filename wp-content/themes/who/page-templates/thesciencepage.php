@@ -73,20 +73,20 @@ get_header();
         <div class="third-block-cards">
         <div class="card">
                     <img src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
-                    <h2>Curabitur tempor neque vitae magna porta fermentum?</h2>
-                    <p>Aenean efficitur mauris ex, sit amet egestas diam vestibulum sit amet. Cras pretium...</p>
+                    <h2>Ingredient 6</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...</p>
                     <p style="float:right; padding: 0 1rem 0 0;">READ MORE ></p>
                 </div>
                 <div class="card">
                     <img src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
-                    <h2>Maecenas nec placerat lectus</h2>
-                    <p>Fusce nec magna eget dui aliquam feugiat nec eu est. Vivamus finibus arcu nec justo...</p>
+                    <h2>Suspendisse</h2>
+                    <p>Vestibulum porttitor dignissim lectus aliquet blandit. Cras at vestibulum sapien....</p>
                     <p style="float:right;padding: 1.2rem 1rem 0 0;">READ MORE ></p>
                 </div>
                 <div class="card">
                     <img src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
-                    <h2>Lorem Ipsum doler</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...</p>
+                    <h2>Curabitur vitae</h2>
+                    <p>Aliquam in risus sit amet ex fringilla tempor ac nec nisi. Fusce eros lacus, molestie...</p>
                     <p style="float:right;padding: 0 1rem 0 0;">READ MORE ></p>
                 </div>
 </div>

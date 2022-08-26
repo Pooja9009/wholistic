@@ -12,21 +12,22 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'who' ); ?></a>
+    <?php wp_body_open(); ?>
+    <div id="page" class="site">
+        <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'who' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<!-- <div class="site-branding">
+        <header id="masthead" class="site-header">
+            <!-- <div class="site-branding">
 			<?php 
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -45,22 +46,22 @@
 			<?php endif; ?>
 		</div> -->
 
-		<nav id="site-navigation" class="main-navigation">
-			 <a class="wholistic-logo" href="/who" style="width:148px; height:151px; padding:0.4rem;">
-              <img src="<?php echo get_bloginfo('template_url') ?>/img/wholisticLogo.png" alt="wholistic Logo">
-			</a>
-	         <!-- <span class="search-btn"></span>
+            <nav id="site-navigation" class="main-navigation">
+                <a class="wholistic-logo" href="/who">
+                    <img src="<?php echo get_bloginfo('template_url') ?>/img/wholisticLogo.png" alt="wholistic Logo">
+                </a>
+                <!-- <span class="search-btn"></span>
 			  <span class ="dashicons dashicons-search">
 			 </span> -->
 
-			<!-- <button class="search-icon" style="font-size:0.5rem">Button <i class="fa fa-search"></i></button> -->
-			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'who' ); ?> -->
-			<span class="dashicons dashicons-search hide-above-sm"></span>
-			<span class="dashicons dashicons-menu menu-icon menu-toggle hide-above-sm" aria-expanded="false"></span>
-			
-		<!-- </button> -->
-		
-			<?php
+                <!-- <button class="search-icon" style="font-size:0.5rem">Button <i class="fa fa-search"></i></button> -->
+                <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'who' ); ?> -->
+                <span class="dashicons dashicons-search hide-above-sm"></span>
+                <span class="dashicons dashicons-menu menu-icon menu-toggle hide-above-sm" aria-expanded="false"></span>
+
+                <!-- </button> -->
+
+                <?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-1',
@@ -68,8 +69,22 @@
 				)
 			);
 			?>
-			
-			
-		</nav><!-- #site-navigation -->
-		
-	</header><!-- #masthead -->
+
+
+            </nav><!-- #site-navigation -->
+            
+            <script>
+            var className = "inverted";
+            var scrollTrigger = 60;
+
+            window.onscroll = function() {
+                // We add pageYOffset for compatibility with IE.
+                if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                    document.getElementsByTagName("header")[0].classList.add(className);
+                } else {
+                    document.getElementsByTagName("header")[0].classList.remove(className);
+                }
+            };
+            </script>
+
+        </header><!-- #masthead -->

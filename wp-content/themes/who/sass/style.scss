@@ -130,11 +130,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 * {
+	@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 	font-family: 'Oswald', sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 }
 
-@media (min-width:770px) {
+@media (min-width:760px) {
     .hide-above-sm {
         display: none !important;
 		

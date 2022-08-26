@@ -7,12 +7,27 @@
     font-weight: 500;
     opacity: 1;
     z-index: 1;
+    transition: background-color 0.8s ease;
 }
+.inverted {
+    background-color: rgb(167, 117, 117);
+    backdrop-filter: blur(10px);
+    // box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+    // a {color: blue; }
+  }
+  
+
 
 .main-navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    .wholistic-logo{
+        width: 120px;
+    padding-top: 2rem;
+    
+}
+
 }
 
 .main-navigation li {
@@ -92,6 +107,9 @@
 
 //tablet 
 
-@media (max-width:800px) {
+@media (min-width:760px) {
+    .nav-menu li{
+       padding: 0 2rem 0 0;
+    }
     
 }
