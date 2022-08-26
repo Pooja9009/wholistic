@@ -16,25 +16,25 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main">
+    <main id="primary" class="site-main">
 
-    <body id="contact-page">
+        <body id="contact-page">
         <div class="contact-banner"
-            style="background-image:url('<?php bloginfo("template_directory"); ?>/img/contactBannerImg.png')">
+             style="background-image:url('<?php bloginfo("template_directory"); ?>/img/contactBannerImg.png')">
             <div class="contact-form">
                 <h1>CONTACT US</h1>
                 <form>
                     <div class="name-info">
                         <label for="fname"></label>
                         <input type="text" id="fname" name="fname" placeholder="First Name">
-                  
+
                         <label for="lname"></label>
                         <input type="text" id="lname" name="lname" placeholder="Last Name">
                     </div>
                     <div class="mail-contact-info">
                         <label for="email"></label>
                         <input type="text" id="email" name="email" placeholder="Email Address">
-                    
+
                         <label for="phone"></label>
                         <input type="number" id="phone" name="phone" placeholder="Phone Number">
                     </div>
@@ -42,10 +42,10 @@ get_header();
                     <div class=submit>
                         <input type="submit" id="send-button" value="Send">
                     </div>
-            </form>
+                </form>
+            </div>
         </div>
-        </div>
-    </body>
-</main><!-- #main -->
+        </body>
+    </main><!-- #main -->
 <?php
 get_footer();

@@ -47,7 +47,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 4rem;
+            gap: 2.5rem;
             padding: 2rem 0;
 
             .card {
@@ -55,11 +55,16 @@
                 border: 1px solid grey;
                 border-radius: 8px;
                 box-shadow: 8px 8px #fcd0c3;
-                width: 300px;
+                width: 286px;
+                height: 420px;
                 text-align: center;
-
+                p,h2 {
+                    margin:0rem;
+                    text-align: center;
+                }
                 img {
-                    width: 100%
+                    width: 100%;
+                    height: 10rem;
                 }
                 h2 {
                     color: #f14946; 
@@ -73,8 +78,10 @@
 
             button {
                 padding: 0.2rem 0.4rem;
-                border-color: #f0f0f0;
-                box-shadow: 1px 1px 0px 0px
+                border-color: #fcd0c3;
+                box-shadow: 1px 1px 0px 0px #fcd0c3;
+                background-color: white;
+                font-size: 13px;
             }
         }
 
@@ -97,20 +104,25 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 3rem;
+            gap: 2.5rem;
             padding: 2rem 0;
         }
 
         .card {
-            border: 1px solid grey;
+            border: 1px solid lightgrey;
             border-radius: 8px;
             box-shadow: 8px 8px #fcd0c3;
-            width: 356px;
+            width: 295px;
+            height: 372px;
             text-align: center;
             background-color: white;
+            p,h2 {
+                margin:0rem;
+            }
 
             img {
-                width: 100%
+                width: 100%;
+                height: 10rem;
             }
             h2 {
                 color: #f14946; 
@@ -121,7 +133,12 @@
 
             button {
                 padding: 0.2rem 0.4rem;
+                box-shadow: 1px 1px 0px 0px #f14946!important;
+                border-color: #fff!important;
+                background-color: hsl(17, 56%, 89%);
+                font-size: 13px;
             }
+           
         }
 
     }
@@ -144,6 +161,11 @@
             background-color: #f14946;
               border-width: 0px;
               padding: 0.8rem;
+        }
+        button:hover {
+            background-color: #fcd0c3;
+            color: black;
+            cursor: pointer;
         }
     }
     @media(max-width:350px) {
