@@ -9,25 +9,22 @@
     z-index: 1;
     transition: background-color 0.8s ease;
 }
-.inverted {
-    background-color: rgb(167, 117, 117);
-    backdrop-filter: blur(10px);
-    // box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
-    // a {color: blue; }
-  }
-  
 
+.inverted {
+    background-color:rgb(167, 117, 117);
+     backdrop-filter: blur(43px);
+}
 
 .main-navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .wholistic-logo{
-        width: 120px;
-    padding-top: 2rem;
-    
-}
 
+    .wholistic-logo {
+        width: 120px;
+        padding-top: 2rem;
+
+    }
 }
 
 .main-navigation li {
@@ -51,6 +48,12 @@
     font: normal normal 300 18px/22px Oswald;
 }
 
+.menu-menu-1-container.nav-menu li:visited {
+    background-color: red;
+    border-radius: 37px;
+    padding: 8px 25px;
+}
+
 
 .nav-menu li a:hover {
     color: rgb(83, 81, 81);
@@ -71,7 +74,7 @@
 
     &:before {
         content: "\f179";
-        color: rgb(218, 96, 16);
+       color: #f14946;
         font-family: dashicons;
         transform: rotateY(180deg);
         font-weight: 100;
@@ -108,8 +111,8 @@
 //tablet 
 
 @media (min-width:760px) {
-    .nav-menu li{
-       padding: 0 2rem 0 0;
+    .nav-menu li {
+        padding: 0 2rem 0 0;
     }
-    
+
 }

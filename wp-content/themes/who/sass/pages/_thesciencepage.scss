@@ -168,7 +168,7 @@
             cursor: pointer;
         }
     }
-    @media(max-width:350px) {
+    @media(min-width:300px) {
        .first-block {
         padding: 3rem 6rem;
        }

@@ -34,48 +34,70 @@
         padding-bottom: 3rem;
 
         .search-bar {
-            width: 70%;
-            padding: 0.5rem;
+            width: 55%;
+            padding: 0.4rem;
+            border: 1px solid #fcd0c3;
         }
     }
-
-    //     .filter-buttons{
-    //         display:flex;
-    // }
+p {
+    font-size: 16px;
+}
     .filter-buttons {
-        display:flex;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        box-sizing: unset !important;
+       
     button {
+        padding: 6px 22px;
         background-color: #FFFFFF;
-        border-radius: 8px;
-    
+        border-radius: 5px;
+        font-size: 16px;
+        color:#88898D;
+        border-width: 0;
+        font-weight: 300;
     }
 }
-
-    // .screen-reader-text {
-    //     width:100%;
-    // }
     .all-products {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 3rem;
+
+       
 
         .product {
             width: 17rem;
+            margin-bottom: 2rem;
+
+            h2:hover {
+                cursor: pointer;
+                color:#fcd0c3;
+
+            }
+            
 
             .product-text {
                 font-weight: 300;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 32px;
+                padding: 0px 5px;
             }
             .star-icon {
                 font-size: 15px;
+                .review {
+                    font-weight: 300;
+                    font-size: 15px;
+                }
             }
-            .product-content:hover {
-                background-image: url('/img/capsule.png');
+            // .product-img:hover {
+            //    img {
+                
+            //    }
                 
 
             }
         }
     }
-}

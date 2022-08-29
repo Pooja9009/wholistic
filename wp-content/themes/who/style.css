@@ -369,12 +369,6 @@ template {
 --------------------------------------------- */
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
 html {
 	box-sizing: border-box;
 }
@@ -391,7 +385,6 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -548,7 +541,6 @@ input[type="submit"] {
 	background: #e6e6e6;
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
-	padding: 0.6em 1em 0.4em;
 }
 
 button:hover,
@@ -1389,42 +1381,65 @@ textarea {
 }
 
 #product-page .curved-product-bg .search-bar {
-	width: 70%;
-	padding: 0.5rem;
+	width: 55%;
+	padding: 0.4rem;
+	border: 1px solid #fcd0c3;
+}
+
+#product-page p {
+	font-size: 16px;
 }
 
 #product-page .filter-buttons {
 	display: flex;
+	align-items: center;
+	gap: 13px;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+	box-sizing: unset !important;
 }
 
 #product-page .filter-buttons button {
+	padding: 6px 22px;
 	background-color: #FFFFFF;
-	border-radius: 8px;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #88898D;
+	border-width: 0;
+	font-weight: 300;
 }
 
 #product-page .all-products {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 	padding: 3rem;
 }
 
 #product-page .all-products .product {
 	width: 17rem;
+	margin-bottom: 2rem;
+}
+
+#product-page .all-products .product h2:hover {
+	cursor: pointer;
+	color: #fcd0c3;
 }
 
 #product-page .all-products .product .product-text {
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 32px;
+	padding: 0px 5px;
 }
 
 #product-page .all-products .product .star-icon {
 	font-size: 15px;
 }
 
-#product-page .all-products .product .product-content:hover {
-	background-image: url("/img/capsule.png");
+#product-page .all-products .product .star-icon .review {
+	font-weight: 300;
+	font-size: 15px;
 }
 
 #the-science-page .science-banner {
@@ -1605,7 +1620,7 @@ textarea {
 	cursor: pointer;
 }
 
-@media (max-width: 350px) {
+@media (min-width: 300px) {
 	#the-science-page .first-block {
 		padding: 3rem 6rem;
 	}
@@ -1630,7 +1645,7 @@ textarea {
 }
 
 #where-to-buy .borderLine {
-	border-bottom: 8px solid orangered;
+	border-bottom: 10px solid #f14946;
 }
 
 #where-to-buy .last-block {
@@ -1719,7 +1734,7 @@ textarea {
 
 .inverted {
 	background-color: #a77575;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(43px);
 }
 
 .main-navigation {
@@ -1752,6 +1767,12 @@ textarea {
 	font: normal normal 300 18px/22px Oswald;
 }
 
+.menu-menu-1-container.nav-menu li:visited {
+	background-color: red;
+	border-radius: 37px;
+	padding: 8px 25px;
+}
+
 .nav-menu li a:hover {
 	color: #535151;
 	border-bottom: 0.2px solid #da6010;
@@ -1772,7 +1793,7 @@ textarea {
 
 .search-btn:before {
 	content: "\f179";
-	color: #da6010;
+	color: #f14946;
 	font-family: dashicons;
 	transform: rotateY(180deg);
 	font-weight: 100;
@@ -1805,6 +1826,27 @@ textarea {
 	.nav-menu li {
 		padding: 0 2rem 0 0;
 	}
+}
+
+#terms-page .terms-banner {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 590px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#terms-page h1 {
+	align-self: center;
+	font-size: 4rem;
+	font-weight: 400;
+	color: #ffece5;
+}
+
+#terms-page .borderLine {
+	border-bottom: 8px solid #f14946;
 }
 
 * {
