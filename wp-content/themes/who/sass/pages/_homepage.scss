@@ -58,17 +58,15 @@
     }
 
     .paragraph {
-        display: flex;
         justify-content: center;
-        flex-direction: column;
         text-align: center;
         padding: 5% 4%;
         width: 96%;
 
-        p {
-            padding: 0 15%;
-            margin-bottom: 0.5rem;
-        }
+        // p {
+        //     padding: 0 15%;
+        //     margin-bottom: 0.5rem;
+        // }
 
         #bold {
             color: #f14946;

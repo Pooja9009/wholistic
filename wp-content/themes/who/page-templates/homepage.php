@@ -27,7 +27,7 @@ get_header();
                  style="background-image:url('<?php echo esc_url($banner['banner_image']['url']); ?>')">
                 <h1><?php echo $banner['title']; ?></h1>
                 <div class="browse-button">
-                    <button>BROWSE THE GOODS</button>
+                    <button><?php echo $banner['button']; ?></button>
                 </div>
             </div>
         <?php endif; ?>
@@ -43,7 +43,7 @@ get_header();
             <div class="paragraph">
                 <img src="<?php echo esc_url($ads['icon']['url']); ?>">
                 <p><?php echo $ads['slogan']; ?></p>
-                <p id="bold"><b><?php echo $ads['question']; ?></b></p>
+                <p id="bold"><?php echo $ads['question']; ?></b></p>
                 <p><?php echo $ads['ans']; ?></p>
             </div>
         <?php endif; ?>
