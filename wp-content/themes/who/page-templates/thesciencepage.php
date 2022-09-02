@@ -33,9 +33,8 @@ get_header();
 
         <div class="borderLine">
         </div>
-        <!-- <div class="first-block"> -->
 
-        <!-- -------------------------------------------supplement------------------------------------------------- -->
+        <!-- -------------------------------------------supplement------------------------------------------ -->
 
         <?php
         $supplement = get_field('supplement');
@@ -99,7 +98,7 @@ get_header();
                     if (have_rows('box2')): while (have_rows('box2')) : the_row();
 
                 $image = get_sub_field('image');
-            ?>
+                ?>
                 <img class="card-img" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
                 <?php endwhile; 
                  endif; 
@@ -173,6 +172,8 @@ get_header();
                 <button>Last>></button>
             </div>
         </div>
+
+        <!-- -------------------------------------------intimate-------------------------------------------- -->
 
         <?php
         $intimate = get_field('intimate');
@@ -289,6 +290,8 @@ get_header();
                 <button>Last>></button>
             </div>
         </div>
+
+<!-- -----------------------------------ready--------------------- -->
 
         <?php
         $ready = get_field('ready');
