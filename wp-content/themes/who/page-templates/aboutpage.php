@@ -78,17 +78,18 @@ get_header();
 
         <?php endif; ?>
 
+        <?php
+        $truth = get_field('truth');
+        if ($truth): ?>
         <div class="last-block-wrapper">
             <div class="last-block">
-                <img src="<?php bloginfo("template_directory"); ?>/img/whoLogoSmall.png">
-                <h2>THE WHOLE TRUTH</h2>
-                <p>No half-truths or pseudoscience here - just evidence-based formulas that ungergo through quality
-                    checks and
-                    the Health Canada stamp of aaproval. Find supplements that will help you achieve your wellness hoals
-                    and
-                    maintain optimal health.</p>
+                <img src="<?php echo esc_url($truth['logo']['url']); ?>">
+                <h2><?php echo $truth['title']; ?></h2>
+                <p><?php echo $truth['text']; ?></p>
             </div>
         </div>
+        <?php endif; ?>
+
     </main><!-- #main -->
 <?php
 get_footer();

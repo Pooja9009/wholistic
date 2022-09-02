@@ -33,7 +33,7 @@ get_header();
         <?php endif; ?>
 
         <div class="borderLine">
-        </div>
+        </div>1
 
         <!-- ----------------------------------------ads---------------------------------------- -->
 
@@ -57,10 +57,10 @@ get_header();
             $commit = get_field('commit');  //asigning a variable to get fields of commit group
             if ($commit): ?>
                 <div class="curve-image">
-                    <p style="text-align: center; margin-top: 10rem;"><?php echo $commit['commitment']; ?><!-- geting text fron commitment field  -->
+                    <p style="text-align: center; margin-top: 10rem;"><?php echo $commit['commitment']; ?>   <!-- getting text from commitment field  -->
                     </p>
-                    <img style="height: 25rem" src="<?php echo esc_url($commit['bottle_image']['url']); ?>"
-                         alt="<?php echo esc_attr($commit['bottle_image']['alt']); ?>"/>
+                    <img style="height: 25rem" src="<?php echo esc_url($commit['bottle_image']['url']); ?>"      
+                         alt="<?php echo esc_attr($commit['bottle_image']['alt']); ?>"/>   <!-- image from group commit-->
                 </div>
             <?php endif; ?>
         </div>
@@ -129,7 +129,13 @@ get_header();
                             endwhile; endif;
                         endwhile; endif;
                         ?></p>
-                <button class="card-button">BROWSE PRODUCTS</button>
+                        <button class="card-button"><?php
+                        if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                            if (have_rows('box1')): while (have_rows('box1')) : the_row();
+                                the_sub_field('button');
+                            endwhile; endif;
+                        endwhile; endif;
+                        ?></button>
             </div>
 
         <!-- ---------------------------------Box 2------------------------------- -->
@@ -160,7 +166,13 @@ get_header();
                             endwhile; endif;
                         endwhile; endif;
                         ?></p>
-                <button class="card-button">LEARN MORE</button>
+                <button class="card-button"><?php
+                        if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                            if (have_rows('box2')): while (have_rows('box2')) : the_row();
+                                the_sub_field('button');
+                            endwhile; endif;
+                        endwhile; endif;
+                        ?></button>
             </div>
 
         <!-- ------------------------------Box 3---------------------------------- -->
@@ -192,7 +204,13 @@ get_header();
                             endwhile; endif;
                         endwhile; endif;
                         ?></p>
-                <button class="card-button">FIND US</button>
+                <button class="card-button"><?php
+                        if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                            if (have_rows('box3')): while (have_rows('box3')) : the_row();
+                                the_sub_field('button');
+                            endwhile; endif;
+                        endwhile; endif;
+                        ?></button>
             </div>
         </div>
         <!-- </div> -->
