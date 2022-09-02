@@ -92,12 +92,16 @@ p {
                     font-size: 15px;
                 }
             }
-            // .product-img:hover {
-            //    img {
-                
-            //    }
-                
-
             }
         }
+        @media(max-width:450px) {
+            .product-banner-img{
+                h1 {
+                    font-size: 2.8rem;
+                    text-align: center;
+                }
+            }
+        }
+    
     }
+    

@@ -1442,6 +1442,13 @@ textarea {
 	font-size: 15px;
 }
 
+@media (max-width: 450px) {
+	#product-page .product-banner-img h1 {
+		font-size: 2.8rem;
+		text-align: center;
+	}
+}
+
 #the-science-page .science-banner {
 	display: flex;
 	background-position: center;
