@@ -993,17 +993,10 @@ textarea {
 }
 
 #home-page .paragraph {
-	display: flex;
 	justify-content: center;
-	flex-direction: column;
 	text-align: center;
 	padding: 5% 4%;
 	width: 96%;
-}
-
-#home-page .paragraph p {
-	padding: 0 15%;
-	margin-bottom: 0.5rem;
 }
 
 #home-page .paragraph #bold {
@@ -1401,7 +1394,7 @@ textarea {
 	border-radius: 8px;
 	box-shadow: 8px 8px #fcd0c3;
 	width: 286px;
-	height: 420px;
+	height: 480px;
 	text-align: center;
 }
 
@@ -1460,7 +1453,7 @@ textarea {
 	border-radius: 8px;
 	box-shadow: 8px 8px #fcd0c3;
 	width: 295px;
-	height: 372px;
+	height: 430px;
 	text-align: center;
 	background-color: white;
 }
