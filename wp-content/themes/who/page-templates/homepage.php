@@ -21,13 +21,13 @@ get_header();
         <!-- ---------------------------------------Banner-------------------------------------- -->
         <?php
 
-        $banner = get_field('banner');
+        $banner = get_field('banner');  //assigning a variable to get every field of banner group
         if ($banner): ?>
             <div class="banner-img-block"
-                 style="background-image:url('<?php echo esc_url($banner['banner_image']['url']); ?>')">
-                <h1><?php echo $banner['title']; ?></h1>
+                 style="background-image:url('<?php echo esc_url($banner['banner_image']['url']); ?>')">  <!-- printing image from style-->
+                <h1><?php echo $banner['title']; ?></h1>   <!-- printing title field from group banner -->
                 <div class="browse-button">
-                    <button><?php echo $banner['button']; ?></button>
+                    <button><?php echo $banner['button']; ?></button>  <!-- printing buttton field from group banner -->
                 </div>
             </div>
         <?php endif; ?>
@@ -38,13 +38,13 @@ get_header();
         <!-- ----------------------------------------ads---------------------------------------- -->
 
         <?php
-        $ads = get_field('ads');
+        $ads = get_field('ads');   //assigning a variable to get every field of ads group
         if ($ads): ?>
             <div class="paragraph">
-                <img src="<?php echo esc_url($ads['icon']['url']); ?>">
-                <p><?php echo $ads['slogan']; ?></p>
-                <p id="bold"><?php echo $ads['question']; ?></b></p>
-                <p><?php echo $ads['ans']; ?></p>
+                <img src="<?php echo esc_url($ads['icon']['url']); ?>">  <!-- printing logo  field from group ads -->
+                <p><?php echo $ads['slogan']; ?></p>   <!-- printing slogan field from group ads -->
+                <p id="bold"><b><?php echo $ads['question']; ?></b></p> <!-- printing question field from group ads -->
+                <p><?php echo $ads['ans']; ?></p>  <!-- printing ans  field from group ads -->
             </div>
         <?php endif; ?>
 
@@ -54,10 +54,10 @@ get_header();
         <div class="curve-image-wrapper"
              style="background-image:url('<?php bloginfo("template_directory"); ?>/img/curvedHomeBackground.svg');">
             <?php
-            $commit = get_field('commit');
+            $commit = get_field('commit');  //asigning a variable to get fields of commit group
             if ($commit): ?>
                 <div class="curve-image">
-                    <p style="text-align: center; margin-top: 10rem;"><?php echo $commit['commitment']; ?>
+                    <p style="text-align: center; margin-top: 10rem;"><?php echo $commit['commitment']; ?><!-- geting text fron commitment field  -->
                     </p>
                     <img style="height: 25rem" src="<?php echo esc_url($commit['bottle_image']['url']); ?>"
                          alt="<?php echo esc_attr($commit['bottle_image']['alt']); ?>"/>
@@ -96,12 +96,24 @@ get_header();
             </div>
         </div>
 
-        <!-- -------------------------------------Info Box------------------------------------- -->
+<!-- --------------------------------------------------Info Box---------------------------------------------- -->
 
         <div class="homepage-card">
-            <!-- <div class="cards-wrapper"> -->
+           
+        <!-- -----------------------------Box 1-------------------------------------------- -->
             <div class="cards">
-                <img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/homepageFirstcard.png">
+            <?php
+                if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                    if (have_rows('box1')): while (have_rows('box1')) : the_row();
+
+                $image = get_sub_field('image');
+            ?>
+                <img class="card-img" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
+                <?php endwhile; 
+                 endif; 
+                 endwhile; 
+                 endif; ?>
+
                 <h3><?php
                         if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
                             if (have_rows('box1')): while (have_rows('box1')) : the_row();
@@ -119,8 +131,21 @@ get_header();
                         ?></p>
                 <button class="card-button">BROWSE PRODUCTS</button>
             </div>
+
+        <!-- ---------------------------------Box 2------------------------------- -->
+
             <div class="cards">
-                <img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/homepageSecondcard.png">
+            <?php
+                if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                    if (have_rows('box2')): while (have_rows('box2')) : the_row();
+
+                $image = get_sub_field('image');
+            ?>
+                <img class="card-img" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
+                <?php endwhile; 
+                 endif; 
+                 endwhile; 
+                 endif; ?>
                 <h3><?php
                         if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
                             if (have_rows('box2')): while (have_rows('box2')) : the_row();
@@ -137,8 +162,22 @@ get_header();
                         ?></p>
                 <button class="card-button">LEARN MORE</button>
             </div>
+
+        <!-- ------------------------------Box 3---------------------------------- -->
+
             <div class="cards">
-                <img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
+            <?php
+                if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
+                    if (have_rows('box3')): while (have_rows('box3')) : the_row();
+
+                $image = get_sub_field('image');
+            ?>
+                <img class="card-img" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
+                <?php endwhile; 
+                 endif; 
+                 endwhile; 
+                 endif; ?>
+
                 <h3><?php
                         if (have_rows('info_box')): while (have_rows('info_box')) : the_row();
                             if (have_rows('box3')): while (have_rows('box3')) : the_row();
