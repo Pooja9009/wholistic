@@ -18,7 +18,7 @@ get_header();
     <main id="primary" class="site-main">
 
         <body id="home-page">
-        <!-- ---------------------------------------Banner-------------------------------------- -->
+<!-- ---------------------------------------Banner-------------------------------------- -->
         <?php
 
         $banner = get_field('banner');  //assigning a variable to get every field of banner group
@@ -35,7 +35,7 @@ get_header();
         <div class="borderLine">
         </div>1
 
-        <!-- ----------------------------------------ads---------------------------------------- -->
+<!-- ----------------------------------------ads---------------------------------------- -->
 
         <?php
         $ads = get_field('ads');   //assigning a variable to get every field of ads group
@@ -48,7 +48,7 @@ get_header();
             </div>
         <?php endif; ?>
 
-        <!-- ------------------------------------Commit---------------------------------------- -->
+<!-- ------------------------------------Commit---------------------------------------- -->
 
 
         <div class="curve-image-wrapper"
@@ -65,7 +65,7 @@ get_header();
             <?php endif; ?>
         </div>
 
-        <!-- -----------------------------------Testimonials------------------------------------ -->
+<!-- -----------------------------------Testimonials------------------------------------ -->
 
         <div class="testimonials-content"
              style="background-image:url('<?php bloginfo("template_directory"); ?>/img/plainHomepageBg.svg">
@@ -138,7 +138,7 @@ get_header();
                         ?></button>
             </div>
 
-        <!-- ---------------------------------Box 2------------------------------- -->
+<!-- ---------------------------------Box 2------------------------------- -->
 
             <div class="cards">
             <?php
@@ -175,7 +175,7 @@ get_header();
                         ?></button>
             </div>
 
-        <!-- ------------------------------Box 3---------------------------------- -->
+<!-- ------------------------------Box 3---------------------------------- -->
 
             <div class="cards">
             <?php
@@ -213,10 +213,9 @@ get_header();
                         ?></button>
             </div>
         </div>
-        <!-- </div> -->
 
         </body>
-    </main><!-- #main -->
+    </main>
 
 <?php
 get_footer();
