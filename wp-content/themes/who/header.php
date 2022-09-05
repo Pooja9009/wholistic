@@ -69,10 +69,11 @@
 				)
 			);
 			?>
-
-
+                <div style="display:none;" id="search-text">
+                    <p>Browse Products</p>
+                    <i class="fa fa-close"></i>
+                </div>
             </nav><!-- #site-navigation -->
-            
             <script>
             var className = "inverted";
             var scrollTrigger = 60;
@@ -85,6 +86,17 @@
                     document.getElementsByTagName("header")[0].classList.remove(className);
                 }
             };
+            const element = document.getElementById("menu-item-132");
+            element.addEventListener("click", myfunction());
+
+            function myFunction() {
+                const searchIcon = documnent.getElementById("search-text");
+                if (searchIcon.style.display === "none") {
+                    searchIcon.style.display = "block";
+                } else {
+                    searchIcon.style.display = "none";
+                }
+            }
             </script>
 
         </header><!-- #masthead -->

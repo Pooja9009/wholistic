@@ -19,9 +19,55 @@
     .borderLine {
         border-bottom: 10px solid #f14946;
     }
-    // .map-block {
+    .map-block {
+        padding-left: 8.5rem;
+        padding-top: 3.5rem;
+        p,b {
+            font-size: 13px;
+            line-height: 21px;
+        }
+        .map-first-block {
+            background-color: rgb(244, 243, 243);
+            display:flex;
+            gap: 16px;
+            padding: 0.5rem;
+    width: 48rem;
+            label {
+                font-size: 12px;
+            }
+            #location {
+                padding: 0;
+            }
 
-    // }
+        }
+    .map-second-block {
+        display: flex;
+        height: 500px;
+        .map {
+            margin-top: 0.5rem;
+        }
+        .locations {
+            overflow-y: scroll;
+            margin: 0.5rem 0.2rem 0 0;
+            width: 15rem;
+            height: 17.5rem;
+            .location-details {
+                border-bottom: 1px dotted grey;
+                padding: 0.8rem 0;
+                p {
+                    margin: 0;
+                }
+                .space {
+                    height: 14px;
+                }
+                .direction {
+                    color: #f14946;
+                }
+            }
+           
+        }
+    }
+}
 
 
     .last-block {

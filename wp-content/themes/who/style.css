@@ -369,6 +369,11 @@ template {
 --------------------------------------------- */
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -937,10 +942,10 @@ textarea {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 990px;
+	height: 730px;
 	display: flex;
 	flex-direction: column;
-	padding: 8rem 0 0 8rem;
+	padding: 4rem 0 0 6rem;
 	flex-wrap: wrap;
 }
 
@@ -994,7 +999,7 @@ textarea {
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	padding: 8% 4%;
+	padding: 8% 2%;
 	width: 96%;
 }
 
@@ -1653,6 +1658,65 @@ textarea {
 
 #where-to-buy .borderLine {
 	border-bottom: 10px solid #f14946;
+}
+
+#where-to-buy .map-block {
+	padding-left: 8.5rem;
+	padding-top: 3.5rem;
+}
+
+#where-to-buy .map-block p, #where-to-buy .map-block b {
+	font-size: 13px;
+	line-height: 21px;
+}
+
+#where-to-buy .map-block .map-first-block {
+	background-color: #f4f3f3;
+	display: flex;
+	gap: 16px;
+	padding: 0.5rem;
+	width: 48rem;
+}
+
+#where-to-buy .map-block .map-first-block label {
+	font-size: 12px;
+}
+
+#where-to-buy .map-block .map-first-block #location {
+	padding: 0;
+}
+
+#where-to-buy .map-block .map-second-block {
+	display: flex;
+	height: 500px;
+}
+
+#where-to-buy .map-block .map-second-block .map {
+	margin-top: 0.5rem;
+}
+
+#where-to-buy .map-block .map-second-block .locations {
+	overflow-y: scroll;
+	margin: 0.5rem 0.2rem 0 0;
+	width: 15rem;
+	height: 17.5rem;
+}
+
+#where-to-buy .map-block .map-second-block .locations .location-details {
+	border-bottom: 1px dotted grey;
+	padding: 0.8rem 0;
+}
+
+#where-to-buy .map-block .map-second-block .locations .location-details p {
+	margin: 0;
+}
+
+#where-to-buy .map-block .map-second-block .locations .location-details .space {
+	height: 14px;
+}
+
+#where-to-buy .map-block .map-second-block .locations .location-details .direction {
+	color: #f14946;
 }
 
 #where-to-buy .last-block {
