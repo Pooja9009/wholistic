@@ -12,10 +12,25 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    li {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    a {
+        font-weight: 300;
+    }
+    
+    a:visited{
+        color : #282828;
+    }
+
+    a.active{
+        background-color: red;
+    }
 }
-.main-navigation li {
-    padding: 2rem 2rem 0 2rem;
-}
+
+
 .nav-menu {
     display: flex;
     justify-content: center;

@@ -1134,7 +1134,7 @@ textarea {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 800px;
+	height: 550px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
@@ -1331,6 +1331,110 @@ textarea {
 	}
 }
 
+#product-page .product-banner-img {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	height: 550px;
+}
+
+#product-page h1 {
+	align-self: center;
+	font-size: 5rem;
+	color: white;
+	font-size: 4rem;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+	font-weight: 400;
+}
+
+#product-page .borderLine {
+	border-bottom: 8px solid #f14946;
+}
+
+#product-page .curved-product-bg {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	height: 440px;
+	padding-bottom: 3rem;
+}
+
+#product-page .curved-product-bg .search-bar {
+	width: 55%;
+	padding: 0.4rem;
+	border: 1px solid #fcd0c3;
+}
+
+#product-page p {
+	font-size: 16px;
+}
+
+#product-page .filter-buttons {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+	box-sizing: unset !important;
+}
+
+#product-page .filter-buttons button {
+	padding: 6px 22px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #88898D;
+	border-width: 0;
+	font-weight: 300;
+}
+
+#product-page .all-products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 3rem;
+}
+
+#product-page .all-products .live_search {
+	width: 17rem;
+	margin-bottom: 2rem;
+}
+
+#product-page .all-products .live_search h2:hover {
+	cursor: pointer;
+	color: #fcd0c3;
+}
+
+#product-page .all-products .live_search .product-text {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 32px;
+	padding: 0px 5px;
+}
+
+#product-page .all-products .live_search .star-icon {
+	font-size: 15px;
+}
+
+#product-page .all-products .live_search .star-icon .review {
+	font-weight: 300;
+	font-size: 15px;
+}
+
+@media (max-width: 450px) {
+	#product-page .product-banner-img h1 {
+		font-size: 2.8rem;
+		text-align: center;
+	}
+}
+
 #the-science-page {
 	font-size: 20px;
 }
@@ -1519,6 +1623,53 @@ textarea {
 	}
 }
 
+#where-to-buy .where-banner {
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 590px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#where-to-buy h1 {
+	align-self: center;
+	color: white;
+	font-size: 4rem;
+	font-weight: 500;
+	color: #ffece5;
+}
+
+#where-to-buy .borderLine {
+	border-bottom: 10px solid #f14946;
+}
+
+#where-to-buy .last-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 3rem;
+	flex-wrap: wrap;
+	background-color: #FFECE5;
+}
+
+#where-to-buy .last-block h3 {
+	font-size: 36px;
+	color: #f14946;
+	font-weight: 500;
+}
+
+#where-to-buy .last-block .browse button {
+	color: #fcd0c3;
+	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+	font-weight: 500;
+	border-radius: 50px;
+	background-color: #f14946;
+	border-width: 0px;
+	padding: 0.8rem;
+}
+
 .site-footer {
 	background-color: #f14946;
 	font-family: 'Oswald', sans-serif;
@@ -1581,6 +1732,18 @@ textarea {
 
 .main-navigation li {
 	padding: 2rem 2rem 0 2rem;
+}
+
+.main-navigation a {
+	font-weight: 300;
+}
+
+.main-navigation a:visited {
+	color: #282828;
+}
+
+.main-navigation a.active {
+	background-color: red;
 }
 
 .nav-menu {
