@@ -26,9 +26,9 @@ get_header();
         if ($banner): ?>
             <div class="science-banner"
                  style="background-image:url('<?php echo esc_url($banner['image']['url']); ?>')">
-                <h1><?php echo $banner['title']; ?></h1>
+                <h1><?php echo $banner['text']; ?></h1>
             </div>
-        <?php endif; ?>
+        
 
 
         <div class="borderLine">
@@ -36,12 +36,14 @@ get_header();
 
         <!-- -------------------------------------------supplement------------------------------------------ -->
 
+        
+        <p class="first-block"><?php echo $banner['phrase']; ?></p>
+        <?php endif; ?>
+
+
         <?php
         $supplement = get_field('supplement');
         if ($supplement): ?>
-        <p class="first-block"><?php echo $supplement['phrases']; ?></p>
-
-
         <!-- </div> -->
         <div class="second-block">
             <div class="logo">
@@ -297,7 +299,7 @@ get_header();
         $ready = get_field('ready');
         if ($ready): ?>
         <div class="fourth-block">
-            <h3><?php echo $ready['query']; ?></h3>
+            <h3><?php echo $ready['title']; ?></h3>
             <div class="browse button">
                 <button><?php echo $ready['button']; ?></button>
             </div>

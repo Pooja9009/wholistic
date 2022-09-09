@@ -24,7 +24,7 @@ get_header();
 
         <div class="about-banner"
              style="background-image:url('<?php echo esc_url($banner['image']['url']); ?>')">
-            <h1><?php echo $banner['title']; ?></h1>
+            <h1><?php echo $banner['text']; ?></h1>
         </div>
 
 
@@ -45,7 +45,7 @@ get_header();
             <div class="row">
                 <div class="content">
 
-                    <h3><?php echo $root['text_title']; ?></h3>
+                    <h3><?php echo $root['title']; ?></h3>
                     <p><?php echo $root['content']; ?></p>
                 </div>
                 <img class="image" src="<?php echo esc_url($root['image']['url']); ?>"/>
@@ -55,7 +55,7 @@ get_header();
 
                     <p><?php echo $root['content2']; ?></p>
                     
-                    <h3><?php echo $root['text_title_2']; ?></h3>
+                    <h3><?php echo $root['title2']; ?></h3>
                 </div>
                 <img class="image" src="<?php echo esc_url($root['image2']['url']); ?>"/>
             </div>
@@ -69,7 +69,7 @@ get_header();
         $achieve = get_field('achieve');
         if ($achieve): ?>
         <div class="about-second-banner"
-             style="background-image:url('<?php echo esc_url($achieve['background_image']['url']); ?>')">
+             style="background-image:url('<?php echo esc_url($achieve['image']['url']); ?>')">
             <div class="about-second-bannerContent">
                 <h3><?php echo $achieve['title']; ?></h3>
                 <p><?php echo $achieve['text']; ?></p>

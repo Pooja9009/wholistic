@@ -58,6 +58,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -465,10 +466,6 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-ul,
-ol {
-	margin: 0 0 1.5em 3em;
-}
 
 ul {
 	list-style: disc;
@@ -481,7 +478,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	/* margin-left: 1.5em; */
 }
 
 dt {
@@ -509,6 +506,7 @@ figure {
 }
 
 table {
+	margin: 0 0 1.5em;
 	width: 100%;
 }
 
@@ -993,10 +991,17 @@ textarea {
 }
 
 #home-page .paragraph {
+	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	text-align: center;
 	padding: 5% 4%;
 	width: 96%;
+}
+
+#home-page .paragraph p {
+	padding: 0 15%;
+	margin-bottom: 0.5rem;
 }
 
 #home-page .paragraph #bold {
@@ -1018,7 +1023,7 @@ textarea {
 
 #home-page .curve-image-wrapper .curve-image {
 	display: flex;
-	width: 60%;
+	width: 49%;
 	align-items: center;
 	margin-left: 23%;
 }
@@ -1028,6 +1033,12 @@ textarea {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 2rem;
+}
+
+#home-page .testimonials-content ul {
+	display: flex;
+	justify-content: space-around;
+	margin-right: 40px;
 }
 
 #home-page .testimonials-content .testimonials-heading {
@@ -1134,7 +1145,7 @@ textarea {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 550px;
+	height: 800px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
@@ -1287,7 +1298,7 @@ textarea {
 
 #contact-page ::placeholder {
 	padding-left: 0.4rem;
-	font-size: 15px;
+	font-size: 13px;
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -1298,14 +1309,6 @@ textarea {
 
 #contact-page .name-info, #contact-page .mail-contact-info {
 	margin-bottom: 0.5rem;
-}
-
-#contact-page .name-info input:focus, #contact-page .mail-contact-info input:focus {
-	background-color: #dabfc3;
-}
-
-#contact-page .name-info input:active, #contact-page .mail-contact-info input:active {
-	border-color: #fcd0c3;
 }
 
 #contact-page #send-button {
@@ -1402,28 +1405,28 @@ textarea {
 	padding: 3rem;
 }
 
-#product-page .all-products .live_search {
+#product-page .all-products .product {
 	width: 17rem;
 	margin-bottom: 2rem;
 }
 
-#product-page .all-products .live_search h2:hover {
+#product-page .all-products .product h2:hover {
 	cursor: pointer;
 	color: #fcd0c3;
 }
 
-#product-page .all-products .live_search .product-text {
+#product-page .all-products .product .product-text {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 32px;
 	padding: 0px 5px;
 }
 
-#product-page .all-products .live_search .star-icon {
+#product-page .all-products .product .star-icon {
 	font-size: 15px;
 }
 
-#product-page .all-products .live_search .star-icon .review {
+#product-page .all-products .product .star-icon .review {
 	font-weight: 300;
 	font-size: 15px;
 }
@@ -1433,10 +1436,6 @@ textarea {
 		font-size: 2.8rem;
 		text-align: center;
 	}
-}
-
-#the-science-page {
-	font-size: 20px;
 }
 
 #the-science-page .science-banner {
@@ -1488,7 +1487,7 @@ textarea {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 2.5rem;
+	gap: 4rem;
 	padding: 2rem 0;
 }
 
@@ -1497,19 +1496,12 @@ textarea {
 	border: 1px solid grey;
 	border-radius: 8px;
 	box-shadow: 8px 8px #fcd0c3;
-	width: 286px;
-	height: 480px;
-	text-align: center;
-}
-
-#the-science-page .second-block .science-card .card p, #the-science-page .second-block .science-card .card h2 {
-	margin: 0rem;
+	width: 300px;
 	text-align: center;
 }
 
 #the-science-page .second-block .science-card .card img {
 	width: 100%;
-	height: 10rem;
 }
 
 #the-science-page .second-block .science-card .card h2 {
@@ -1522,10 +1514,8 @@ textarea {
 
 #the-science-page .second-block .more-pages button {
 	padding: 0.2rem 0.4rem;
-	border-color: #fcd0c3;
-	box-shadow: 1px 1px 0px 0px #fcd0c3;
-	background-color: white;
-	font-size: 13px;
+	border-color: #f0f0f0;
+	box-shadow: 1px 1px 0px 0px;
 }
 
 #the-science-page .third-block {
@@ -1548,27 +1538,21 @@ textarea {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 2.5rem;
+	gap: 3rem;
 	padding: 2rem 0;
 }
 
 #the-science-page .third-block .card {
-	border: 1px solid lightgrey;
+	border: 1px solid grey;
 	border-radius: 8px;
 	box-shadow: 8px 8px #fcd0c3;
-	width: 295px;
-	height: 430px;
+	width: 356px;
 	text-align: center;
 	background-color: white;
 }
 
-#the-science-page .third-block .card p, #the-science-page .third-block .card h2 {
-	margin: 0rem;
-}
-
 #the-science-page .third-block .card img {
 	width: 100%;
-	height: 10rem;
 }
 
 #the-science-page .third-block .card h2 {
@@ -1581,10 +1565,6 @@ textarea {
 
 #the-science-page .third-block .more-pages button {
 	padding: 0.2rem 0.4rem;
-	box-shadow: 1px 1px 0px 0px #f14946 !important;
-	border-color: #fff !important;
-	background-color: #f3dcd3;
-	font-size: 13px;
 }
 
 #the-science-page .fourth-block {
@@ -1609,12 +1589,6 @@ textarea {
 	background-color: #f14946;
 	border-width: 0px;
 	padding: 0.8rem;
-}
-
-#the-science-page .fourth-block button:hover {
-	background-color: #fcd0c3;
-	color: black;
-	cursor: pointer;
 }
 
 @media (max-width: 350px) {
@@ -1642,7 +1616,7 @@ textarea {
 }
 
 #where-to-buy .borderLine {
-	border-bottom: 10px solid #f14946;
+	border-bottom: 8px solid orangered;
 }
 
 #where-to-buy .last-block {
@@ -1671,7 +1645,7 @@ textarea {
 }
 
 .site-footer {
-	background-color: #f14946;
+	background-color: #F14946;
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	color: white;
@@ -1684,8 +1658,8 @@ textarea {
 .site-footer .footer-content {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2rem;
-	justify-content: space-evenly;
+	gap: 1rem;
+	justify-content: center;
 }
 
 .site-footer hr {
@@ -1722,6 +1696,12 @@ textarea {
 	font-weight: 500;
 	opacity: 1;
 	z-index: 1;
+	transition: background-color 0.8s ease;
+}
+
+.inverted {
+	background-color: #a77575;
+	backdrop-filter: blur(43px);
 }
 
 .main-navigation {
@@ -1730,20 +1710,13 @@ textarea {
 	align-items: center;
 }
 
+.main-navigation .wholistic-logo {
+	width: 120px;
+	padding-top: 2rem;
+}
+
 .main-navigation li {
 	padding: 2rem 2rem 0 2rem;
-}
-
-.main-navigation a {
-	font-weight: 300;
-}
-
-.main-navigation a:visited {
-	color: #282828;
-}
-
-.main-navigation a.active {
-	background-color: red;
 }
 
 .nav-menu {
@@ -1759,6 +1732,12 @@ textarea {
 	font-size: 20px;
 	color: black;
 	font: normal normal 300 18px/22px Oswald;
+}
+
+.menu-menu-1-container.nav-menu li:visited {
+	background-color: red;
+	border-radius: 37px;
+	padding: 8px 25px;
 }
 
 .nav-menu li a:hover {
@@ -1781,7 +1760,7 @@ textarea {
 
 .search-btn:before {
 	content: "\f179";
-	color: #da6010;
+	color: #f14946;
 	font-family: dashicons;
 	transform: rotateY(180deg);
 	font-weight: 100;
@@ -1797,7 +1776,7 @@ textarea {
 		width: 87%;
 		position: absolute;
 		top: 154px;
-		background-color: #FCD0C3;
+		background-color: #fcd0c3;
 	}
 	.menu-menu-1-container .nav-menu li {
 		padding-top: 0;
@@ -1810,9 +1789,21 @@ textarea {
 	}
 }
 
+@media (min-width: 760px) {
+	.nav-menu li {
+		padding: 0 2rem 0 0;
+	}
+}
+
 * {
 	font-family: 'Oswald', sans-serif;
-	font-size: 22px;
+	font-size: 20px;
+}
+
+@media (min-width: 760px) {
+	.hide-above-sm {
+		display: none !important;
+	}
 }
 
 /*# sourceMappingURL=style.css.map */

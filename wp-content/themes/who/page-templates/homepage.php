@@ -24,8 +24,8 @@ get_header();
         $banner = get_field('banner');  //assigning a variable to get every field of banner group
         if ($banner): ?>
             <div class="banner-img-block"
-                 style="background-image:url('<?php echo esc_url($banner['banner_image']['url']); ?>')">  <!-- printing image from style-->
-                <h1><?php echo $banner['title']; ?></h1>   <!-- printing title field from group banner -->
+                 style="background-image:url('<?php echo esc_url($banner['image']['url']); ?>')">  <!-- printing image from style-->
+                <h1><?php echo $banner['text']; ?></h1>   <!-- printing title field from group banner -->
                 <div class="browse-button">
                     <button><?php echo $banner['button']; ?></button>  <!-- printing buttton field from group banner -->
                 </div>
@@ -41,9 +41,9 @@ get_header();
         $ads = get_field('ads');   //assigning a variable to get every field of ads group
         if ($ads): ?>
             <div class="paragraph">
-                <img src="<?php echo esc_url($ads['icon']['url']); ?>">  <!-- printing logo  field from group ads -->
+                <img src="<?php echo esc_url($ads['logo']['url']); ?>">  <!-- printing logo  field from group ads -->
                 <p><?php echo $ads['slogan']; ?></p>   <!-- printing slogan field from group ads -->
-                <p id="bold"><b><?php echo $ads['question']; ?></b></p> <!-- printing question field from group ads -->
+                <p id="bold"><b><?php echo $ads['ques']; ?></b></p> <!-- printing question field from group ads -->
                 <p><?php echo $ads['ans']; ?></p>  <!-- printing ans  field from group ads -->
             </div>
         <?php endif; ?>
@@ -57,10 +57,10 @@ get_header();
             $commit = get_field('commit');  //asigning a variable to get fields of commit group
             if ($commit): ?>
                 <div class="curve-image">
-                    <p style="text-align: center; margin-top: 10rem;"><?php echo $commit['commitment']; ?>   <!-- getting text from commitment field  -->
+                    <p style="text-align: center; margin-top: 10rem;"><?php echo $commit['text']; ?>   <!-- getting text from commitment field  -->
                     </p>
-                    <img style="height: 25rem" src="<?php echo esc_url($commit['bottle_image']['url']); ?>"      
-                         alt="<?php echo esc_attr($commit['bottle_image']['alt']); ?>"/>   <!-- image from group commit-->
+                    <img style="height: 25rem" src="<?php echo esc_url($commit['image']['url']); ?>"      
+                         alt="<?php echo esc_attr($commit['image']['alt']); ?>"/>   <!-- image from group commit-->
                 </div>
             <?php endif; ?>
         </div>
@@ -70,30 +70,31 @@ get_header();
         <div class="testimonials-content"
              style="background-image:url('<?php bloginfo("template_directory"); ?>/img/plainHomepageBg.svg">
             <h3 class="testimonials-heading">TESTIMONIALS</h3>
+            <?php
+            $testimonial = get_field('testimonial');
+            if( $testimonial ): ?>
+                <ul>
+                    <?php foreach( $testimonial as $post ): 
+
+                    // Setup this post for WP functions (variable must be named $post).
+                    setup_postdata($post); ?>
+                                   
+        
             <div class="testimonials-column-wrapper">
          
                     <div class="testimonials-column">
                         <img src="<?php bloginfo("template_directory"); ?>/img/testimonial1.svg">
-                        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt
-                            ut labore et dolore magna."</p>
-                        <p class="name-title">- Name, Title</p>
+                        <p><?php the_field( 'reviews' ); ?></p>
+                        <p class="name-title"><?php the_title(); ?></p>
                     </div>
-                    <div class="testimonials-column">
-                        <img src="<?php bloginfo("template_directory"); ?>/img/testimonial2.svg">
-                        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt
-                            ut labore et dolore magna."</p>
-                        <p class="name-title">- Name, Title</p>
+                    
                     </div>
-                    <div class="testimonials-column">
-                        <img src="<?php bloginfo("template_directory"); ?>/img/testimonial3.svg">
-                        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt
-                            ut labore et dolore magna."</p>
-                        <p class="name-title">- Name, Title</p>
-                    </div>
-            </div>
+                    <?php endforeach; ?>
+                </ul>
+                <?php 
+                // Reset the global post object so that the rest of the page works correctly.
+                wp_reset_postdata(); ?>
+            <?php endif; ?>
         </div>
 
 <!-- --------------------------------------------------Info Box---------------------------------------------- -->
@@ -108,7 +109,7 @@ get_header();
 
                 $image = get_sub_field('image');
             ?>
-                <img class="card-img" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
+                <img class="card-img" src="<?php echo esc_url( $image['url'] ); ?>">
                 <?php endwhile; 
                  endif; 
                  endwhile; 
