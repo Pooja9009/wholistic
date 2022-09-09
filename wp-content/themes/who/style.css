@@ -1431,6 +1431,10 @@ textarea {
 	color: #fcd0c3;
 }
 
+#product-page .all-products .product .product-img:hover {
+	display: none;
+}
+
 #product-page .all-products .product .product-text {
 	font-weight: 300;
 	font-size: 16px;
