@@ -44,10 +44,9 @@ get_header();
         </div>
         <div class="all-products">
             <div class="product">
-                  <div class="product-hover"
-                  style="background-image:url('<?php bloginfo("template_directory");?>/img/productHover.jpg"> 
+                  <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg"> 
                   <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />        
-</div>
+
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
                     <span class="fa fa-star "></span>
@@ -61,6 +60,8 @@ get_header();
                     that...</p>
             </div>
             <div class="product">
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+            <!-- <div class="hover-img" data-image-src="<?php bloginfo("template_directory");?>/img/productHover.jpg"></div> -->
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/coQ10Product.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -76,6 +77,7 @@ get_header();
                 </p>
             </div>
             <div class="product">
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -91,6 +93,7 @@ get_header();
             </div>
             <div class="product">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3100product.png" />
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
                     <span class="fa fa-star "></span>
@@ -104,6 +107,7 @@ get_header();
                     body....</p>
             </div>
             <div class="product">
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D32500UIproduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -118,6 +122,7 @@ get_header();
                     the...</p>
             </div>
             <div class="product">
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/folicAcidProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -132,8 +137,8 @@ get_header();
 
             </div>
             <div class="product">
-
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/K2product.png" />
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png"" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
                     <span class="fa fa-star "></span>
@@ -147,7 +152,8 @@ get_header();
                 </p>
             </div>
             <div class="product">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/luteinProduct.png" />
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
                     <span class="fa fa-star "></span>
@@ -161,6 +167,7 @@ get_header();
                     possible,...</p>
             </div>
             <div class="product">
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/lycopeneProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -175,6 +182,7 @@ get_header();
                     of...</p>
             </div>
             <div class="product">
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/magnesiumProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -189,6 +197,7 @@ get_header();
                 </div>
             </div>
             <div class="product">
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/magnesiumProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -203,7 +212,8 @@ get_header();
                     often...</p>
             </div>
             <div class="product">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/omega3Product.png" />
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
                     <span class="fa fa-star "></span>
@@ -217,6 +227,7 @@ get_header();
                     support...</p>
             </div>
             <div class="product">
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/tumericProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -230,6 +241,7 @@ get_header();
                 <p class="product-text">Turmeric has traditionally been used in herbal medicine to reduce...</p>
             </div>
             <div class="product">
+            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>

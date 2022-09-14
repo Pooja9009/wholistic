@@ -18,6 +18,24 @@ get_header();
 <main id="primary" class="site-main">
 
     <body id="where-to-buy">
+        <script type="text/Javascript">
+            function initMap() {
+  const myLatLng = { lat: -25.363, lng: 131.044 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: myLatLng,
+  });
+
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+}
+
+window.initMap = initMap;
+
+            </script>
         <div class="where-banner"
             style="background-image:url('<?php bloginfo("template_directory");?>/img/whereBanner.png">
             <h1>WHERE TO BUY</h1>

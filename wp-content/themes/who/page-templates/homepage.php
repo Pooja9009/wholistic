@@ -16,14 +16,20 @@
 get_header();
 ?>
 <main id="primary" class="site-main">
-
     <body id="home-page">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/Javascript">
+$(document).ready(function() {
+            $("#hero-heading").slideDown(800).html("<h1>COMPLETE <br> YOUR CARE</h1>");
+    })
+
+        </script>
         <div class="banner-img-block"
              style="background-image:url('<?php bloginfo("template_directory"); ?>/img/banner.png')"> 
         <!-- <div class="banner-img-block">
             <img src="<?php bloginfo("template_directory"); ?>/img/banner.png">
             <div class="img-text"> -->
-                <h1 class=>COMPLETE <br> YOUR CARE</h1>
+                <label id="hero-heading"></label>
                 <div class="browse-button">
                     <button>BROWSE THE GOODS</button>
                 </div>

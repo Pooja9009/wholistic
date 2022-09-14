@@ -1431,7 +1431,19 @@ textarea {
 	color: #fcd0c3;
 }
 
-#product-page .all-products .product .product-img:hover {
+#product-page .all-products .product .hover-img {
+	border-radius: 20px;
+	display: none;
+}
+
+#product-page .all-products .product:hover .hover-img {
+	display: block;
+	cursor: pointer;
+	width: 300px;
+	height: 350px;
+}
+
+#product-page .all-products .product:hover .product-img {
 	display: none;
 }
 
@@ -1842,12 +1854,6 @@ textarea {
 	font: normal normal 300 18px/22px Oswald;
 }
 
-.menu-menu-1-container.nav-menu li:visited {
-	background-color: red;
-	border-radius: 37px;
-	padding: 8px 25px;
-}
-
 .nav-menu li a:hover {
 	color: #535151;
 	border-bottom: 0.2px solid #da6010;
@@ -1900,6 +1906,12 @@ textarea {
 @media (min-width: 760px) {
 	.nav-menu li {
 		padding: 0 2rem 0 0;
+	}
+	.current_page_item a {
+		color: #FFECE5 !important;
+		border-radius: 37px !important;
+		background: #F14946 !important;
+		padding: 8px 20px !important;
 	}
 }
 
