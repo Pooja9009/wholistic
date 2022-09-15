@@ -1689,9 +1689,9 @@ textarea {
 #where-to-buy .map-block .map-first-block {
 	background-color: #f4f3f3;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 16px;
 	padding: 0.5rem;
-	width: 48rem;
 }
 
 #where-to-buy .map-block .map-first-block label {
@@ -1702,13 +1702,22 @@ textarea {
 	padding: 0;
 }
 
+#where-to-buy .map-block .map-first-block select {
+	font-size: 14px;
+}
+
+#where-to-buy .map-block .map-first-block select option {
+	font-size: 14px;
+}
+
 #where-to-buy .map-block .map-second-block {
 	display: flex;
 	height: 500px;
 }
 
-#where-to-buy .map-block .map-second-block .map {
+#where-to-buy .map-block .map-second-block #map {
 	margin-top: 0.5rem;
+	color: #f14946;
 }
 
 #where-to-buy .map-block .map-second-block .locations {
@@ -1758,6 +1767,18 @@ textarea {
 	background-color: #f14946;
 	border-width: 0px;
 	padding: 0.8rem;
+}
+
+@media (max-width: 1030px) {
+	#where-to-buy .map-block {
+		padding: 3rem 1rem 0 1rem;
+	}
+}
+
+@media (max-width: 1030px) and (max-width: 430px) {
+	#where-to-buy .map-second-block {
+		flex-direction: column;
+	}
 }
 
 .site-footer {

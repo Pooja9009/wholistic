@@ -12,7 +12,7 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,16 +50,19 @@
                 <a class="wholistic-logo" href="/who">
                     <img src="<?php echo get_bloginfo('template_url') ?>/img/wholisticLogo.png" alt="wholistic Logo">
                 </a>
-                <!-- <span class="search-btn"></span>
-			  <span class ="dashicons dashicons-search">
-			 </span> -->
-
-                <!-- <button class="search-icon" style="font-size:0.5rem">Button <i class="fa fa-search"></i></button> -->
+               
+               
                 <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'who' ); ?> -->
-                <span class="dashicons dashicons-search hide-above-sm"></span>
+                
+                <span class="dashicons dashicons-search hide-above-sm">
+
+                
+                </span>
                 <span class="dashicons dashicons-menu menu-icon menu-toggle hide-above-sm" aria-expanded="false"></span>
 
+              
                 <!-- </button> -->
+               
 
                 <?php
 			wp_nav_menu(
@@ -69,11 +72,23 @@
 				)
 			);
 			?>
-                <div style="display:none;" id="search-text">
-                    <p>Browse Products</p>
-                    <i class="fa fa-close"></i>
-                </div>
-            </nav><!-- #site-navigation -->
+            <div id="search-bar" style="display:none">
+                <input type="search" placeholder="Browse Products">
+                <i class="close" class="fa fa-close"></i>
+            </div>
+         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+         <script type="text/JavaScript">
+            $(document).ready(function () {
+                $('.search-btn').click(function () {
+                    $('.menu-menu-1-container').hide();
+                    $("#search-bar").show();
+                });
+            });
+           
+            
+    </script>
+  
+                
             <script>
             var className = "inverted";
             var scrollTrigger = 60;
@@ -86,17 +101,6 @@
                     document.getElementsByTagName("header")[0].classList.remove(className);
                 }
             };
-            const element = document.getElementById("menu-item-132");
-            element.addEventListener("click", myfunction());
-
-            function myFunction() {
-                const searchIcon = documnent.getElementById("search-text");
-                if (searchIcon.style.display === "none") {
-                    searchIcon.style.display = "block";
-                } else {
-                    searchIcon.style.display = "none";
-                }
-            }
             </script>
 
         </header><!-- #masthead -->

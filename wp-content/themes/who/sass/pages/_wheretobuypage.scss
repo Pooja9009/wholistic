@@ -29,22 +29,30 @@
         .map-first-block {
             background-color: rgb(244, 243, 243);
             display:flex;
+            flex-wrap:wrap;
             gap: 16px;
             padding: 0.5rem;
-    width: 48rem;
+    //width: 48rem;
             label {
                 font-size: 12px;
             }
             #location {
                 padding: 0;
             }
+            select {
+                font-size:14px;
+                option{
+                font-size:14px;
+                }
+            }
 
         }
     .map-second-block {
         display: flex;
         height: 500px;
-        .map {
+        #map {
             margin-top: 0.5rem;
+            color:#f14946;
         }
         .locations {
             overflow-y: scroll;
@@ -90,6 +98,22 @@
             background-color: #f14946;
               border-width: 0px;
               padding: 0.8rem;
+        }
+    }
+    @media(max-width:1030px) {
+        .map-block {
+            padding: 3rem 1rem 0 1rem;
+            .map-first-block {
+               // width:36rem;
+            }
+        }
+        @media(max-width:430px) {
+            .map-first-block {
+               // width:370px;
+            }
+            .map-second-block{
+                flex-direction:column;
+            }
         }
     }
 }
