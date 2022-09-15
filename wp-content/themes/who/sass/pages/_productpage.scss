@@ -58,7 +58,18 @@ p {
         color:#88898D;
         border-width: 0;
         font-weight: 300;
+        &:hover {
+            background-color: #fcd0c3;
+        }
+        &:focus {
+            background-color: #f14946;
+            color:white;
+            border-radius: 5px;
+        }
     }
+     
+
+    
 }
     .all-products {
         display: flex;
@@ -77,9 +88,6 @@ p {
             .hover-img {
               border-radius: 20px;
               display: none;
-            //    height:350px; 
-            // width: 300px;
-            
          }
             &:hover .hover-img {
                 display:block;
@@ -90,7 +98,7 @@ p {
             }
             
             &:hover .product-img {
-                display:none;
+               display:none;
             }
             
             

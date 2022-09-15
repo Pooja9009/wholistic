@@ -74,7 +74,7 @@
 			?>
             <div id="search-bar" style="display:none">
                 <input type="search" placeholder="Browse Products">
-                <i class="close" class="fa fa-close"></i>
+                <i class="fa fa-close"></i>
             </div>
          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
          <script type="text/JavaScript">
@@ -82,7 +82,9 @@
                 $('.search-btn').click(function () {
                     $('.menu-menu-1-container').hide();
                     $("#search-bar").show();
+                    // $('.search-btn').off('click');
                 });
+                
             });
            
             

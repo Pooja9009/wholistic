@@ -1414,6 +1414,16 @@ textarea {
 	font-weight: 300;
 }
 
+#product-page .filter-buttons button:hover {
+	background-color: #fcd0c3;
+}
+
+#product-page .filter-buttons button:focus {
+	background-color: #f14946;
+	color: white;
+	border-radius: 5px;
+}
+
 #product-page .all-products {
 	display: flex;
 	flex-wrap: wrap;

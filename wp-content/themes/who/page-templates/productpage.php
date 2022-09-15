@@ -32,7 +32,9 @@ get_header();
             <input type="text" name="s" placeholder="Search Products" class="search-bar">
             <div class="filter-buttons">
                 <p style="padding-top:9px">Filter By:</p>
-                <div><button>Bone & Joint</button></div>
+                <div>
+                <i class="fa fa-close"></i>
+                <button>Bone & Joint</button></div>
                 <div><button>Foundational</button></div>
                 <div><button>Heart Health</button></div>
                 <div><button>Immune</button></div>
