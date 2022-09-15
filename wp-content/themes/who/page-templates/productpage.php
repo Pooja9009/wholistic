@@ -36,11 +36,16 @@ get_header();
         <div class="curved-product-bg"
             style="background-image:url('<?php bloginfo("template_directory");?>/img/curvedBgProduct.png">
             <p><?php the_field ('slogan'); ?></p>
+
             <label class="screen-reader-text" for="s">Search for:</label>
-            <input type="text" name="s" placeholder="Search Products" class="search-bar" onkeyup="show_result(this.value)">
+            <form role="search" method="get" id="searchform">
+                <input type="text" name="s" id="search" placeholder="search" value="" onkeyup="showResult(this.value)"/> 
+                <input type="submit" name="submit" value="Add Country"  style="visibility:hidden;" id="search"/>
+            </form>
+                                   
             <div class="filter-buttons">
                 <p style="padding-top:9px">Filter By:</p>
-                <div><button>Bone & Joint</button></div>
+                <div><button onclick = "<?php get_taxonomy ('bone&joint') ?>">Bone & Joint</button></div>
                 <div><button>Foundational</button></div>
                 <div><button>Heart Health</button></div>
                 <div><button>Immune</button></div>
@@ -50,22 +55,22 @@ get_header();
                 <div><button>Women’s Health</button></div>
             </div>
         </div>
-        <div class="all-products">
+        <div class="all-products" id="table-data">
         
             <?php
             $product = get_field('products');
             if( $product ): ?>
-                <ul>
+                <ul class="list" style = "display: flex;
+            flex-wrap: wrap;     justify-content: space-evenly;
+            padding: 0px 50px 0px 50px;">
                     <?php foreach( $product as $post ): 
 
                     // Setup this post for WP functions (variable must be named $post).
                     setup_postdata($post); ?>
                                    
-                    <div class="live_search">
-                        <div class="product-hover"
-                        style="background-image:url(<?php the_field( 'image' ); ?>)"> 
-                        <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />        
-                        </div>
+                    <div class="live_search" style = "width: 300px; ">
+                        <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg"> 
+                        <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />
                         <div class="star-icon">
                             <span class="fa fa-star "></span>
                             <span class="fa fa-star "></span>
@@ -85,8 +90,6 @@ get_header();
             <?php endif; ?>
         
         </div>
-
-
 
     </body>
 </main><!-- #main -->

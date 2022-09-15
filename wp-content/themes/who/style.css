@@ -365,7 +365,6 @@ template {
 --------------------------------------------- */
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-*,
 *::before,
 *::after {
 	box-sizing: inherit;
@@ -466,7 +465,6 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-
 ul {
 	list-style: disc;
 }
@@ -478,7 +476,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	/* margin-left: 1.5em; */
+	margin-left: 1.5em;
 }
 
 dt {
@@ -668,7 +666,10 @@ textarea {
 
 .main-navigation a {
 	display: block;
+	color: black;
+	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
+	font-weight: 300;
 }
 
 /* Small menu. */
@@ -941,16 +942,20 @@ textarea {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 990px;
+	height: 730px;
 	display: flex;
 	flex-direction: column;
-	padding: 8rem 0 0 8rem;
+	padding: 4rem 0 0 6rem;
 	flex-wrap: wrap;
+}
+
+#home-page .banner-img-block img {
+	width: 100%;
 }
 
 #home-page .banner-img-block h1 {
 	color: white;
-	font-size: 88px;
+	font-size: 80px;
 	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
 	font-weight: 400;
 	color: #ffece5;
@@ -986,8 +991,7 @@ textarea {
 }
 
 #home-page .borderLine {
-	margin-top: 0;
-	border-bottom: 8px solid #f14946;
+	border-bottom: 10px solid #f14946;
 }
 
 #home-page .paragraph {
@@ -995,7 +999,7 @@ textarea {
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	padding: 5% 4%;
+	padding: 8% 2%;
 	width: 96%;
 }
 
@@ -1023,22 +1027,31 @@ textarea {
 
 #home-page .curve-image-wrapper .curve-image {
 	display: flex;
-	width: 49%;
+	width: 60%;
 	align-items: center;
 	margin-left: 23%;
+}
+
+#home-page .curve-image-wrapper .curve-image img {
+	position: relative;
+	top: 0;
+	transition: top ease 0.5s;
+}
+
+#home-page .curve-image-wrapper .curve-image img:hover {
+	top: -10px;
 }
 
 #home-page .testimonials-content {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 2rem;
+	padding-right: 2rem;
 }
 
 #home-page .testimonials-content ul {
 	display: flex;
-	justify-content: space-around;
-	margin-right: 40px;
+	justify-content: space-evenly;
 }
 
 #home-page .testimonials-content .testimonials-heading {
@@ -1106,7 +1119,13 @@ textarea {
 	font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
+	#home-page .site-header {
+		height: 168px;
+	}
+	#home-page .site-header .wholistic-logo {
+		width: 5rem;
+	}
 	#home-page .banner-img-block {
 		padding-left: 0rem;
 	}
@@ -1131,12 +1150,6 @@ textarea {
 	}
 	#home-page .curve-image img {
 		width: 15rem;
-	}
-}
-
-@media (max-width: 770px) {
-	#home-page * {
-		font-size: 16px;
 	}
 }
 
@@ -1369,8 +1382,12 @@ textarea {
 	padding-bottom: 3rem;
 }
 
-#product-page .curved-product-bg .search-bar {
-	width: 55%;
+#product-page .curved-product-bg #searchform {
+	width: 80%;
+}
+
+#product-page .curved-product-bg #searchform #search {
+	width: 100%;
 	padding: 0.4rem;
 	border: 1px solid #fcd0c3;
 }
@@ -1398,35 +1415,56 @@ textarea {
 	font-weight: 300;
 }
 
+#product-page .filter-buttons button:focus {
+	color: #FFECE5 !important;
+	border-radius: 5px !important;
+	background: #F14946 !important;
+}
+
 #product-page .all-products {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 3rem;
 }
 
-#product-page .all-products .product {
+#product-page .all-products .live_search {
 	width: 17rem;
 	margin-bottom: 2rem;
 }
 
-#product-page .all-products .product h2:hover {
+#product-page .all-products .live_search h2:hover {
 	cursor: pointer;
 	color: #fcd0c3;
 }
 
-#product-page .all-products .product .product-text {
+#product-page .all-products .live_search .hover-img {
+	border-radius: 20px;
+	display: none;
+}
+
+#product-page .all-products .live_search:hover .hover-img {
+	display: block;
+	cursor: pointer;
+	width: 300px;
+	height: 350px;
+}
+
+#product-page .all-products .live_search:hover .product-img {
+	display: none;
+}
+
+#product-page .all-products .live_search .product-text {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 32px;
 	padding: 0px 5px;
 }
 
-#product-page .all-products .product .star-icon {
+#product-page .all-products .live_search .star-icon {
 	font-size: 15px;
 }
 
-#product-page .all-products .product .star-icon .review {
+#product-page .all-products .live_search .star-icon .review {
 	font-weight: 300;
 	font-size: 15px;
 }
@@ -1734,12 +1772,6 @@ textarea {
 	font: normal normal 300 18px/22px Oswald;
 }
 
-.menu-menu-1-container.nav-menu li:visited {
-	background-color: red;
-	border-radius: 37px;
-	padding: 8px 25px;
-}
-
 .nav-menu li a:hover {
 	color: #535151;
 	border-bottom: 0.2px solid #da6010;
@@ -1792,6 +1824,12 @@ textarea {
 @media (min-width: 760px) {
 	.nav-menu li {
 		padding: 0 2rem 0 0;
+	}
+	.current_page_item a {
+		color: #FFECE5 !important;
+		border-radius: 37px !important;
+		background: #F14946 !important;
+		padding: 8px 20px !important;
 	}
 }
 

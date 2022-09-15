@@ -215,3 +215,5 @@ function bd_parse_post_variables(){
 	}
 	}
 	}
+
+	
