@@ -74,15 +74,22 @@
 			?>
             <div id="search-bar" style="display:none">
                 <input type="search" placeholder="Browse Products">
-                <i class="fa fa-close"></i>
+                <i class="fa fa-close" id="search-close"></i>
             </div>
          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
          <script type="text/JavaScript">
+            var searchShown = false;
             $(document).ready(function () {
                 $('.search-btn').click(function () {
+                    searchShown = true;
                     $('.menu-menu-1-container').hide();
                     $("#search-bar").show();
-                    // $('.search-btn').off('click');
+                });
+                $('#primary,#search-close').click(function () { 
+                    if(searchShown){
+                   $("#search-bar").hide();
+                   $('.menu-menu-1-container').show();
+                    }
                 });
                 
             });

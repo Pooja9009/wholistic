@@ -288,29 +288,21 @@ get_header();
                 var grayStyles = [{
                     featureType: "landscape",
                     stylers: [{
-                            color: "#F5F5F5"
-                        },
-
-                    ],
+                            color: "#f5f5f5"
+                        }
+                    ]},
+                    {
                     featureType: "water",
                     stylers: [{
                         color: "#fcd0c3"
-                    }, ]
-                }, ];
+                    }]}
+                 ];
                 var mapOptions = {
                     center: new google.maps.LatLng(52.11717572868288, -106.65649114522991),
-                    zoom: 15,
+                    zoom: 3,
                     styles: grayStyles,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
-
-                // function clearOverlays() {
-                //     for (var i = 0; i < markersArray.length; i++) {
-                //         markersArray[i].setMap(null);
-                //     }
-                //     markersArray.length = 0;
-                // }
-
 
                 var locations = [
                     ['Nutters Everyday', 52.11717572868288, -106.65649114522991],
@@ -335,13 +327,19 @@ get_header();
                     ['Aaura Whole Foods LTD', 45.96152482902304, -66.64786662030247]
                 ];
 
-                var marker, i;
+                
+
+                function initialize() {
+                    map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+                    var marker, i;
                 var infowindow = new google.maps.InfoWindow();
 
                 for (i = 0; i < locations.length; i++) {
                     marker = new google.maps.Marker({
                         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                        map: map
+                        map:map,
+                    //    icon:'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+                     icon: '<?php bloginfo("template_directory"); ?>/img/redMarker.svg'
                     });
                     google.maps.event.addListener(marker, 'click', (function(marker, i) {
                         return function() {
@@ -352,9 +350,7 @@ get_header();
 
 
                 }
-
-                function initialize() {
-                    map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+                
                 }
 
                 google.maps.event.addDomListener(window, 'load', initialize);
