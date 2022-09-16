@@ -11,6 +11,7 @@
 /**
  * Executing Ajax process.
  *
+ * Template Name: Ajax Demo
  * @since 2.1.0
  */
 define( 'DOING_AJAX', true );
@@ -40,7 +41,6 @@ require_once ABSPATH . 'wp-admin/includes/ajax-actions.php';
 
 send_nosniff_header();
 nocache_headers();
-
 /** This action is documented in wp-admin/admin.php */
 do_action( 'admin_init' );
 
@@ -202,5 +202,15 @@ if ( is_user_logged_in() ) {
 	do_action( "wp_ajax_nopriv_{$action}" );
 }
 
+
+
+
+
+
+
+
 // Default status.
 wp_die( '0' );
+
+
+

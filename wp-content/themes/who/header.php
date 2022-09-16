@@ -54,7 +54,7 @@
                
                 <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'who' ); ?> -->
                 
-                <span class="dashicons dashicons-search hide-above-sm">
+                <span class="dashicons dashicons-search hide-above-sm" id="search-sm">
 
                 
                 </span>
@@ -73,7 +73,7 @@
 			);
 			?>
             <div id="search-bar" style="display:none">
-                <input type="search" placeholder="Browse Products">
+                <input id="search-icon" type="search" placeholder="Browse Products">
                 <i class="fa fa-close" id="search-close"></i>
             </div>
          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
@@ -93,11 +93,19 @@
                 });
                 
             });
-           
-            
-    </script>
-  
-                
+            $(document).ready(function () {
+                $('#search-sm').click(function(){
+                    searchShown = true;
+                    $('.menu-icon,#search-sm').hide();
+                    $('#search-bar').show();
+                });
+                $("#primary").click(function () {
+                    if(searchShown){
+                    $('.menu-icon,#search-sm').show();
+                    }
+                });
+            });
+    </script>  
             <script>
             var className = "inverted";
             var scrollTrigger = 60;
@@ -106,6 +114,7 @@
                 // We add pageYOffset for compatibility with IE.
                 if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
                     document.getElementsByTagName("header")[0].classList.add(className);
+                    document.getElementsByClassName(".search-btn").style.color = "black";
                 } else {
                     document.getElementsByTagName("header")[0].classList.remove(className);
                 }

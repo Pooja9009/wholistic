@@ -500,7 +500,7 @@ object {
 
 img {
 	height: auto;
-	max-width: 100%;
+	max-width: 95%;
 }
 
 figure {
@@ -1851,7 +1851,7 @@ textarea {
 }
 
 .inverted {
-	background-color: #a77575;
+	background-color: #d0a8a2;
 	backdrop-filter: blur(43px);
 }
 
@@ -1916,6 +1916,28 @@ textarea {
 	visibility: hidden;
 }
 
+.input::-webkit-input-placeholder {
+	color: black;
+	font-weight: bold;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
+#search-icon {
+	background-color: #FCD0C3;
+	border: none;
+	width: 300px;
+}
+
+#search-icon:focus {
+	outline: none;
+}
+
 @media (max-width: 600px) {
 	.menu-menu-1-container {
 		width: 87%;
@@ -1932,17 +1954,38 @@ textarea {
 	.menu-menu-1-container .search-btn {
 		display: none;
 	}
+	#search-icon {
+		background-color: #FCD0C3;
+		border: none;
+		width: 140px;
+	}
+	.wholistic-logo img {
+		width: 90%;
+	}
+	#search-sm {
+		padding-left: 44px;
+		padding-top: 10px;
+	}
 }
 
-@media (min-width: 760px) {
+@media (min-width: 765px) and (max-width: 800px) {
 	.nav-menu li {
-		padding: 0 2rem 0 0;
+		padding: 22px 30px 0 0;
+	}
+	#primary-menu {
+		padding-left: 5rem;
+	}
+}
+
+@media (min-width: 850px) {
+	.nav-menu li {
+		padding: 0 3rem 0 0;
 	}
 	.current_page_item a {
 		color: #FFECE5 !important;
 		border-radius: 37px !important;
 		background: #F14946 !important;
-		padding: 8px 20px !important;
+		padding: 4px 20px !important;
 	}
 }
 

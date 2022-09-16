@@ -34,7 +34,8 @@ get_header();
                 <p style="padding-top:9px">Filter By:</p>
                 <div>
                 <i class="fa fa-close"></i>
-                <button>Bone & Joint</button></div>
+                <button id="bone-joint" onclick="fetchposts()">Bone & Joint</button></div>
+                <div id="postconatiner"></div>
                 <div><button>Foundational</button></div>
                 <div><button>Heart Health</button></div>
                 <div><button>Immune</button></div>
@@ -44,6 +45,11 @@ get_header();
                 <div><button>Women’s Health</button></div>
             </div>
         </div>
+        
+
+        
+
+
         <div class="all-products">
             <div class="product">
                   <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg"> 
