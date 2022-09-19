@@ -74,7 +74,7 @@
 			?>
             <div id="search-bar" style="display:none">
                 <input id="search-icon" type="search" placeholder="Browse Products">
-                <i class="fa fa-close" id="search-close"></i>
+                <i class="fa fa-close" id="search-close" style="cursor:pointer;"></i>
             </div>
          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
          <script type="text/JavaScript">
@@ -87,6 +87,7 @@
                 });
                 $('#primary,#search-close').click(function () { 
                     if(searchShown){
+                        searchShown=false;
                    $("#search-bar").hide();
                    $('.menu-menu-1-container').show();
                     }
@@ -99,8 +100,9 @@
                     $('.menu-icon,#search-sm').hide();
                     $('#search-bar').show();
                 });
-                $("#primary").click(function () {
+                $("#primary,#search-close").click(function () {
                     if(searchShown){
+                        searchShown=false;
                     $('.menu-icon,#search-sm').show();
                     }
                 });
