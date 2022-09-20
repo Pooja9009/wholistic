@@ -59,6 +59,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -463,6 +464,11 @@ hr {
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
 }
 
 ul {
@@ -1654,7 +1660,75 @@ textarea {
 }
 
 #where-to-buy .borderLine {
-	border-bottom: 8px solid orangered;
+	border-bottom: 10px solid #f14946;
+}
+
+#where-to-buy .map-block {
+	padding-left: 8.5rem;
+	padding-top: 3.5rem;
+}
+
+#where-to-buy .map-block p, #where-to-buy .map-block b {
+	font-size: 13px;
+	line-height: 21px;
+}
+
+#where-to-buy .map-block .map-first-block {
+	background-color: #f4f3f3;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	padding: 0.5rem;
+}
+
+#where-to-buy .map-block .map-first-block label {
+	font-size: 12px;
+}
+
+#where-to-buy .map-block .map-first-block #location {
+	padding: 0;
+}
+
+#where-to-buy .map-block .map-first-block select {
+	font-size: 14px;
+}
+
+#where-to-buy .map-block .map-first-block select option {
+	font-size: 14px;
+}
+
+#where-to-buy .map-block .map-second-block {
+	display: flex;
+	height: 500px;
+}
+
+#where-to-buy .map-block .map-second-block #map {
+	margin-top: 0.5rem;
+	color: #f14946;
+}
+
+#where-to-buy .map-block .map-second-block .locations {
+	overflow-y: scroll;
+	margin: 0.5rem 0.2rem 0 0;
+	width: 15rem;
+	height: 17.5rem;
+}
+
+#where-to-buy .map-block .map-second-block .locations .location-details {
+	border-bottom: 1px dotted grey;
+	padding: 0.8rem 0;
+}
+
+#where-to-buy .map-block .map-second-block .locations .location-details p {
+	margin: 0;
+}
+
+#where-to-buy .map-block .map-second-block .locations .location-details .space {
+	height: 14px;
+}
+
+#where-to-buy .map-block .map-second-block .locations .location-details .direction {
+	color: #f14946;
 }
 
 #where-to-buy .last-block {
@@ -1682,6 +1756,18 @@ textarea {
 	padding: 0.8rem;
 }
 
+@media (max-width: 1030px) {
+	#where-to-buy .map-block {
+		padding: 3rem 1rem 0 1rem;
+	}
+}
+
+@media (max-width: 1030px) and (max-width: 430px) {
+	#where-to-buy .map-second-block {
+		flex-direction: column;
+	}
+}
+
 .site-footer {
 	background-color: #F14946;
 	font-family: 'Oswald', sans-serif;
@@ -1696,8 +1782,12 @@ textarea {
 .site-footer .footer-content {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1rem;
-	justify-content: center;
+	gap: 2rem;
+	justify-content: space-evenly;
+}
+
+.site-footer .footer-content #email-id {
+	padding: 2px 0 3px 0;
 }
 
 .site-footer hr {
@@ -1716,11 +1806,11 @@ textarea {
 }
 
 @media (max-width: 980px) {
-	.site-footer .footer-content {
+	.footer-content {
 		flex-direction: column;
 		padding-left: 3.5rem;
 	}
-	.site-footer .second-content-footer {
+	.second-content-footer {
 		justify-content: center;
 	}
 }
@@ -1738,7 +1828,7 @@ textarea {
 }
 
 .inverted {
-	background-color: #a77575;
+	background-color: #d0a8a2;
 	backdrop-filter: blur(43px);
 }
 
@@ -1797,10 +1887,33 @@ textarea {
 	transform: rotateY(180deg);
 	font-weight: 100;
 	padding-right: 0.5rem;
+	cursor: pointer;
 }
 
 .search-btn a {
 	visibility: hidden;
+}
+
+.input::-webkit-input-placeholder {
+	color: black;
+	font-weight: bold;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
+#search-icon {
+	background-color: #FCD0C3;
+	border: none;
+	width: 300px;
+}
+
+#search-icon:focus {
+	outline: none;
 }
 
 @media (max-width: 600px) {
@@ -1819,17 +1932,38 @@ textarea {
 	.menu-menu-1-container .search-btn {
 		display: none;
 	}
+	#search-icon {
+		background-color: #FCD0C3;
+		border: none;
+		width: 140px;
+	}
+	.wholistic-logo img {
+		width: 90%;
+	}
+	#search-sm {
+		padding-left: 44px;
+		padding-top: 10px;
+	}
 }
 
-@media (min-width: 760px) {
+@media (min-width: 765px) and (max-width: 800px) {
 	.nav-menu li {
-		padding: 0 2rem 0 0;
+		padding: 22px 30px 0 0;
+	}
+	#primary-menu {
+		padding-left: 5rem;
+	}
+}
+
+@media (min-width: 850px) {
+	.nav-menu li {
+		padding: 0 3rem 0 0;
 	}
 	.current_page_item a {
 		color: #FFECE5 !important;
 		border-radius: 37px !important;
 		background: #F14946 !important;
-		padding: 8px 20px !important;
+		padding: 4px 20px !important;
 	}
 }
 

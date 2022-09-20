@@ -65,20 +65,41 @@
 			);
 			?>
             <div id="search-bar" style="display:none">
-                <input type="search" placeholder="Browse Products">
-                <i class="close" class="fa fa-close"></i>
+                <input id="search-icon" type="search" placeholder="Browse Products">
+                <i class="fa fa-close" id="search-close" style="cursor:pointer;"></i>
             </div>
          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
          <script type="text/JavaScript">
+            var searchShown = false;
             $(document).ready(function () {
                 $('.search-btn').click(function () {
+                    searchShown = true;
                     $('.menu-menu-1-container').hide();
                     $("#search-bar").show();
                 });
+                $('#primary,#search-close').click(function () { 
+                    if(searchShown){
+                        searchShown=false;
+                   $("#search-bar").hide();
+                   $('.menu-menu-1-container').show();
+                    }
+                });
+                
             });
-           
-            
-    </script>
+            $(document).ready(function () {
+                $('#search-sm').click(function(){
+                    searchShown = true;
+                    $('.menu-icon,#search-sm').hide();
+                    $('#search-bar').show();
+                });
+                $("#primary,#search-close").click(function () {
+                    if(searchShown){
+                        searchShown=false;
+                    $('.menu-icon,#search-sm').show();
+                    }
+                });
+            });
+    </script> 
   
                 
             <script>
@@ -95,23 +116,6 @@
             };
             </script>
 
-<script>
-function showResult(str) {
-  if (str.length==0) {
-    document.getElementById("table-data").innerHTML="";
-    document.getElementById("table-data").style.border="0px";
-    return;
-  }
-  var xmlhttp=new XMLHttpRequest();
-  xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-      document.getElementById("table-data").innerHTML=this.responseText;
-      document.getElementById("table-data").style.border="1px solid #A5ACB2";
-    }
-  }
-  xmlhttp.open("GET","search.php?q="+str,true);
-  xmlhttp.send();
-}
-</script>
+
 
         </header><!-- #masthead -->

@@ -17,6 +17,7 @@ get_header();
 ?>
 <main id="primary" class="site-main">
     <body id="product-page">
+    
 
     <?php
     $banner = get_field('banner');
@@ -38,9 +39,9 @@ get_header();
             <p><?php the_field ('slogan'); ?></p>
 
             <label class="screen-reader-text" for="s">Search for:</label>
-            <form role="search" method="get" id="searchform">
-                <input type="text" name="s" id="search" placeholder="search" value="" onkeyup="showResult(this.value)"/> 
-                <input type="submit" name="submit" value="Add Country"  style="visibility:hidden;" id="search"/>
+            <form role="search" method="get" id="searchform" action="">
+                <input type="text" name="s" id="search" placeholder="search" value=""/> 
+                <input type="submit" name="submit" value="Add Country" id="triggerajax" onclick="fetchposts()" style="visibility:hidden;" id="search"/>
             </form>
                                    
             <div class="filter-buttons">
@@ -68,7 +69,7 @@ get_header();
                     // Setup this post for WP functions (variable must be named $post).
                     setup_postdata($post); ?>
                                    
-                    <div class="live_search" style = "width: 300px; ">
+                    <div class="live_search" id = "ajax" style = "width: 300px; ">
                         <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg"> 
                         <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />
                         <div class="star-icon">
@@ -90,6 +91,25 @@ get_header();
             <?php endif; ?>
         
         </div>
+
+        <script>
+            
+            function fetchposts() {
+
+            var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+
+                var postdata = "action=my_ajax_action";
+
+                jQuery.post(ajaxurl, postdata, function (response) {
+
+                    console.log(response);
+                    $("#table-data").html(response);
+                    
+                });
+
+            }
+            
+        </script>
 
     </body>
 </main><!-- #main -->
