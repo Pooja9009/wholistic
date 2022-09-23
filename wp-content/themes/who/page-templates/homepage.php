@@ -16,24 +16,24 @@
 get_header();
 ?>
 <main id="primary" class="site-main">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(".banner-img-block").animate({opacity: 0}, 'slow', function() {
+     $(this)
+         .attr({'src': "<?php bloginfo("template_directory"); ?>/img/banner.png')"})
+         .animate({opacity: 1});
+});
+    </script> -->
     <body id="home-page">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/Javascript">
-$(document).ready(function() {
-            $("#hero-heading").slideDown(800).html("<h1>COMPLETE <br> YOUR CARE</h1>");
-    })
-
-        </script>
-        <div class="banner-img-block"
+        <!-- <div class="banner-img-hover"> -->
+        <div class="banner-img-block complete-your-care"
              style="background-image:url('<?php bloginfo("template_directory"); ?>/img/banner.png')"> 
-        <!-- <div class="banner-img-block">
-            <img src="<?php bloginfo("template_directory"); ?>/img/banner.png">
-            <div class="img-text"> -->
-                <label id="hero-heading"></label>
+            <h1 class=>COMPLETE <br> YOUR CARE</h1>
                 <div class="browse-button">
                     <button>BROWSE THE GOODS</button>
                 </div>
             </div>
+<!-- </div> -->
             <div class="borderLine">
         </div>
         <div class="paragraph">

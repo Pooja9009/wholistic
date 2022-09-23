@@ -280,7 +280,7 @@ get_header();
                     </div>
                 </div>
 
-                <div id="googleMap" style="width:700px; height:355px;"> </div>
+                <div id="googleMap" style="width:700px; height:355px; margin: 10px 0 0 3px;"> </div>
                 <script type="text/javascript"
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn4lGEsuCpRyQGQ5TWINi-C3PEtHS0XLc"></script>
                 <script type="text/javascript">

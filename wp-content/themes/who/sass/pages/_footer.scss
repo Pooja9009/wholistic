@@ -5,17 +5,46 @@
     color: white;
 
     .footer-heading {
-        padding: 3rem 0 0rem 4rem;
+        padding: 3rem 0 0rem 7rem;
+        font-size:20px;
+        font-weight: 500;
     }
 
     .footer-content {
         display: flex;
         flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: space-evenly;
+       gap: 5rem;
+        justify-content: center;
+        margin-bottom: 39px;
+    margin-top: -34px;
 
-        #email-id {
-            padding: 2px 0 3px 0;
+        .content-detail {
+            display: flex;
+   
+    align-items: center;
+    gap: 1.5rem;
+}
+        
+        p {
+            font-weight: 300;
+            // color: #fcd0c3;
+            font-size:16px;
+            
+        }
+
+        #email-id {  
+    width: 244px;
+    input[type="text"]{
+    padding-bottom: 5px!important;
+    padding-left: 20px!important;
+    border-radius: 5px 5px 5px 5px;
+    }
+           
+        }
+       
+        img {
+            height:15px;
+           // margin-left: 3px;
         }
     }
 
@@ -23,7 +52,7 @@
         background-color: #ccc;
         border: 0;
         height: 1px;
-        margin-bottom: 1.5em;
+       
         width: 100%;
     }
 
@@ -32,6 +61,19 @@
         gap: 1.5rem;
         justify-content: flex-end;
         flex-wrap: wrap;
+        margin-right: 12rem;
+
+        p {
+            font-weight: 300;
+           // color: #fcd0c3;
+            font-size:15px;
+            a {
+                font-weight: 300;
+                // color: #fcd0c3;
+                 font-size:15px;
+                 text-decoration: none;
+            }
+        }
     }
 }
 
@@ -41,6 +83,7 @@
         flex-direction: column;
         padding-left: 3.5rem;
     }
+
 
     .second-content-footer {
         justify-content: center;

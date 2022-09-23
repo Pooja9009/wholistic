@@ -18,6 +18,14 @@ get_header();
 <main id="primary" class="site-main">
 
     <body id="product-page">
+    <!-- <?php
+        $banner = get_field('banner');
+        if( $banner ): ?>
+        <div class="product-banner-img"
+            style="background-image:url('<?php echo esc_url( $banner['image']['url'] ); ?>')">
+            <h1><?php echo $banner['title']; ?></h1>
+        </div>
+        <?php endif; ?> -->
         <div class="product-banner-img"
             style="background-image:url('<?php bloginfo("template_directory");?>/img/bannerProduct.png">
             <h1>SUPPLEMENTS, SIMPLIFIED</h1>
@@ -47,11 +55,49 @@ get_header();
         </div>
         
 
+        <!-- <div class="all-products" id="table-data">
         
+            <?php
+            $product = get_field('products');
+            if( $product ): ?>
+                <ul class="list" style = "display: flex;
+            flex-wrap: wrap;     justify-content: space-evenly;
+            padding: 0px 50px 0px 50px;">
+                    <?php foreach( $product as $post ): 
+
+                    // Setup this post for WP functions (variable must be named $post).
+                    setup_postdata($post); ?>
+                                   
+                    <div class="live_search" style = "width: 300px; ">
+                        <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg"> 
+                        <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />
+                        <div class="star-icon">
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-o"></span>
+                            <span class="review"><?php the_field( 'review' ); ?> Reviews</span>
+                        </div>
+                        <h2><?php the_title(); ?></h2>
+                        <p class="product-text"><?php the_field( 'content' ); ?></p>
+                    </div>
+                    <?php endforeach; ?>
+                </ul>
+                <?php 
+                // Reset the global post object so that the rest of the page works correctly.
+                wp_reset_postdata(); ?>
+            <?php endif; ?>
+        
+        </div> -->
 
 
         <div class="all-products">
+        
+            <!-- $product = get_field('products');
+            if( $product ): ?> -->
             <div class="product">
+
                   <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg"> 
                   <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />        
 
@@ -69,7 +115,7 @@ get_header();
             </div>
             <div class="product">
             <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
-            <!-- <div class="hover-img" data-image-src="<?php bloginfo("template_directory");?>/img/productHover.jpg"></div> -->
+           
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/coQ10Product.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -146,7 +192,7 @@ get_header();
             </div>
             <div class="product">
             <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png"" />
+                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
                     <span class="fa fa-star "></span>
