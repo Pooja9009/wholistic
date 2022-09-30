@@ -34,26 +34,41 @@ get_header();
         <div class="borderLine">
         </div>
 
+        <?php
+        $product = get_field('products');
+        if ($product): ?>
+
         <div class="curved-product-bg"
              style="background-image:url('<?php bloginfo("template_directory"); ?>/img/curvedBgProduct.png">
             <p><?php the_field('slogan'); ?></p>
 
             <label class="screen-reader-text" for="s">Search for:</label>
-            <div id="productPageSearch"
-                 class="et_pb_with_border et_pb_module et_pb_search et_pb_search_0 ds-icon-search  et_pb_text_align_left et_pb_bg_layout_light">
+            <form id="search-form">
+                <div class="form-group">
+                    <input type="search" name="q" id="keyword" placeholder="<?php _e( 'Search for...', 'domain-name' ); ?>" maxlength="64" tabindex="1">
+                    <span class="input-btn">
+                    <button class="btn btn-custom" type="submit" tabindex="-1" onclick="fetchposts()"></button>
+                    </span>
+                </div>
+            </form>
+            <script>
+                function fetchposts() {
 
-                <form role="search" method="get" class="et_pb_searchform" action="https://who.blmprojects.com/">
-                    <div>
-                        <label class="screen-reader-text" for="s">Search for:</label>
-                        <input type="text" name="s" placeholder="Search Products" class="et_pb_s"/>
-                        <input type="hidden" name="et_pb_searchform_submit" value="et_search_proccess"/>
+                    const ajaxurl = "<?php echo admin_url( 'admin-ajax.php' ); ?>";
 
-                        <input type="hidden" name="et_pb_include_posts" value="yes"/>
-                        <input type="hidden" name="et_pb_include_pages" value="yes"/>
-                        <input type="submit" value="Search" class="et_pb_searchsubmit">
-                    </div>
-                </form>
-            </div>
+                    const postdata = "action=product_search";
+
+                    jQuery.post(ajaxurl, postdata, function (response) {
+
+                        console.log(response);
+                        $("#table-data").html(response); //post-container == table-data
+
+                    });
+
+                }
+
+            </script>
+
 
             <div class="filter-buttons">
                 <p style="padding-top:9px">Filter By:</p>
@@ -85,59 +100,21 @@ get_header();
         </div>
         <div class="all-products" id="table-data">
 
-            <?php
-            $product = get_field('products');
-            if ($product): ?>
-                <ul class="list" style="display: flex;
-            flex-wrap: wrap;     justify-content: space-evenly;
-            padding: 0px 50px 0px 50px;">
-                    <?php foreach ($product as $post):
 
-                        // Setup this post for WP functions (variable must be named $post).
-                        setup_postdata($post); ?>
+	            <?php foreach ($product as $post):
 
-                        <div class="live_search" id="ajax" style="width: 300px; ">
-                            <img class="hover-img" src="<?php bloginfo("template_directory"); ?>/img/productHover.jpg">
-                            <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png"/>
-                            <div class="star-icon">
-                                <span class="fa fa-star "></span>
-                                <span class="fa fa-star "></span>
-                                <span class="fa fa-star "></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star-o"></span>
-                                <span class="review"><?php the_field('reviews'); ?> Reviews</span>
-                            </div>
-                            <h2><?php the_title(); ?></h2>
-                            <p class="product-text"><?php the_field('content'); ?></p>
-                        </div>
-                    <?php endforeach; ?>
-                </ul>
-                <?php
-                // Reset the global post object so that the rest of the page works correctly.
-                wp_reset_postdata(); ?>
-            <?php endif; ?>
+                setup_postdata($post); ?>
+
+                <?php include 'product.php' ?>
+
+	            <?php endforeach; ?>
+	            <?php
+	            // Reset the global post object so that the rest of the page works correctly.
+	            wp_reset_postdata(); ?>
+
 
         </div>
-
-        <!-- <script>
-
-            
-            function fetchposts() {
-
-            var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
-
-                var postdata = "action=my_ajax_action";
-
-                jQuery.post(ajaxurl, postdata, function (response) {
-
-                    console.log(response);
-                    $("#table-data").html(response);
-                    
-                });
-
-            }
-             -->
-        </script>
+        <?php endif; ?>
 
         </body>
     </main><!-- #main -->

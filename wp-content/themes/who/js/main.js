@@ -1,47 +1,63 @@
 
-// jQuery(function($){
-//     $('.page-id-12 #searchform').on('submit', function(e){
-//             e.preventDefault();
-//             var postData = {
-//                 'action' : 'ajax_fetch',
-//                 'searchTerm' : $(this).find('input#search').val(),
-//                 'category' : //get the id of the active selected category       
-//             };
-//             $.ajax(//send dta to url
-//              done:function(data){
+( function( $ ) {
 
-//             })
-//     });
+		// fetchData();
 
-// });
-$('#productPageSearch form').submit(function (e) {
-    e.preventDefault();
-    var $search = $.trim($(this).find('input[name="s"]').val());
-    if ($search.length > 0) {
-        window.productAjaxSearch = $search;
-        window.productAjaxPage = 1;
-        var $category = 'All';
-        if ($('#menu-concern-menu li.active').length > 0) {
-            $category = $.trim($('#menu-concern-menu li.active a').attr('href'));
-        }
-        var data = {
-            'action': 'ajax_load_more_products',
-            'page': window.productAjaxPage,
-            'search': window.productAjaxSearch,
-            'category': $category,
-        };
-        if (!window.doingProductAjax) {
-            window.doingProductAjax = true;
-            window.productAjaxScroll = true;
-            $.post(divi.ajaxurl, data, function (response) {
-                if (response !== 'NULL') {
-                    $('.et_pb_ajax_pagination_container').html(response);
-                    window.productAjaxPage++;
-                } else {
-                    $('.et_pb_ajax_pagination_container').html('<p>No products found matching your search term. <a href="' + divi.productPage + '">Browse all products</a></p>');
-                }
-                window.doingProductAjax = false;
-            });
-        }
-    }
-});
+
+	const $searchForm = $( '#search-form' );
+	$searchForm.submit(function (e){
+		e.preventDefault();
+
+		//send ajax request
+		$.ajax( {
+			method: "POST",
+			url: window.wp_ajax_url,
+			type: 'post',
+			data: {
+				action: 'product_search',
+				keyword: $searchForm.find('input[name=q]').val(),
+				// nonce: ajax.nonce,
+			},
+			success: function ( data ) {
+				console.log(data);
+				return;
+				const $data = $( '#data' );
+				$data.show();
+				$data.html( data );
+			},
+		} );
+	});
+
+
+	// function fetchData() {
+	//
+	// 	if ( searchForm.length ) {
+	// 		// const minLengthSearchQuery = 3;
+	//
+	// 		$( '#search-query' ).keyup( function() {
+	// 			const value = $( this ).val();
+	//
+	// 			if ( value.length >= minLengthSearchQuery ) {
+	// 				$.ajax( {
+	// 					url: ajax.url,
+	// 					type: 'post',
+	// 					data: {
+	// 						action: 'fetch_data',
+	// 						keyword: value,
+	// 						nonce: ajax.nonce,
+	// 					},
+	// 					success( data ) {
+	// 						$( '#data' ).show();
+	// 						$( '#data' ).html( data );
+	// 					},
+	// 				} );
+	// 			} else {
+	// 				$( '#data' ).empty();
+	// 			}
+	// 		} );
+	// 	}
+	// }
+// eslint-disable-next-line func-call-spacing
+}
+// eslint-disable-next-line no-undef
+( jQuery ) );

@@ -87,7 +87,7 @@ get_header();
 
                             <div class="testimonials-column">
                                 <img src="<?php bloginfo("template_directory"); ?>/img/testimonial1.svg">
-                                <p><?php the_field('reviews'); ?></p>
+                                <p>"<?php the_field('reviews'); ?>"</p>
                                 <p class="name-title"><?php the_title(); ?></p>
                             </div>
 

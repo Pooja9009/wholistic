@@ -235,49 +235,32 @@ function bd_parse_post_variables()
 
 /* Ajax Function */
 
-// add the ajax fetch js
-add_action('wp_footer', 'ajax_fetch');
-function ajax_fetch()
-{
-    ?>
-    <script type="text/javascript">
-        function fetch(
-            jQuery
 
-        .ajax({
-            url: '<?php echo admin_url('admin-ajax.php'); ?>',
-            type: 'post',
-            data: {action: 'data_fetch', keyword: jQuery('#keyword').val()},
-            success: function (data) {
-                jQuery('#datafetch').html(data);
-            }
-        });
+add_action("wp_ajax_product_search", "product_search");
+add_action("wp_ajax_nopriv_product_search", "product_search");
 
-        }
-    </script>
+function product_search() {
+	var_dump( 'here' );
+//    if (!empty($keyword) && strlen($keyword) >= 3) :
+        $args = [
+            'post_type' => 'my_product',
+            'post_status' => 'publish',
+            'posts_per_page' => -1,
+//            'q' => $keyword,
+        ];
 
-    <?php
+        $the_query = new WP_Query($args);
+
+            while ($the_query->have_posts()): $the_query->the_post(); ?>
+
+                <?php include 'page-templates/product.php' ?>
+
+            <?php endwhile;
+
+            wp_reset_postdata();
+
+    wp_die();
 }
-
-
-add_action("wp_ajax_my_ajax_action", "my_ajax_handler");
-add_action("wp_ajax_nopriv_my_ajax_action", "my_ajax_handler");
-
-function my_ajax_handler()
-{
-
-    $args = array(
-        'post_type' => 'my_product',
-        'post_status' => 'publish',
-    );
-
-    $loop = new WP_Query($args);
-
-    while ($loop->have_posts()) : $loop->the_post(); ?>
-        <h3><?php the_title(); ?></h3>
-    <?php endwhile;
-}
-    
 
 
 

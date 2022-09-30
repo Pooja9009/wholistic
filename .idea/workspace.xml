@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c862357e-5f80-4e48-b703-eb8e0a61f0c0" name="Changes" comment="try">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/who/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/homepage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/productpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/productpage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/sass/pages/_productpage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/sass/pages/_productpage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/style.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +22,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="DrupalConfiguration">
+    <drupalPath />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -24,6 +36,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JoomlaConfiguration">
+    <joomlaConfigPath />
+    <joomlaPath />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -33,21 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/wordpress",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/wordpress&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.php.frameworks&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes" />
@@ -57,15 +75,19 @@
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\twentytwentytwo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.php">
+  <component name="RunManager" selected="PHP Script.product.php">
     <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/wordpress/wp-content/themes/index.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="functions.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/wp-content/themes/wholistic/functions.php">
       <method v="2" />
     </configuration>
+    <configuration name="product.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/wp-content/themes/who/page-templates/product.php">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.product.php" />
         <item itemvalue="PHP Script.functions.php" />
         <item itemvalue="JavaScript Debug.index.php" />
       </list>
@@ -89,7 +111,13 @@
       <workItem from="1661400068800" duration="32000" />
       <workItem from="1661500790258" duration="187000" />
       <workItem from="1664174208585" duration="1114000" />
-      <workItem from="1664175530213" duration="496000" />
+      <workItem from="1664175530213" duration="7189000" />
+      <workItem from="1664250440150" duration="991000" />
+      <workItem from="1664253029523" duration="3885000" />
+      <workItem from="1664264170535" duration="6154000" />
+      <workItem from="1664423710751" duration="8078000" />
+      <workItem from="1664510159482" duration="12132000" />
+      <workItem from="1664528380913" duration="542000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1661334619995</created>
@@ -131,5 +159,11 @@
     <MESSAGE value="try" />
     <option name="LAST_COMMIT_MESSAGE" value="try" />
   </component>
-  <component name="WordPressConfiguration" doNotAskAgain="true" />
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>C:\xampp\htdocs\wordpress</wordpressPath>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
 </project>

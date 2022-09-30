@@ -33,13 +33,36 @@
         height: 440px;
         padding-bottom: 3rem;
 
-        #searchform{
+        .example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
             width: 80%;
-            #search {
-                width: 100%;
-                padding: 0.4rem;
-                border: 1px solid #fcd0c3;
-            }
+            background: #f1f1f1;
+        }
+
+        .example button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+
+        .example button:hover {
+            background: #0b7dda;
+        }
+
+       .example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
         }
 
         
@@ -130,5 +153,5 @@ p {
             }
         }
     
-    }
+
     
