@@ -842,7 +842,7 @@ function cptui_error_admin_notice() {
  */
 function cptui_not_new_install( $wp_upgrader, $extras ) {
 
-	if ( $wp_upgrader instanceof \Plugin_Upgrader ) {
+	if ( $wp_upgrader instanceof Plugin_Upgrader ) {
 		return;
 	}
 

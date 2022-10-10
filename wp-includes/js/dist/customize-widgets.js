@@ -182,27 +182,27 @@ __webpack_require__.d(store_selectors_namespaceObject, {
   "isItemPinned": function() { return isItemPinned; }
 });
 
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: external ["wp","blockLibrary"]
+// CONCATENATED MODULE: external ["wp","blockLibrary"]
 var external_wp_blockLibrary_namespaceObject = window["wp"]["blockLibrary"];
-;// CONCATENATED MODULE: external ["wp","widgets"]
+// CONCATENATED MODULE: external ["wp","widgets"]
 var external_wp_widgets_namespaceObject = window["wp"]["widgets"];
-;// CONCATENATED MODULE: external ["wp","blocks"]
+// CONCATENATED MODULE: external ["wp","blocks"]
 var external_wp_blocks_namespaceObject = window["wp"]["blocks"];
-;// CONCATENATED MODULE: external ["wp","data"]
+// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: external ["wp","preferences"]
+// CONCATENATED MODULE: external ["wp","preferences"]
 var external_wp_preferences_namespaceObject = window["wp"]["preferences"];
-;// CONCATENATED MODULE: external ["wp","components"]
+// CONCATENATED MODULE: external ["wp","components"]
 var external_wp_components_namespaceObject = window["wp"]["components"];
-;// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
+// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
 var external_wp_keyboardShortcuts_namespaceObject = window["wp"]["keyboardShortcuts"];
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: external ["wp","blockEditor"]
+// CONCATENATED MODULE: external ["wp","blockEditor"]
 var external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
-;// CONCATENATED MODULE: external ["wp","compose"]
+// CONCATENATED MODULE: external ["wp","compose"]
 var external_wp_compose_namespaceObject = window["wp"]["compose"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/customize-widgets/build-module/components/error-boundary/index.js
 
@@ -262,13 +262,13 @@ class ErrorBoundary extends external_wp_element_namespaceObject.Component {
 
 }
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: external ["wp","coreData"]
+// CONCATENATED MODULE: external ["wp","coreData"]
 var external_wp_coreData_namespaceObject = window["wp"]["coreData"];
-;// CONCATENATED MODULE: external ["wp","mediaUtils"]
+// CONCATENATED MODULE: external ["wp","mediaUtils"]
 var external_wp_mediaUtils_namespaceObject = window["wp"]["mediaUtils"];
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 function _extends() {
   _extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -323,9 +323,9 @@ function BlockInspectorButton(_ref) {
 // EXTERNAL MODULE: ./node_modules/classnames/index.js
 var classnames = __webpack_require__(4403);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
-;// CONCATENATED MODULE: external ["wp","keycodes"]
+// CONCATENATED MODULE: external ["wp","keycodes"]
 var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: external ["wp","primitives"]
+// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/undo.js
 
@@ -628,7 +628,7 @@ function MoreMenuDropdown(_ref) {
   }, onClose => children(onClose));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/index.js
 
 
 
@@ -642,7 +642,7 @@ function MoreMenuDropdown(_ref) {
 
 
 
-;// CONCATENATED MODULE: external ["wp","deprecated"]
+// CONCATENATED MODULE: external ["wp","deprecated"]
 var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/store/actions.js
@@ -888,7 +888,7 @@ const store_store = (0,external_wp_data_namespaceObject.createReduxStore)(consta
 
 (0,external_wp_data_namespaceObject.register)(store_store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/index.js
 
 
 
@@ -1363,7 +1363,7 @@ function useInserter(inserter) {
   }, [setIsInserterOpened])];
 }
 
-;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
+// CONCATENATED MODULE: external ["wp","isShallowEqual"]
 var external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/customize-widgets/build-module/utils.js
@@ -2180,7 +2180,7 @@ function CustomizeWidgets(_ref) {
   }, activeSidebar, popover))));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/customize-widgets/build-module/controls/inspector-section.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/customize-widgets/build-module/controls/inspector-section.js
 function getInspectorSection() {
   const {
     wp: {
@@ -2698,7 +2698,7 @@ class SidebarAdapter {
 
 }
 
-;// CONCATENATED MODULE: external ["wp","dom"]
+// CONCATENATED MODULE: external ["wp","dom"]
 var external_wp_dom_namespaceObject = window["wp"]["dom"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/customize-widgets/build-module/controls/inserter-outer-section.js
 /**
@@ -2876,7 +2876,7 @@ function getSidebarControl() {
   };
 }
 
-;// CONCATENATED MODULE: external ["wp","hooks"]
+// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/customize-widgets/build-module/filters/move-to-sidebar.js
 
@@ -2995,7 +2995,7 @@ const withWideWidgetDisplay = (0,external_wp_compose_namespaceObject.createHighe
 }, 'withWideWidgetDisplay');
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.BlockEdit', 'core/customize-widgets/wide-widget-display', withWideWidgetDisplay);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/customize-widgets/build-module/filters/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/customize-widgets/build-module/filters/index.js
 /**
  * Internal dependencies
  */

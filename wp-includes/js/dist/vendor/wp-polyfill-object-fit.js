@@ -155,7 +155,7 @@
         $media.style['margin-' + end] = side * (position / -100) + 'px';
       }
 
-      return;
+
     }
     // Length-based values (e.g. 10px / 10em)
     else {

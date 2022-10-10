@@ -11,12 +11,14 @@
 
 namespace ShapedPlugin\TestimonialFree\Admin\Views;
 
+use WP_Widget;
+
 /**
  * Real Testimonials Widget class
  *
  * @since 2.0
  */
-class TFREE_Widget extends \WP_Widget {
+class TFREE_Widget extends WP_Widget {
 
 	/**
 	 * Constructor of the class.

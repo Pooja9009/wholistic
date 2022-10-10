@@ -55,10 +55,10 @@ __webpack_require__.d(__webpack_exports__, {
   "speak": function() { return /* binding */ speak; }
 });
 
-;// CONCATENATED MODULE: external ["wp","domReady"]
+// CONCATENATED MODULE: external ["wp","domReady"]
 var external_wp_domReady_namespaceObject = window["wp"]["domReady"];
 var external_wp_domReady_default = /*#__PURE__*/__webpack_require__.n(external_wp_domReady_namespaceObject);
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/add-intro-text.js
 /**
@@ -138,7 +138,7 @@ function clear() {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/filter-message.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/filter-message.js
 let previousMessage = '';
 /**
  * Filter the message to be announced to the screenreader.

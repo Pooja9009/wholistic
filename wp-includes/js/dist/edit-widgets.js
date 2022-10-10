@@ -221,21 +221,21 @@ __webpack_require__.d(widget_area_namespaceObject, {
   "settings": function() { return settings; }
 });
 
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: external ["wp","blocks"]
+// CONCATENATED MODULE: external ["wp","blocks"]
 var external_wp_blocks_namespaceObject = window["wp"]["blocks"];
-;// CONCATENATED MODULE: external ["wp","data"]
+// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: external ["wp","blockLibrary"]
+// CONCATENATED MODULE: external ["wp","blockLibrary"]
 var external_wp_blockLibrary_namespaceObject = window["wp"]["blockLibrary"];
-;// CONCATENATED MODULE: external ["wp","coreData"]
+// CONCATENATED MODULE: external ["wp","coreData"]
 var external_wp_coreData_namespaceObject = window["wp"]["coreData"];
-;// CONCATENATED MODULE: external ["wp","widgets"]
+// CONCATENATED MODULE: external ["wp","widgets"]
 var external_wp_widgets_namespaceObject = window["wp"]["widgets"];
-;// CONCATENATED MODULE: external ["wp","preferences"]
+// CONCATENATED MODULE: external ["wp","preferences"]
 var external_wp_preferences_namespaceObject = window["wp"]["preferences"];
-;// CONCATENATED MODULE: external ["wp","apiFetch"]
+// CONCATENATED MODULE: external ["wp","apiFetch"]
 var external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/reducer.js
@@ -336,11 +336,11 @@ function listViewPanel() {
   widgetAreasOpenState
 }));
 
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: external ["wp","notices"]
+// CONCATENATED MODULE: external ["wp","notices"]
 var external_wp_notices_namespaceObject = window["wp"]["notices"];
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 function _extends() {
   _extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -360,9 +360,9 @@ function _extends() {
 // EXTERNAL MODULE: ./node_modules/classnames/index.js
 var classnames = __webpack_require__(4403);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
-;// CONCATENATED MODULE: external ["wp","components"]
+// CONCATENATED MODULE: external ["wp","components"]
 var external_wp_components_namespaceObject = window["wp"]["components"];
-;// CONCATENATED MODULE: external ["wp","primitives"]
+// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/check.js
 
@@ -411,7 +411,7 @@ const starEmpty = (0,external_wp_element_namespaceObject.createElement)(external
 }));
 /* harmony default export */ var star_empty = (starEmpty);
 
-;// CONCATENATED MODULE: external ["wp","viewport"]
+// CONCATENATED MODULE: external ["wp","viewport"]
 var external_wp_viewport_namespaceObject = window["wp"]["viewport"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close-small.js
 
@@ -428,9 +428,9 @@ const closeSmall = (0,external_wp_element_namespaceObject.createElement)(externa
 }));
 /* harmony default export */ var close_small = (closeSmall);
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: external ["wp","deprecated"]
+// CONCATENATED MODULE: external ["wp","deprecated"]
 var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/store/actions.js
@@ -676,9 +676,9 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: external ["wp","plugins"]
+// CONCATENATED MODULE: external ["wp","plugins"]
 var external_wp_plugins_namespaceObject = window["wp"]["plugins"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/complementary-area-context/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/complementary-area-context/index.js
 /**
  * WordPress dependencies
  */
@@ -1140,7 +1140,7 @@ const ComplementaryAreaWrapped = complementary_area_context(ComplementaryArea);
 ComplementaryAreaWrapped.Slot = ComplementaryAreaSlot;
 /* harmony default export */ var complementary_area = (ComplementaryAreaWrapped);
 
-;// CONCATENATED MODULE: external ["wp","compose"]
+// CONCATENATED MODULE: external ["wp","compose"]
 var external_wp_compose_namespaceObject = window["wp"]["compose"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/interface-skeleton/index.js
 
@@ -1324,7 +1324,7 @@ function MoreMenuDropdown(_ref) {
   }, onClose => children(onClose));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/index.js
 
 
 
@@ -1338,11 +1338,11 @@ function MoreMenuDropdown(_ref) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/index.js
 
 
 
-;// CONCATENATED MODULE: external ["wp","blockEditor"]
+// CONCATENATED MODULE: external ["wp","blockEditor"]
 var external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/transformers.js
 /**
@@ -2301,7 +2301,7 @@ external_wp_apiFetch_default().use(function (options, next) {
   return next(options);
 });
 
-;// CONCATENATED MODULE: external ["wp","hooks"]
+// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/filters/move-to-widget-area.js
 
@@ -2359,7 +2359,7 @@ const withMoveToWidgetAreaToolbarItem = (0,external_wp_compose_namespaceObject.c
 }, 'withMoveToWidgetAreaToolbarItem');
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.BlockEdit', 'core/edit-widgets/block-edit', withMoveToWidgetAreaToolbarItem);
 
-;// CONCATENATED MODULE: external ["wp","mediaUtils"]
+// CONCATENATED MODULE: external ["wp","mediaUtils"]
 var external_wp_mediaUtils_namespaceObject = window["wp"]["mediaUtils"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/filters/replace-media-upload.js
 /**
@@ -2372,7 +2372,7 @@ const replaceMediaUpload = () => external_wp_mediaUtils_namespaceObject.MediaUpl
 
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.MediaUpload', 'core/edit-widgets/replace-media-upload', replaceMediaUpload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/filters/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/filters/index.js
 /**
  * Internal dependencies
  */
@@ -2710,9 +2710,9 @@ class ErrorBoundary extends external_wp_element_namespaceObject.Component {
 
 }
 
-;// CONCATENATED MODULE: external ["wp","reusableBlocks"]
+// CONCATENATED MODULE: external ["wp","reusableBlocks"]
 var external_wp_reusableBlocks_namespaceObject = window["wp"]["reusableBlocks"];
-;// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
+// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
 var external_wp_keyboardShortcuts_namespaceObject = window["wp"]["keyboardShortcuts"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/keyboard-shortcuts/index.js
 /**
@@ -2881,7 +2881,7 @@ const useLastSelectedWidgetArea = () => (0,external_wp_data_namespaceObject.useS
 
 /* harmony default export */ var use_last_selected_widget_area = (useLastSelectedWidgetArea);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/constants.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/constants.js
 const ALLOW_REUSABLE_BLOCKS = false;
 const ENABLE_EXPERIMENTAL_FSE_BLOCKS = false;
 
@@ -3015,9 +3015,9 @@ const blockDefault = (0,external_wp_element_namespaceObject.createElement)(exter
 }));
 /* harmony default export */ var block_default = (blockDefault);
 
-;// CONCATENATED MODULE: external ["wp","url"]
+// CONCATENATED MODULE: external ["wp","url"]
 var external_wp_url_namespaceObject = window["wp"]["url"];
-;// CONCATENATED MODULE: external ["wp","dom"]
+// CONCATENATED MODULE: external ["wp","dom"]
 var external_wp_dom_namespaceObject = window["wp"]["dom"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/sidebar/widget-areas.js
 
@@ -3322,7 +3322,7 @@ const redo = (0,external_wp_element_namespaceObject.createElement)(external_wp_p
 }));
 /* harmony default export */ var library_redo = (redo);
 
-;// CONCATENATED MODULE: external ["wp","keycodes"]
+// CONCATENATED MODULE: external ["wp","keycodes"]
 var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/header/undo-redo/undo.js
 

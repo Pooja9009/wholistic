@@ -1,7 +1,7 @@
 <?php
 namespace FortAwesome;
 
-use \WP_Error, \Exception;
+use WP_Error, Exception;
 require_once dirname( __FILE__ ) . '/../includes/class-fontawesome-command.php';
 
 /**

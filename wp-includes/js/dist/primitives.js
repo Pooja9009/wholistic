@@ -160,7 +160,7 @@ __webpack_require__.d(__webpack_exports__, {
 // EXTERNAL MODULE: ./node_modules/classnames/index.js
 var classnames = __webpack_require__(4403);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/svg/index.js
 /**
@@ -263,16 +263,16 @@ const SVG = _ref => {
   return (0,external_wp_element_namespaceObject.createElement)("svg", appliedProps);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/horizontal-rule/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/horizontal-rule/index.js
 const HorizontalRule = 'hr';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/block-quotation/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/block-quotation/index.js
 const BlockQuotation = 'blockquote';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/view/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/view/index.js
 const View = 'div';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/index.js
 
 
 

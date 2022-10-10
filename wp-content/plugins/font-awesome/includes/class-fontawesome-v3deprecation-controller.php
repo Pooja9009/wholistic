@@ -2,7 +2,7 @@
 namespace FortAwesome;
 
 require_once trailingslashit( FONTAWESOME_DIR_PATH ) . 'includes/class-fontawesome-rest-response.php';
-use \WP_REST_Controller, \WP_Error, \Error, \Exception;
+use WP_REST_Controller, WP_Error, Error, Exception;
 
 /**
  * Controller class for REST endpoint

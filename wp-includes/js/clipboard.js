@@ -122,7 +122,7 @@ var ClipboardActionCopy = function ClipboardActionCopy(target) {
 };
 
 /* harmony default export */ var actions_copy = (ClipboardActionCopy);
-;// CONCATENATED MODULE: ./src/actions/default.js
+// CONCATENATED MODULE: ./src/actions/default.js
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 
@@ -177,7 +177,7 @@ var ClipboardActionDefault = function ClipboardActionDefault() {
 };
 
 /* harmony default export */ var actions_default = (ClipboardActionDefault);
-;// CONCATENATED MODULE: ./src/clipboard.js
+// CONCATENATED MODULE: ./src/clipboard.js
 function clipboard_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { clipboard_typeof = function _typeof(obj) { return typeof obj; }; } else { clipboard_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return clipboard_typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -762,7 +762,7 @@ E.prototype = {
     function listener () {
       self.off(name, listener);
       callback.apply(ctx, arguments);
-    };
+    }
 
     listener._ = callback
     return this.on(name, listener, ctx);

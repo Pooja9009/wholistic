@@ -4,7 +4,8 @@ namespace FortAwesome;
 require_once trailingslashit( FONTAWESOME_DIR_PATH ) . 'includes/class-fontawesome-exception.php';
 require_once trailingslashit( FONTAWESOME_DIR_PATH ) . 'includes/class-fontawesome-rest-response.php';
 
-use \WP_REST_Controller, \WP_Error, \Error, \Exception;
+use WP_REST_Controller, WP_Error, Error, Exception;
+use function is_array;
 
 /**
  * REST Controller for managing data on the FontAwesome::CONFLICT_DETECTION_OPTIONS_KEY.
@@ -402,7 +403,7 @@ class FontAwesome_Conflict_Detection_Controller extends WP_REST_Controller {
 	protected function prepare_unregistered_clients_for_database( $request ) {
 		$body = $request->get_json_params();
 
-		if ( ! \is_array( $body ) || count( $body ) === 0 ) {
+		if ( ! is_array( $body ) || count( $body ) === 0 ) {
 			throw new ConflictDetectionSchemaException();
 		}
 
@@ -452,7 +453,7 @@ class FontAwesome_Conflict_Detection_Controller extends WP_REST_Controller {
 	}
 
 	protected function is_array_of_md5( $data ) {
-		return \is_array( $data ) &&
+		return is_array( $data ) &&
 			count( $data ) === 0 ||
 			(
 				0 === count(

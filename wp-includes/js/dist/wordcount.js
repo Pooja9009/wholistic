@@ -42,9 +42,9 @@ __webpack_require__.d(__webpack_exports__, {
   "count": function() { return /* binding */ count; }
 });
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/defaultSettings.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/defaultSettings.js
 /** @typedef {import('./index').WPWordCountStrategy} WPWordCountStrategy */
 
 /** @typedef {Partial<{type: WPWordCountStrategy, shortcodes: string[]}>} WPWordCountL10n */

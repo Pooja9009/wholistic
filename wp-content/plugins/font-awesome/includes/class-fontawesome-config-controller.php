@@ -10,7 +10,7 @@ require_once trailingslashit( FONTAWESOME_DIR_PATH ) . 'includes/class-fontaweso
 require_once trailingslashit( FONTAWESOME_DIR_PATH ) . 'includes/class-fontawesome-exception.php';
 require_once trailingslashit( FONTAWESOME_DIR_PATH ) . 'includes/class-fontawesome-rest-response.php';
 
-use \WP_REST_Controller, \WP_Error, \Exception;
+use WP_REST_Controller, WP_Error, Exception;
 
 /**
  * Controller class for REST endpoint

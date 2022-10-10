@@ -62,9 +62,9 @@ __webpack_require__.d(actions_namespaceObject, {
   "__experimentalUpdateAnnotationRange": function() { return __experimentalUpdateAnnotationRange; }
 });
 
-;// CONCATENATED MODULE: external ["wp","richText"]
+// CONCATENATED MODULE: external ["wp","richText"]
 var external_wp_richText_namespaceObject = window["wp"]["richText"];
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/constants.js
 /**
@@ -284,9 +284,9 @@ const {
 } = annotation;
 (0,external_wp_richText_namespaceObject.registerFormatType)(format_name, settings);
 
-;// CONCATENATED MODULE: external ["wp","hooks"]
+// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: external ["wp","data"]
+// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/block/index.js
 /**
@@ -325,7 +325,7 @@ const addAnnotationClassName = OriginalComponent => {
 
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.BlockListBlock', 'core/annotations', addAnnotationClassName);
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/reducer.js
 /**
@@ -432,7 +432,7 @@ function annotations() {
 }
 /* harmony default export */ var reducer = (annotations);
 
-;// CONCATENATED MODULE: ./node_modules/rememo/es/rememo.js
+// CONCATENATED MODULE: ./node_modules/rememo/es/rememo.js
 
 
 var LEAF_KEY, hasWeakMap;
@@ -795,7 +795,7 @@ function __experimentalGetAnnotations(state) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/rng.js
+// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/rng.js
 // Unique ID creation requires a high quality random # generator. In the browser we therefore
 // require the crypto API and do not support built-in fallback to lower quality random number
 // generators (like Math.random()).
@@ -815,9 +815,9 @@ function rng() {
 
   return getRandomValues(rnds8);
 }
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/regex.js
+// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/regex.js
 /* harmony default export */ var regex = (/^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/validate.js
+// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/validate.js
 
 
 function validate(uuid) {
@@ -856,7 +856,7 @@ function stringify(arr) {
 }
 
 /* harmony default export */ var esm_browser_stringify = (stringify);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/v4.js
+// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/v4.js
 
 
 

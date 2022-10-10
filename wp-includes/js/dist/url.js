@@ -94,7 +94,7 @@ function isURL(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-email.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-email.js
 const EMAIL_REGEXP = /^(mailto:)?[a-z0-9._%+-]+@[a-z0-9][a-z0-9.-]*\.[a-z]{2,63}$/i;
 /**
  * Determines whether the given string looks like an email.
@@ -769,7 +769,7 @@ function filterURLForDisplay(url) {
   return file.slice(0, maxLength - truncatedFile.length - 1) + '…' + truncatedFile;
 }
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/clean-for-slug.js
 /**

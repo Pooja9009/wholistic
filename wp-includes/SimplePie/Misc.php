@@ -396,7 +396,7 @@ class SimplePie_Misc
 	 */
 	protected static function change_encoding_uconverter($data, $input, $output)
 	{
-		return @\UConverter::transcode($data, $output, $input);
+		return @UConverter::transcode($data, $output, $input);
 	}
 
 	/**

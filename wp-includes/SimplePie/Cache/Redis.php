@@ -28,7 +28,7 @@ class SimplePie_Cache_Redis implements SimplePie_Cache_Base {
     /**
      * Redis instance
      *
-     * @var \Redis
+     * @var Redis
      */
     protected $cache;
 
@@ -86,9 +86,9 @@ class SimplePie_Cache_Redis implements SimplePie_Cache_Base {
     }
 
     /**
-     * @param \Redis $cache
+     * @param Redis $cache
      */
-    public function setRedisClient(\Redis $cache) {
+    public function setRedisClient( Redis $cache) {
         $this->cache = $cache;
     }
 

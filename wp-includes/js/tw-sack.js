@@ -1,5 +1,5 @@
 /* Simple AJAX Code-Kit (SACK) v1.6.1 */
-/* ©2005 Gregory Wild-Smith */
+/* ï¿½2005 Gregory Wild-Smith */
 /* www.twilightuniverse.com */
 /* Software licenced under a modified X11 licence,
    see documentation or authors website for more details */
@@ -17,7 +17,7 @@ function sack(file) {
   		this.element = null;
 		this.elementObj = null;
 		this.requestFile = file;
-		this.vars = new Object();
+		this.vars = {};
 		this.responseStatus = new Array(2);
   	};
 
@@ -97,7 +97,7 @@ function sack(file) {
 		// prevents caching of URLString
 		this.setVar("rndval", new Date().getTime());
 
-		urlstringtemp = new Array();
+		urlstringtemp = [];
 		for (key in this.vars) {
 			if (false == this.vars[key][1] && true == this.encodeURIString) {
 				encoded = this.encVar(key, this.vars[key][0], true);

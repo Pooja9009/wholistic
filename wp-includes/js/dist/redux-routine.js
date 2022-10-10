@@ -726,9 +726,9 @@ function isGenerator(object) {
 
 // EXTERNAL MODULE: ./node_modules/rungen/dist/index.js
 var dist = __webpack_require__(2290);
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: ./node_modules/is-promise/index.mjs
+// CONCATENATED MODULE: ./node_modules/is-promise/index.mjs
 function isPromise(obj) {
   return !!obj && (typeof obj === 'object' || typeof obj === 'function') && typeof obj.then === 'function';
 }

@@ -5,7 +5,7 @@
 update_option( 'testimonial_version', '2.5.5' );
 update_option( 'testimonial_db_version', '2.5.5' );
 
-$args     = new \WP_Query(
+$args     = new WP_Query(
 	array(
 		'post_type'      => array( 'page' ),
 		'post_status'    => 'publish',

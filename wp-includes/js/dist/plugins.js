@@ -254,16 +254,16 @@ __webpack_require__.d(__webpack_exports__, {
   "withPluginContext": function() { return /* reexport */ withPluginContext; }
 });
 
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
 // EXTERNAL MODULE: ./node_modules/memize/index.js
 var memize = __webpack_require__(9756);
 var memize_default = /*#__PURE__*/__webpack_require__.n(memize);
-;// CONCATENATED MODULE: external ["wp","hooks"]
+// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 function _extends() {
   _extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -280,7 +280,7 @@ function _extends() {
   };
   return _extends.apply(this, arguments);
 }
-;// CONCATENATED MODULE: external ["wp","compose"]
+// CONCATENATED MODULE: external ["wp","compose"]
 var external_wp_compose_namespaceObject = window["wp"]["compose"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/plugin-context/index.js
 
@@ -354,7 +354,7 @@ class PluginErrorBoundary extends external_wp_element_namespaceObject.Component 
 
 }
 
-;// CONCATENATED MODULE: external ["wp","primitives"]
+// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/plugins.js
 
@@ -720,11 +720,11 @@ class PluginArea extends external_wp_element_namespaceObject.Component {
 
 /* harmony default export */ var plugin_area = (PluginArea);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/index.js
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/index.js
 
 
 

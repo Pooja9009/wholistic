@@ -61,7 +61,7 @@ NOTES:
 function getAnchorPosition(anchorname) {
 	// This function will return an Object with x and y properties
 	var useWindow=false;
-	var coordinates=new Object();
+	var coordinates={};
 	var x=0,y=0;
 	// Browser capability sniffing
 	var use_gebi=false, use_css=false, use_layers=false;
@@ -420,7 +420,7 @@ function PopupWindow_attachListener() {
 // Pass it a DIV name to use a DHTML popup, otherwise will default to window popup
 function PopupWindow() {
 	if (!window.popupWindowIndex) { window.popupWindowIndex = 0; }
-	if (!window.popupWindowObjects) { window.popupWindowObjects = new Array(); }
+	if (!window.popupWindowObjects) { window.popupWindowObjects = []; }
 	if (!window.listenerAttached) {
 		window.listenerAttached = true;
 		PopupWindow_attachListener();
@@ -598,7 +598,7 @@ function ColorPicker() {
 	cp.select = ColorPicker_select;
 
 	// Code to populate color picker window
-	var colors = new Array(	"#4180B6","#69AEE7","#000000","#000033","#000066","#000099","#0000CC","#0000FF","#330000","#330033","#330066","#330099",
+	var colors = ["#4180B6","#69AEE7","#000000","#000033","#000066","#000099","#0000CC","#0000FF","#330000","#330033","#330066","#330099",
 							"#3300CC","#3300FF","#660000","#660033","#660066","#660099","#6600CC","#6600FF","#990000","#990033","#990066","#990099",
 							"#9900CC","#9900FF","#CC0000","#CC0033","#CC0066","#CC0099","#CC00CC","#CC00FF","#FF0000","#FF0033","#FF0066","#FF0099",
 							"#FF00CC","#FF00FF","#7FFFFF","#7FFFFF","#7FF7F7","#7FEFEF","#7FE7E7","#7FDFDF","#7FD7D7","#7FCFCF","#7FC7C7","#7FBFBF",
@@ -666,7 +666,7 @@ function ColorPicker() {
 							"#ABABAB","#A7A7A7","#A3A3A3","#9F9F9F","#9B9B9B","#979797","#939393","#8F8F8F","#8B8B8B","#878787","#838383","#7F7F7F",
 							"#7B7B7B","#777777","#737373","#6F6F6F","#6B6B6B","#676767","#636363","#5F5F5F","#5B5B5B","#575757","#535353","#4F4F4F",
 							"#4B4B4B","#474747","#434343","#3F3F3F","#3B3B3B","#373737","#333333","#2F2F2F","#2B2B2B","#272727","#232323","#1F1F1F",
-							"#1B1B1B","#171717","#131313","#0F0F0F","#0B0B0B","#070707","#030303","#000000","#000000","#000000","#000000","#000000");
+							"#1B1B1B","#171717","#131313","#0F0F0F","#0B0B0B","#070707","#030303","#000000","#000000","#000000","#000000","#000000"];
 	var total = colors.length;
 	var width = 72;
 	var cp_contents = "";

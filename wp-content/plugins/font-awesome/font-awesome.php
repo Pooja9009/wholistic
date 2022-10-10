@@ -4,7 +4,7 @@
  */
 namespace FortAwesome;
 
-use \Exception, \Error;
+use Exception, Error;
 
 defined( 'WPINC' ) || die;
 
@@ -482,7 +482,7 @@ if ( ! class_exists( 'FortAwesome\FontAwesome_Loader' ) ) :
 		 * the Font Awesome plugin to invoke this. It's probably more convenient
 		 * to access the Loader's functionality through the its public static methods.
 		 *
-		 * @return \FortAwesome\FontAwesome_Loader
+		 * @return FontAwesome_Loader
 		 * @see FontAwesome_Loader::initialize()
 		 * @see FontAwesome_Loader::maybe_deactivate()
 		 * @see FontAwesome_Loader::maybe_uninstall()

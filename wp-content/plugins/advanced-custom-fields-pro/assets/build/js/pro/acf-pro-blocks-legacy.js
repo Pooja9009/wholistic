@@ -566,7 +566,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
         if (isDuplicateBlock(props)) {
           attributes.id = acf.uniqid('block_');
-          return;
+
         }
       }
 
@@ -1709,7 +1709,7 @@ function shouldUseNative() {
 		// Detect buggy property enumeration order in older V8 versions.
 
 		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
+		var test1 = String('abc');  // eslint-disable-line no-new-wrappers
 		test1[5] = 'de';
 		if (Object.getOwnPropertyNames(test1)[0] === '5') {
 			return false;

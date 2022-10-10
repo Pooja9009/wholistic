@@ -9,6 +9,8 @@
 
 namespace ShapedPlugin\TestimonialFree\Frontend;
 
+use WP_Query;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -143,7 +145,7 @@ class Helper {
 			'posts_per_page' => empty( $number_of_total_testimonials ) ? '10000' : $number_of_total_testimonials,
 		);
 		$args                         = apply_filters( 'spt_testimonial_pro_query_args', $args, $post_id );
-		$post_query                   = new \WP_Query( $args );
+		$post_query                   = new WP_Query( $args );
 		return $post_query;
 	}
 

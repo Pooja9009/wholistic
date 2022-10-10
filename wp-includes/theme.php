@@ -3729,7 +3729,7 @@ function is_customize_preview() {
  *
  * @param string   $new_status Transition to this post status.
  * @param string   $old_status Previous post status.
- * @param \WP_Post $post       Post data.
+ * @param WP_Post $post       Post data.
  */
 function _wp_keep_alive_customize_changeset_dependent_auto_drafts( $new_status, $old_status, $post ) {
 	global $wpdb;

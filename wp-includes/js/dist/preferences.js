@@ -59,15 +59,15 @@ __webpack_require__.d(selectors_namespaceObject, {
   "get": function() { return get; }
 });
 
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: external ["wp","data"]
+// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: external ["wp","components"]
+// CONCATENATED MODULE: external ["wp","components"]
 var external_wp_components_namespaceObject = window["wp"]["components"];
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: external ["wp","primitives"]
+// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/check.js
 
@@ -84,7 +84,7 @@ const check = (0,external_wp_element_namespaceObject.createElement)(external_wp_
 }));
 /* harmony default export */ var library_check = (check);
 
-;// CONCATENATED MODULE: external ["wp","a11y"]
+// CONCATENATED MODULE: external ["wp","a11y"]
 var external_wp_a11y_namespaceObject = window["wp"]["a11y"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/reducer.js
 /**
@@ -333,7 +333,7 @@ function PreferenceToggleMenuItem(_ref) {
   }, label);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/index.js
 
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/index.js

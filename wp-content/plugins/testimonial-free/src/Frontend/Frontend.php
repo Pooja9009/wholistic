@@ -12,6 +12,7 @@
 namespace ShapedPlugin\TestimonialFree\Frontend;
 
 use ShapedPlugin\TestimonialFree\Frontend\Helper;
+use WP_Query;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; }  // if direct access
@@ -99,7 +100,7 @@ class Frontend {
 		wp_enqueue_style( 'tfree-deprecated-style', SP_TFREE_URL . 'Frontend/assets/css/deprecated-style.min.css', array(), SP_TFREE_VERSION );
 		wp_enqueue_style( 'tfree-style', SP_TFREE_URL . 'Frontend/assets/css/style.min.css', array(), SP_TFREE_VERSION );
 
-		$sptp_posts = new \WP_Query(
+		$sptp_posts = new WP_Query(
 			array(
 				'post_type'      => 'spt_shortcodes',
 				'post_status'    => 'publish',

@@ -263,4 +263,38 @@ function product_search() {
 }
 
 
+add_action("wp_ajax_filter", "filter");
+add_action("wp_ajax_nopriv_filter", "filter");
+
+
+function filter() {
+	var_dump( 'here' );
+//	$cat_ids = $_REQUEST['category'];
+//    $csv_cats = implode(", ", $cat_ids);
+//    echo "Showing Results for (Term ID):".$csv_cats;
+    $args = array(
+        'post_type' => 'my_product',
+        'status' => 'publish',
+//        'category__in' => $cat_ids
+    );
+    // the query
+    $the_query = new WP_Query( $args ); ?>
+
+    <?php if ( $the_query->have_posts() ) : ?>
+
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			<?php include 'page-templates/product.php' ?>
+        <?php endwhile; ?>
+
+        <?php wp_reset_postdata(); ?>
+
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+
+    <?php
+    wp_die();
+
+}
+
 

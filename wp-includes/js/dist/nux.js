@@ -74,10 +74,10 @@ __webpack_require__.d(selectors_namespaceObject, {
   "isTipVisible": function() { return isTipVisible; }
 });
 
-;// CONCATENATED MODULE: external ["wp","deprecated"]
+// CONCATENATED MODULE: external ["wp","deprecated"]
 var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: external ["wp","data"]
+// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/reducer.js
 /**
@@ -217,7 +217,7 @@ function enableTips() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/rememo/es/rememo.js
+// CONCATENATED MODULE: ./node_modules/rememo/es/rememo.js
 
 
 var LEAF_KEY, hasWeakMap;
@@ -493,7 +493,7 @@ function isShallowEqual( a, b, fromIndex ) {
 	return callSelector;
 }
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/selectors.js
 /**
@@ -611,15 +611,15 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
   persist: ['preferences']
 });
 
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: external ["wp","compose"]
+// CONCATENATED MODULE: external ["wp","compose"]
 var external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: external ["wp","components"]
+// CONCATENATED MODULE: external ["wp","components"]
 var external_wp_components_namespaceObject = window["wp"]["components"];
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: external ["wp","primitives"]
+// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close.js
 
@@ -739,7 +739,7 @@ function DotTip(_ref) {
   };
 }))(DotTip));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/index.js
 /**
  * WordPress dependencies
  */

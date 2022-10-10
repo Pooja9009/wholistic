@@ -3649,7 +3649,7 @@ the specific language governing permissions and limitations under the Apache Lic
 							this.clear();
 						}
 						killEvent( e );
-						return;
+
 					}
 				} )
 			);

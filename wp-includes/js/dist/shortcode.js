@@ -238,7 +238,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // UNUSED EXPORTS: attrs, fromMatch, next, regexp, replace, string
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
 // EXTERNAL MODULE: ./node_modules/memize/index.js
 var memize = __webpack_require__(9756);

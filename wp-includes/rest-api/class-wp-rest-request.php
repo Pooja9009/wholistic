@@ -906,7 +906,7 @@ class WP_REST_Request implements ArrayAccess {
 			$param = $this->get_param( $key );
 
 			if ( null !== $param && ! empty( $arg['validate_callback'] ) ) {
-				/** @var bool|\WP_Error $valid_check */
+				/** @var bool|WP_Error $valid_check */
 				$valid_check = call_user_func( $arg['validate_callback'], $param, $this, $key );
 
 				if ( false === $valid_check ) {

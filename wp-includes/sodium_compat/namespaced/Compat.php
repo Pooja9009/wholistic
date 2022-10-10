@@ -1,7 +1,9 @@
 <?php
 namespace ParagonIE\Sodium;
 
-class Compat extends \ParagonIE_Sodium_Compat
+use ParagonIE_Sodium_Compat;
+
+class Compat extends ParagonIE_Sodium_Compat
 {
 
 }

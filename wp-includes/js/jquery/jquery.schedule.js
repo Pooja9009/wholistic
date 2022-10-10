@@ -1,5 +1,5 @@
 
-(function($){$.scheduler=function(){this.bucket={};return;};$.scheduler.prototype={schedule:function(){var ctx={"id":null,"time":1000,"repeat":false,"protect":false,"obj":null,"func":function(){},"args":[]};function _isfn(fn){return(!!fn&&typeof fn!="string"&&typeof fn[0]=="undefined"&&RegExp("function","i").test(fn+""));};var i=0;var override=false;if(typeof arguments[i]=="object"&&arguments.length>1){override=true;i++;}
+(function($){$.scheduler=function(){this.bucket={};};$.scheduler.prototype={schedule:function(){var ctx={"id":null,"time":1000,"repeat":false,"protect":false,"obj":null,"func":function(){},"args":[]};function _isfn(fn){return(!!fn&&typeof fn!="string"&&typeof fn[0]=="undefined"&&RegExp("function","i").test(fn+""));}var i=0;var override=false;if(typeof arguments[i]=="object"&&arguments.length>1){override=true;i++;}
 if(typeof arguments[i]=="object"){for(var option in arguments[i])
 if(typeof ctx[option]!="undefined")
 ctx[option]=arguments[i][option];i++;}

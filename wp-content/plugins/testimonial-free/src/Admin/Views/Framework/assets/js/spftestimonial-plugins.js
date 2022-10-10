@@ -15,7 +15,7 @@
     this.element = $(element);
     this.options = options;
     this.init();
-  };
+  }
 
   SPFTESTIMONIALAjaxChosen.prototype.init = function() {
     this.element.chosen(this.options);
@@ -287,7 +287,7 @@
         }
         return _results;
       } else {
-        return;
+
       }
     };
 
@@ -1899,7 +1899,7 @@
 
   function Ruleset() {
     this.rules = [];
-  };
+  }
 
   $.extend(Ruleset.prototype, {
 

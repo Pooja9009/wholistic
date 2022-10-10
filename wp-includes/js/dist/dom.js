@@ -206,7 +206,7 @@ function find(context) {
   });
 }
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/dom/build-module/tabbable.js
 /**
@@ -408,7 +408,7 @@ function findNext(element) {
   return (0,external_lodash_namespaceObject.first)(filterTabbable(remaining));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/dom/build-module/utils/assert-is-defined.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/dom/build-module/utils/assert-is-defined.js
 function assertIsDefined(val, name) {
   if (false) {}
 }
@@ -1982,7 +1982,7 @@ function removeInvalidHTML(HTML, schema, inline) {
   return doc.body.innerHTML;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/dom/build-module/dom/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/dom/build-module/dom/index.js
 
 
 

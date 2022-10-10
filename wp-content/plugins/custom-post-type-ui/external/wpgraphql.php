@@ -2,6 +2,8 @@
 
 namespace CPTUI;
 
+use WPGraphQL\Utils\Utils;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -102,8 +104,8 @@ class CPTUI_GraphQL {
 	 */
 	public function before_update_post_type( $data ) {
 		$this->show_in_graphql     = isset( $data['cpt_custom_post_type']['show_in_graphql'] ) ? $data['cpt_custom_post_type']['show_in_graphql'] : false;
-		$this->graphql_single_name = isset( $data['cpt_custom_post_type']['graphql_single_name'] ) ? \WPGraphQL\Utils\Utils::format_type_name( $data['cpt_custom_post_type']['graphql_single_name'] ) : '';
-		$this->graphql_plural_name = isset( $data['cpt_custom_post_type']['graphql_plural_name'] ) ? \WPGraphQL\Utils\Utils::format_type_name( $data['cpt_custom_post_type']['graphql_plural_name'] ) : '';
+		$this->graphql_single_name = isset( $data['cpt_custom_post_type']['graphql_single_name'] ) ? Utils::format_type_name( $data['cpt_custom_post_type']['graphql_single_name'] ) : '';
+		$this->graphql_plural_name = isset( $data['cpt_custom_post_type']['graphql_plural_name'] ) ? Utils::format_type_name( $data['cpt_custom_post_type']['graphql_plural_name'] ) : '';
 	}
 
 	/**
@@ -113,8 +115,8 @@ class CPTUI_GraphQL {
 	 */
 	public function before_update_taxonomy( $data ) {
 		$this->show_in_graphql     = isset( $data['cpt_custom_tax']['show_in_graphql'] ) ? $data['cpt_custom_tax']['show_in_graphql'] : false;
-		$this->graphql_single_name = isset( $data['cpt_custom_tax']['graphql_single_name'] ) ? \WPGraphQL\Utils\Utils::format_type_name( $data['cpt_custom_tax']['graphql_single_name'] ) : '';
-		$this->graphql_plural_name = isset( $data['cpt_custom_tax']['graphql_plural_name'] ) ? \WPGraphQL\Utils\Utils::format_type_name( $data['cpt_custom_tax']['graphql_plural_name'] ) : '';
+		$this->graphql_single_name = isset( $data['cpt_custom_tax']['graphql_single_name'] ) ? Utils::format_type_name( $data['cpt_custom_tax']['graphql_single_name'] ) : '';
+		$this->graphql_plural_name = isset( $data['cpt_custom_tax']['graphql_plural_name'] ) ? Utils::format_type_name( $data['cpt_custom_tax']['graphql_plural_name'] ) : '';
 	}
 
 	/**
@@ -127,8 +129,8 @@ class CPTUI_GraphQL {
 	 */
 	public function save_graphql_settings( $type, $name ) {
 		$type[ $name ]['show_in_graphql']     = $this->show_in_graphql;
-		$type[ $name ]['graphql_single_name'] = \WPGraphQL\Utils\Utils::format_type_name( $this->graphql_single_name );
-		$type[ $name ]['graphql_plural_name'] = \WPGraphQL\Utils\Utils::format_type_name( $this->graphql_plural_name );
+		$type[ $name ]['graphql_single_name'] = Utils::format_type_name( $this->graphql_single_name );
+		$type[ $name ]['graphql_plural_name'] = Utils::format_type_name( $this->graphql_plural_name );
 
 		return $type;
 	}

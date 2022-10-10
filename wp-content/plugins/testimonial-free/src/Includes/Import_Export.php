@@ -12,6 +12,10 @@
 namespace ShapedPlugin\TestimonialFree\Includes;
 
 // don't call the file directly.
+use Exception;
+use WP_Error;
+use WP_Http;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -123,7 +127,7 @@ class Import_Export {
 				return $attachment_id;
 			}
 		}
-		$http     = new \WP_Http();
+		$http     = new WP_Http();
 		$response = $http->request( $url );
 		if ( is_wp_error( $response ) ) {
 			return false;
@@ -167,7 +171,7 @@ class Import_Export {
 	 *
 	 * @param  array $shortcodes Import Testimonials shortcode array.
 	 *
-	 * @throws \Exception Error message.
+	 * @throws Exception Error message.
 	 * @return object
 	 */
 	public function import( $shortcodes ) {
@@ -195,7 +199,7 @@ class Import_Export {
 					$shortcode['meta']['_thumbnail_id'] = $thumb_id;
 				}
 				if ( is_wp_error( $new_shortcode_id ) ) {
-					throw new \Exception( $new_shortcode_id->get_error_message() );
+					throw new Exception( $new_shortcode_id->get_error_message() );
 				}
 
 				if ( isset( $shortcode['meta'] ) && is_array( $shortcode['meta'] ) ) {
@@ -207,7 +211,7 @@ class Import_Export {
 						);
 					}
 				}
-			} catch ( \Exception $e ) {
+			} catch ( Exception $e ) {
 				array_push( $errors[ $index ], $e->getMessage() );
 
 				// If there was a failure somewhere, clean up.
@@ -224,7 +228,7 @@ class Import_Export {
 		}
 
 		$errors = reset( $errors );
-		return isset( $errors[0] ) ? new \WP_Error( 'import_testimonials_error', $errors[0] ) : $spt_post_type;
+		return isset( $errors[0] ) ? new WP_Error( 'import_testimonials_error', $errors[0] ) : $spt_post_type;
 	}
 
 	/**

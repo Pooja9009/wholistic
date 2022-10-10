@@ -112,7 +112,6 @@ parse: function parse(input) {
         }
 
         // handle parse error
-        _handle_error:
         if (typeof action === 'undefined' || !action.length || !action[0]) {
 
             if (!recovering) {
@@ -407,7 +406,7 @@ lexer.rules = [/^(?:\s+)/,/^(?:(-?([0-9]|[1-9][0-9]+))(\.[0-9]+)?([eE][-+]?[0-9]
 lexer.conditions = {"INITIAL":{"rules":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],"inclusive":true}};
 
 
-;
+
 return lexer;})()
 parser.lexer = lexer;
 return parser;

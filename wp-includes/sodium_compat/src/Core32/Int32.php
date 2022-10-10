@@ -719,8 +719,8 @@ class ParagonIE_Sodium_Core32_Int32
      */
     public static function fromInt($signed)
     {
-        ParagonIE_Sodium_Core32_Util::declareScalarType($signed, 'int', 1);;
-        /** @var int $signed */
+        ParagonIE_Sodium_Core32_Util::declareScalarType($signed, 'int', 1);
+	    /** @var int $signed */
         $signed = (int) $signed;
 
         return new ParagonIE_Sodium_Core32_Int32(

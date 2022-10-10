@@ -1,6 +1,8 @@
 <?php
 namespace FortAwesome;
 
+use function call_user_func;
+
 require_once trailingslashit( FONTAWESOME_DIR_PATH ) . 'includes/class-fontawesome-exception.php';
 
 /**
@@ -37,6 +39,6 @@ class FontAwesome_Command {
 	 * @ignore
 	 */
 	public function run( ...$params ) {
-		return \call_user_func( $this->cmd, ...$params );
+		return call_user_func( $this->cmd, ...$params );
 	}
 }

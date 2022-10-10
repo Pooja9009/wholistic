@@ -11,6 +11,8 @@
 
 namespace ShapedPlugin\TestimonialFree\Frontend\Views;
 
+use WP_Query;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 } // Exit if accessed directly.
@@ -53,7 +55,7 @@ class Deprecated_Shortcodes {
 			'posts_per_page' => -1,
 		);
 
-		$que = new \WP_Query( $args );
+		$que = new WP_Query( $args );
 
 		$custom_id = uniqid();
 
@@ -72,7 +74,7 @@ class Deprecated_Shortcodes {
 			dots: ' . $pagination . ',
 			autoplay: ' . $autoplay . ',
 			pauseOnHover: false,
-		});
+		})
 
     });
     </script>';

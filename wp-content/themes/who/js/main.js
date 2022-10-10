@@ -1,9 +1,6 @@
 
 ( function( $ ) {
 
-		// fetchData();
-
-
 	const $searchForm = $( '#search-form' );
 	$searchForm.submit(function (e){
 		e.preventDefault();
@@ -27,36 +24,35 @@
 			},
 		} );
 	});
+	// eslint-disable-next-line func-call-spacing
+}
+	// eslint-disable-next-line no-undef
+	( jQuery ) );
 
+	( function( $ ) {
 
-	// function fetchData() {
-	//
-	// 	if ( searchForm.length ) {
-	// 		// const minLengthSearchQuery = 3;
-	//
-	// 		$( '#search-query' ).keyup( function() {
-	// 			const value = $( this ).val();
-	//
-	// 			if ( value.length >= minLengthSearchQuery ) {
-	// 				$.ajax( {
-	// 					url: ajax.url,
-	// 					type: 'post',
-	// 					data: {
-	// 						action: 'fetch_data',
-	// 						keyword: value,
-	// 						nonce: ajax.nonce,
-	// 					},
-	// 					success( data ) {
-	// 						$( '#data' ).show();
-	// 						$( '#data' ).html( data );
-	// 					},
-	// 				} );
-	// 			} else {
-	// 				$( '#data' ).empty();
-	// 			}
-	// 		} );
-	// 	}
-	// }
+		const $filter = $('#filter');
+		$filter.submit(function (e) {
+			e.preventDefault();
+			$.ajax({
+				method: "POST",
+				url: window.wp_ajax_url,
+				type: 'post',
+				data: {
+					action: 'filter',
+					keyword: $filter.find('button[name=category]').val(),
+					// nonce: ajax.nonce,
+				},
+				success: function (data) {
+					console.log(data);
+					return;
+					const $data = $('#data');
+					$data.show();
+					$data.html(data);
+				},
+			});
+		});
+
 // eslint-disable-next-line func-call-spacing
 }
 // eslint-disable-next-line no-undef

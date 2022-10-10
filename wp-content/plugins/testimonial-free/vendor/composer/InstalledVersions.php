@@ -14,10 +14,9 @@ namespace Composer;
 
 use Composer\Autoload\ClassLoader;
 use Composer\Semver\VersionParser;
-
-
-
-
+use OutOfBoundsException;
+use function call_user_func_array;
+use function count;
 
 
 class InstalledVersions
@@ -63,11 +62,11 @@ $packages[] = array_keys($installed['versions']);
 }
 
 
-if (1 === \count($packages)) {
+if (1 === count($packages)) {
 return $packages[0];
 }
 
-return array_keys(array_flip(\call_user_func_array('array_merge', $packages)));
+return array_keys(array_flip( call_user_func_array('array_merge', $packages)));
 }
 
 
@@ -143,7 +142,7 @@ $ranges = array_merge($ranges, $installed['versions'][$packageName]['provided'])
 return implode(' || ', $ranges);
 }
 
-throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+throw new OutOfBoundsException('Package "' . $packageName . '" is not installed');
 }
 
 
@@ -164,7 +163,7 @@ return null;
 return $installed['versions'][$packageName]['version'];
 }
 
-throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+throw new OutOfBoundsException('Package "' . $packageName . '" is not installed');
 }
 
 
@@ -185,7 +184,7 @@ return null;
 return $installed['versions'][$packageName]['pretty_version'];
 }
 
-throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+throw new OutOfBoundsException('Package "' . $packageName . '" is not installed');
 }
 
 
@@ -206,7 +205,7 @@ return null;
 return $installed['versions'][$packageName]['reference'];
 }
 
-throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+throw new OutOfBoundsException('Package "' . $packageName . '" is not installed');
 }
 
 

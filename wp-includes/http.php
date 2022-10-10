@@ -205,7 +205,7 @@ function wp_remote_head( $url, $args = array() ) {
  * @see \Requests_Utility_CaseInsensitiveDictionary
  *
  * @param array|WP_Error $response HTTP response.
- * @return array|\Requests_Utility_CaseInsensitiveDictionary The headers of the response. Empty array if incorrect parameter given.
+ * @return array|Requests_Utility_CaseInsensitiveDictionary The headers of the response. Empty array if incorrect parameter given.
  */
 function wp_remote_retrieve_headers( $response ) {
 	if ( is_wp_error( $response ) || ! isset( $response['headers'] ) ) {

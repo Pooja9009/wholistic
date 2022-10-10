@@ -154,7 +154,7 @@
 										( i === 1 && name[ 2 ] === '..' ) ||
 										name[ i - 1 ] === '..'
 									) {
-										continue;
+
 									} else if ( i > 0 ) {
 										name.splice( i - 1, 2 );
 										i -= 2;

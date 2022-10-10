@@ -123,7 +123,7 @@ var ClipboardActionCopy = function ClipboardActionCopy(target) {
 };
 
 /* harmony default export */ var actions_copy = (ClipboardActionCopy);
-;// CONCATENATED MODULE: ./src/actions/default.js
+// CONCATENATED MODULE: ./src/actions/default.js
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 
@@ -178,7 +178,7 @@ var ClipboardActionDefault = function ClipboardActionDefault() {
 };
 
 /* harmony default export */ var actions_default = (ClipboardActionDefault);
-;// CONCATENATED MODULE: ./src/clipboard.js
+// CONCATENATED MODULE: ./src/clipboard.js
 function clipboard_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { clipboard_typeof = function _typeof(obj) { return typeof obj; }; } else { clipboard_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return clipboard_typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -763,7 +763,7 @@ E.prototype = {
     function listener () {
       self.off(name, listener);
       callback.apply(ctx, arguments);
-    };
+    }
 
     listener._ = callback
     return this.on(name, listener, ctx);
@@ -2126,7 +2126,7 @@ __webpack_require__.d(__webpack_exports__, {
   "withState": function() { return /* reexport */ withState; }
 });
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/utils/create-higher-order-component/index.js
 /**
@@ -2154,7 +2154,7 @@ function createHigherOrderComponent(mapComponent, modifierName) {
 
 /* harmony default export */ var create_higher_order_component = (createHigherOrderComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/compose.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/compose.js
 /**
  * External dependencies
  */
@@ -2170,7 +2170,7 @@ function createHigherOrderComponent(mapComponent, modifierName) {
 
 /* harmony default export */ var compose = (external_lodash_namespaceObject.flowRight);
 
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/if-condition/index.js
 
@@ -2207,7 +2207,7 @@ const ifCondition = predicate => create_higher_order_component(WrappedComponent 
 
 /* harmony default export */ var if_condition = (ifCondition);
 
-;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
+// CONCATENATED MODULE: external ["wp","isShallowEqual"]
 var external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/pure/index.js
@@ -2254,7 +2254,7 @@ const pure = create_higher_order_component(Wrapped => {
 }, 'pure');
 /* harmony default export */ var higher_order_pure = (pure);
 
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 function _extends() {
   _extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -2271,7 +2271,7 @@ function _extends() {
   };
   return _extends.apply(this, arguments);
 }
-;// CONCATENATED MODULE: external ["wp","deprecated"]
+// CONCATENATED MODULE: external ["wp","deprecated"]
 var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/higher-order/with-global-events/listener.js
@@ -2642,9 +2642,9 @@ function withState() {
   }, 'withState');
 }
 
-;// CONCATENATED MODULE: external ["wp","keycodes"]
+// CONCATENATED MODULE: external ["wp","keycodes"]
 var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: external ["wp","dom"]
+// CONCATENATED MODULE: external ["wp","dom"]
 var external_wp_dom_namespaceObject = window["wp"]["dom"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-ref-effect/index.js
 /**
@@ -3947,7 +3947,7 @@ useViewportMatch.__experimentalWidthProvider = ViewportMatchWidthContext.Provide
 // EXTERNAL MODULE: ./node_modules/react-resize-aware/dist/index.js
 var dist = __webpack_require__(235);
 var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-resize-observer/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-resize-observer/index.js
 /**
  * External dependencies
  */
@@ -3980,7 +3980,7 @@ var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 
 /* harmony default export */ var use_resize_observer = ((dist_default()));
 
-;// CONCATENATED MODULE: external ["wp","priorityQueue"]
+// CONCATENATED MODULE: external ["wp","priorityQueue"]
 var external_wp_priorityQueue_namespaceObject = window["wp"]["priorityQueue"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-async-list/index.js
 /**
@@ -4111,7 +4111,7 @@ function useWarnOnChange(object) {
 
 // EXTERNAL MODULE: external "React"
 var external_React_ = __webpack_require__(9196);
-;// CONCATENATED MODULE: ./node_modules/use-memo-one/dist/use-memo-one.esm.js
+// CONCATENATED MODULE: ./node_modules/use-memo-one/dist/use-memo-one.esm.js
 
 
 function areInputsEqual(newInputs, lastInputs) {
@@ -4678,7 +4678,7 @@ function useFixedWindowList(elementRef, itemHeight, totalItems, options) {
   return [fixedListWindow, setFixedListWindow];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/index.js
 // Utils.
  // Compose helper (aliased flowRight from Lodash)
 

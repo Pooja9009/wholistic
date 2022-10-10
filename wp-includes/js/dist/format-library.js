@@ -20,15 +20,15 @@ var __webpack_exports__ = {};
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-;// CONCATENATED MODULE: external ["wp","richText"]
+// CONCATENATED MODULE: external ["wp","richText"]
 var external_wp_richText_namespaceObject = window["wp"]["richText"];
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: external ["wp","blockEditor"]
+// CONCATENATED MODULE: external ["wp","blockEditor"]
 var external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
-;// CONCATENATED MODULE: external ["wp","primitives"]
+// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/format-bold.js
 
@@ -203,7 +203,7 @@ const code_code = {
 
 };
 
-;// CONCATENATED MODULE: external ["wp","components"]
+// CONCATENATED MODULE: external ["wp","components"]
 var external_wp_components_namespaceObject = window["wp"]["components"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/keyboard-return.js
 
@@ -446,9 +446,9 @@ const italic = {
 
 };
 
-;// CONCATENATED MODULE: external ["wp","url"]
+// CONCATENATED MODULE: external ["wp","url"]
 var external_wp_url_namespaceObject = window["wp"]["url"];
-;// CONCATENATED MODULE: external ["wp","htmlEntities"]
+// CONCATENATED MODULE: external ["wp","htmlEntities"]
 var external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/link-off.js
 
@@ -480,11 +480,11 @@ const link_link = (0,external_wp_element_namespaceObject.createElement)(external
 }));
 /* harmony default export */ var library_link = (link_link);
 
-;// CONCATENATED MODULE: external ["wp","a11y"]
+// CONCATENATED MODULE: external ["wp","a11y"]
 var external_wp_a11y_namespaceObject = window["wp"]["a11y"];
-;// CONCATENATED MODULE: external ["wp","data"]
+// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/format-library/build-module/link/utils.js
 /**
@@ -708,7 +708,7 @@ function walkToBoundary(formats, initialIndex, targetFormatRef, formatIndex, dir
 const walkToStart = (0,external_lodash_namespaceObject.partialRight)(walkToBoundary, 'backwards');
 const walkToEnd = (0,external_lodash_namespaceObject.partialRight)(walkToBoundary, 'forwards');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/format-library/build-module/link/use-link-instance-key.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/format-library/build-module/link/use-link-instance-key.js
 // Weakly referenced map allows unused ids to be garbage collected.
 const weakMap = new WeakMap(); // Incrementing zero-based ID value.
 
@@ -1780,7 +1780,7 @@ const keyboard = {
 
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/format-library/build-module/default-formats.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/format-library/build-module/default-formats.js
 /**
  * Internal dependencies
  */
@@ -1797,7 +1797,7 @@ const keyboard = {
 
 /* harmony default export */ var default_formats = ([bold, code_code, image_image, italic, build_module_link_link, strikethrough, underline, text_color_textColor, subscript_subscript, superscript_superscript, keyboard]);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/format-library/build-module/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/format-library/build-module/index.js
 /**
  * WordPress dependencies
  */

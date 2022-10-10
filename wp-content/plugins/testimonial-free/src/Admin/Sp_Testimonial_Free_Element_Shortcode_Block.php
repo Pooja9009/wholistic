@@ -11,6 +11,8 @@
 
 namespace ShapedPlugin\TestimonialFree\Admin;
 
+use Elementor\Plugin;
+
 /**
  * Elementor shortcode block.
  */
@@ -82,7 +84,7 @@ class Sp_Testimonial_Free_Element_Shortcode_Block {
 		wp_register_script( 'sp-testimonial-scripts', SP_TFREE_URL . 'Frontend/assets/js/sp-scripts.js', array( 'jquery' ), SP_TFREE_VERSION, true );
 		$setting_options   = get_option( 'sp_testimonial_pro_options' );
 		$dequeue_swiper_js = isset( $setting_options['tf_dequeue_slick_js'] ) ? $setting_options['tf_dequeue_slick_js'] : true;
-		if ( $dequeue_swiper_js && \Elementor\Plugin::$instance->preview->is_preview_mode()) {
+		if ( $dequeue_swiper_js && Plugin::$instance->preview->is_preview_mode()) {
 			wp_enqueue_script( 'sp-testimonial-swiper-js' );
 			wp_enqueue_script( 'sp-testimonial-scripts' );
 		}
@@ -132,7 +134,7 @@ class Sp_Testimonial_Free_Element_Shortcode_Block {
 	 */
 	public function init_widgets() {
 		// Register widget.
-		\Elementor\Plugin::instance()->widgets_manager->register( new ElementAddons\Sp_Testimonial_Free_Shortcode_Widget() );
+		Plugin::instance()->widgets_manager->register( new ElementAddons\Sp_Testimonial_Free_Shortcode_Widget() );
 
 	}
 

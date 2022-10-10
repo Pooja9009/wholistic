@@ -2388,7 +2388,7 @@ function compression_test() {
 			if ( window.XMLHttpRequest ) {
 				x = new XMLHttpRequest();
 			} else {
-				try{x=new ActiveXObject('Msxml2.XMLHTTP');}catch(e){try{x=new ActiveXObject('Microsoft.XMLHTTP');}catch(e){};}
+				try{x=new ActiveXObject('Msxml2.XMLHTTP');}catch(e){try{x=new ActiveXObject('Microsoft.XMLHTTP');}catch(e){}}
 			}
 
 			if (x) {

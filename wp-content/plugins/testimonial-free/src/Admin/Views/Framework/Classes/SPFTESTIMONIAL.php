@@ -11,6 +11,10 @@
 
 namespace ShapedPlugin\TestimonialFree\Admin\Views\Framework\Classes;
 
+use SPFTESTIMONIAL_Comment_Metabox;
+use SPFTESTIMONIAL_Metabox;
+use SPFTESTIMONIAL_Options;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	die; } // Cannot access directly.
 
@@ -190,7 +194,7 @@ class SPFTESTIMONIAL {
 					$params['sections']   = self::$args['sections'][ $key ];
 					self::$inited[ $key ] = true;
 
-					\SPFTESTIMONIAL_Options::instance( $key, $params );
+					SPFTESTIMONIAL_Options::instance( $key, $params );
 
 					if ( ! empty( $value['show_in_customizer'] ) ) {
 						$value['output_css']                     = false;
@@ -212,7 +216,7 @@ class SPFTESTIMONIAL {
 					$params['sections']   = self::$args['sections'][ $key ];
 					self::$inited[ $key ] = true;
 
-					\SPFTESTIMONIAL_Metabox::instance( $key, $params );
+					SPFTESTIMONIAL_Metabox::instance( $key, $params );
 
 				}
 			}
@@ -228,7 +232,7 @@ class SPFTESTIMONIAL {
 					$params['sections']   = self::$args['sections'][ $key ];
 					self::$inited[ $key ] = true;
 
-					\SPFTESTIMONIAL_Comment_Metabox::instance( $key, $params );
+					SPFTESTIMONIAL_Comment_Metabox::instance( $key, $params );
 
 				}
 			}

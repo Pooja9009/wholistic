@@ -4,7 +4,7 @@
  */
 namespace FortAwesome;
 
-use \Exception, \Error, \DateTime, \DateInterval, \DateTimeInterface, \DateTimeZone;
+use Exception, Error, DateTime, DateInterval, DateTimeInterface, DateTimeZone;
 
 require_once trailingslashit( __DIR__ ) . '../defines.php';
 require_once trailingslashit( FONTAWESOME_DIR_PATH ) . 'includes/class-fontawesome-release-provider.php';

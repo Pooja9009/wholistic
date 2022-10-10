@@ -524,11 +524,11 @@ module.exports = function() {
     );
     err.name = 'Invariant Violation';
     throw err;
-  };
+  }
   shim.isRequired = shim;
   function getShim() {
     return shim;
-  };
+  }
   // Important!
   // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
   var ReactPropTypes = {
@@ -1137,7 +1137,7 @@ __webpack_require__.d(actions_namespaceObject, {
   "updatePostLock": function() { return updatePostLock; }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 function _extends() {
   _extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -1154,21 +1154,21 @@ function _extends() {
   };
   return _extends.apply(this, arguments);
 }
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: external ["wp","blocks"]
+// CONCATENATED MODULE: external ["wp","blocks"]
 var external_wp_blocks_namespaceObject = window["wp"]["blocks"];
-;// CONCATENATED MODULE: external ["wp","data"]
+// CONCATENATED MODULE: external ["wp","data"]
 var external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: external ["wp","coreData"]
+// CONCATENATED MODULE: external ["wp","coreData"]
 var external_wp_coreData_namespaceObject = window["wp"]["coreData"];
-;// CONCATENATED MODULE: external ["wp","compose"]
+// CONCATENATED MODULE: external ["wp","compose"]
 var external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: external ["wp","hooks"]
+// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: external ["wp","blockEditor"]
+// CONCATENATED MODULE: external ["wp","blockEditor"]
 var external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/defaults.js
 /**
@@ -1498,7 +1498,7 @@ function editorSettings() {
   postAutosavingLock
 }));
 
-;// CONCATENATED MODULE: ./node_modules/rememo/es/rememo.js
+// CONCATENATED MODULE: ./node_modules/rememo/es/rememo.js
 
 
 var LEAF_KEY, hasWeakMap;
@@ -1774,14 +1774,14 @@ function isShallowEqual( a, b, fromIndex ) {
 	return callSelector;
 }
 
-;// CONCATENATED MODULE: external ["wp","date"]
+// CONCATENATED MODULE: external ["wp","date"]
 var external_wp_date_namespaceObject = window["wp"]["date"];
-;// CONCATENATED MODULE: external ["wp","url"]
+// CONCATENATED MODULE: external ["wp","url"]
 var external_wp_url_namespaceObject = window["wp"]["url"];
-;// CONCATENATED MODULE: external ["wp","deprecated"]
+// CONCATENATED MODULE: external ["wp","deprecated"]
 var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: external ["wp","primitives"]
+// CONCATENATED MODULE: external ["wp","primitives"]
 var external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/layout.js
 
@@ -1798,7 +1798,7 @@ const layout = (0,external_wp_element_namespaceObject.createElement)(external_wp
 }));
 /* harmony default export */ var library_layout = (layout);
 
-;// CONCATENATED MODULE: external ["wp","preferences"]
+// CONCATENATED MODULE: external ["wp","preferences"]
 var external_wp_preferences_namespaceObject = window["wp"]["preferences"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/constants.js
 /**
@@ -3373,10 +3373,10 @@ const getPostTypeLabel = (0,external_wp_data_namespaceObject.createRegistrySelec
   return postType === null || postType === void 0 ? void 0 : (_postType$labels = postType.labels) === null || _postType$labels === void 0 ? void 0 : _postType$labels.singular_name;
 });
 
-;// CONCATENATED MODULE: external ["wp","apiFetch"]
+// CONCATENATED MODULE: external ["wp","apiFetch"]
 var external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
-;// CONCATENATED MODULE: external ["wp","notices"]
+// CONCATENATED MODULE: external ["wp","notices"]
 var external_wp_notices_namespaceObject = window["wp"]["notices"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/local-autosave.js
 /**
@@ -3411,7 +3411,7 @@ function localAutosaveClear(postId, isPostNew) {
   window.sessionStorage.removeItem(postKey(postId, isPostNew));
 }
 
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/store/utils/notice-builder.js
 /**
@@ -4523,14 +4523,10 @@ function setDefaultCompleters() {
 
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.Autocomplete.completers', 'editor/autocompleters/set-default-completers', setDefaultCompleters);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/hooks/index.js
-/**
- * Internal dependencies
- */
+// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/hooks/index.js
 
 
-
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/autocompleters/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/autocompleters/index.js
 
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/autosave-monitor/index.js
@@ -4659,7 +4655,7 @@ class AutosaveMonitor extends external_wp_element_namespaceObject.Component {
 
 }))])(AutosaveMonitor));
 
-;// CONCATENATED MODULE: external ["wp","richText"]
+// CONCATENATED MODULE: external ["wp","richText"]
 var external_wp_richText_namespaceObject = window["wp"]["richText"];
 // EXTERNAL MODULE: ./node_modules/classnames/index.js
 var classnames = __webpack_require__(4403);
@@ -4865,7 +4861,7 @@ function DocumentOutlineCheck(_ref) {
   blocks: select(external_wp_blockEditor_namespaceObject.store).getBlocks()
 }))(DocumentOutlineCheck));
 
-;// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
+// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
 var external_wp_keyboardShortcuts_namespaceObject = window["wp"]["keyboardShortcuts"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/global-keyboard-shortcuts/save-shortcut.js
 /**
@@ -5029,9 +5025,9 @@ function EditorKeyboardShortcutsRegister() {
 
 /* harmony default export */ var register_shortcuts = (EditorKeyboardShortcutsRegister);
 
-;// CONCATENATED MODULE: external ["wp","components"]
+// CONCATENATED MODULE: external ["wp","components"]
 var external_wp_components_namespaceObject = window["wp"]["components"];
-;// CONCATENATED MODULE: external ["wp","keycodes"]
+// CONCATENATED MODULE: external ["wp","keycodes"]
 var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/redo.js
 
@@ -5280,7 +5276,7 @@ function EditorSnackbars() {
   });
 }
 
-;// CONCATENATED MODULE: external ["wp","htmlEntities"]
+// CONCATENATED MODULE: external ["wp","htmlEntities"]
 var external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/entities-saved-states/entity-record-item.js
 
@@ -6391,7 +6387,7 @@ function PostTemplate(_ref) {
 }
 /* harmony default export */ var post_template = (PostTemplate);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-author/constants.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-author/constants.js
 const AUTHORS_QUERY = {
   who: 'authors',
   per_page: 50,
@@ -8240,7 +8236,7 @@ const wordpress = (0,external_wp_element_namespaceObject.createElement)(external
 }));
 /* harmony default export */ var library_wordpress = (wordpress);
 
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -8616,7 +8612,7 @@ function PostScheduleLabel(_ref) {
   };
 })(PostScheduleLabel));
 
-;// CONCATENATED MODULE: external ["wp","a11y"]
+// CONCATENATED MODULE: external ["wp","a11y"]
 var external_wp_a11y_namespaceObject = window["wp"]["a11y"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/post-taxonomies/most-used-terms.js
 
@@ -11074,7 +11070,7 @@ const info = (0,external_wp_element_namespaceObject.createElement)(external_wp_p
 }));
 /* harmony default export */ var library_info = (info);
 
-;// CONCATENATED MODULE: external ["wp","wordcount"]
+// CONCATENATED MODULE: external ["wp","wordcount"]
 var external_wp_wordcount_namespaceObject = window["wp"]["wordcount"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/word-count/index.js
 
@@ -11320,7 +11316,7 @@ function UnsavedChangesWarning() {
   return null;
 }
 
-;// CONCATENATED MODULE: external ["wp","reusableBlocks"]
+// CONCATENATED MODULE: external ["wp","reusableBlocks"]
 var external_wp_reusableBlocks_namespaceObject = window["wp"]["reusableBlocks"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/provider/with-registry-provider.js
 
@@ -11367,7 +11363,7 @@ const withRegistryProvider = (0,external_wp_compose_namespaceObject.createHigher
 }), 'withRegistryProvider');
 /* harmony default export */ var with_registry_provider = (withRegistryProvider);
 
-;// CONCATENATED MODULE: external ["wp","mediaUtils"]
+// CONCATENATED MODULE: external ["wp","mediaUtils"]
 var external_wp_mediaUtils_namespaceObject = window["wp"]["mediaUtils"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/utils/media-upload/index.js
 /**
@@ -11673,7 +11669,7 @@ function EditorProvider(_ref) {
 
 /* harmony default export */ var provider = (with_registry_provider(EditorProvider));
 
-;// CONCATENATED MODULE: external ["wp","serverSideRender"]
+// CONCATENATED MODULE: external ["wp","serverSideRender"]
 var external_wp_serverSideRender_namespaceObject = window["wp"]["serverSideRender"];
 var external_wp_serverSideRender_default = /*#__PURE__*/__webpack_require__.n(external_wp_serverSideRender_namespaceObject);
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/deprecated.js
@@ -11773,7 +11769,7 @@ const withColorContext = deprecateFunction('withColorContext', external_wp_block
 const withColors = deprecateFunction('withColors', external_wp_blockEditor_namespaceObject.withColors);
 const withFontSizes = deprecateFunction('withFontSizes', external_wp_blockEditor_namespaceObject.withFontSizes);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/components/index.js
 // Block Creation Components.
  // Post Related Components.
 
@@ -11874,16 +11870,10 @@ function cleanForSlug(string) {
   return (0,external_wp_url_namespaceObject.cleanForSlug)(string);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/utils/index.js
-/**
- * Internal dependencies
- */
+// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/utils/index.js
 
 
-
-
-
-;// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/editor/build-module/index.js
 /**
  * Internal dependencies
  */

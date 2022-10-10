@@ -144,7 +144,7 @@ class ACF_Rest_Api {
 	 * https://core.trac.wordpress.org/ticket/49960
 	 *
 	 * @param mixed            $value
-	 * @param \WP_REST_Request $request
+	 * @param WP_REST_Request $request
 	 * @param string           $param
 	 *
 	 * @return bool|WP_Error

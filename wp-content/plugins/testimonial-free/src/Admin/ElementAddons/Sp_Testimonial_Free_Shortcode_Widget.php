@@ -11,14 +11,18 @@
 
 namespace ShapedPlugin\TestimonialFree\Admin\ElementAddons;
 
+use Elementor\Controls_Manager;
+use Elementor\Plugin;
+use Elementor\Widget_Base;
 use ShapedPlugin\TestimonialFree\Frontend\Helper;
+use WP_Query;
 
 /**
  * Elementor real testimonial free shortcode Widget.
  *
  * @since 2.5.2
  */
-class Sp_Testimonial_Free_Shortcode_Widget extends \Elementor\Widget_Base {
+class Sp_Testimonial_Free_Shortcode_Widget extends Widget_Base {
 	/**
 	 * Get widget name.
 	 *
@@ -75,7 +79,7 @@ class Sp_Testimonial_Free_Shortcode_Widget extends \Elementor\Widget_Base {
 	 */
 	public function sprtp_post_list() {
 		$post_list   = array();
-		$sprtp_posts = new \WP_Query(
+		$sprtp_posts = new WP_Query(
 			array(
 				'post_type'      => 'spt_shortcodes',
 				'post_status'    => 'publish',
@@ -100,7 +104,7 @@ class Sp_Testimonial_Free_Shortcode_Widget extends \Elementor\Widget_Base {
 			'content_section',
 			array(
 				'label' => __( 'Content', 'testimonial-free' ),
-				'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
+				'tab'   => Controls_Manager::TAB_CONTENT,
 			)
 		);
 
@@ -108,7 +112,7 @@ class Sp_Testimonial_Free_Shortcode_Widget extends \Elementor\Widget_Base {
 			'sp_testimonial_pro_shortcode',
 			array(
 				'label'       => __( 'Real Testimonial Shortcode(s)', 'testimonial-free' ),
-				'type'        => \Elementor\Controls_Manager::SELECT2,
+				'type'        => Controls_Manager::SELECT2,
 				'label_block' => true,
 				'default'     => '',
 				'options'     => $this->sprtp_post_list(),
@@ -137,7 +141,7 @@ class Sp_Testimonial_Free_Shortcode_Widget extends \Elementor\Widget_Base {
 
 		$generator_id = $sp_testimonial_shortcode;
 
-		if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) {
+		if ( Plugin::$instance->editor->is_edit_mode() ) {
 			$post_id            = $generator_id;
 			$setting_options    = get_option( 'sp_testimonial_pro_options' );
 			$shortcode_data     = get_post_meta( $post_id, 'sp_tpro_shortcode_options', true );

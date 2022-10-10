@@ -67,9 +67,9 @@ __webpack_require__.d(__webpack_exports__, {
   "shortcutAriaLabel": function() { return /* binding */ shortcutAriaLabel; }
 });
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/keycodes/build-module/platform.js
 /**

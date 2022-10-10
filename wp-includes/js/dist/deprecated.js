@@ -31,7 +31,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // UNUSED EXPORTS: logged
 
-;// CONCATENATED MODULE: external ["wp","hooks"]
+// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/deprecated/build-module/index.js
 /**

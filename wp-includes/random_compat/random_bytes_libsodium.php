@@ -26,6 +26,8 @@
  * SOFTWARE.
  */
 
+use function Sodium\randombytes_buf;
+
 if (!is_callable('random_bytes')) {
     /**
      * If the libsodium PHP extension is loaded, we'll use it above any other
@@ -68,11 +70,11 @@ if (!is_callable('random_bytes')) {
                 $n = ($bytes - $i) > 1073741824
                     ? 1073741824
                     : $bytes - $i;
-                $buf .= \Sodium\randombytes_buf($n);
+                $buf .= randombytes_buf($n);
             }
         } else {
             /** @var string|bool $buf */
-            $buf = \Sodium\randombytes_buf($bytes);
+            $buf = randombytes_buf($bytes);
         }
 
         if (is_string($buf)) {

@@ -60,7 +60,7 @@ class WP_HTTP_Requests_Response extends WP_HTTP_Response {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @return \Requests_Utility_CaseInsensitiveDictionary Map of header name to header value.
+	 * @return Requests_Utility_CaseInsensitiveDictionary Map of header name to header value.
 	 */
 	public function get_headers() {
 		// Ensure headers remain case-insensitive.

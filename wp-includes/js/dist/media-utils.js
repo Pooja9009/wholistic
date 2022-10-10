@@ -55,11 +55,11 @@ __webpack_require__.d(__webpack_exports__, {
   "uploadMedia": function() { return /* reexport */ uploadMedia; }
 });
 
-;// CONCATENATED MODULE: external "lodash"
+// CONCATENATED MODULE: external "lodash"
 var external_lodash_namespaceObject = window["lodash"];
-;// CONCATENATED MODULE: external ["wp","element"]
+// CONCATENATED MODULE: external ["wp","element"]
 var external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/components/media-upload/index.js
 /**
@@ -483,13 +483,13 @@ class MediaUpload extends external_wp_element_namespaceObject.Component {
 
 /* harmony default export */ var media_upload = (MediaUpload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/components/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/components/index.js
 
 
-;// CONCATENATED MODULE: external ["wp","apiFetch"]
+// CONCATENATED MODULE: external ["wp","apiFetch"]
 var external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
-;// CONCATENATED MODULE: external ["wp","blob"]
+// CONCATENATED MODULE: external ["wp","blob"]
 var external_wp_blob_namespaceObject = window["wp"]["blob"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/utils/upload-media.js
 
@@ -703,7 +703,7 @@ function createMediaFromFile(file, additionalData) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/utils/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/utils/index.js
 
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/index.js

@@ -66,7 +66,7 @@ const hidePdfEmbedsOnUnsupportedBrowsers = () => {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-library/build-module/file/view.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/block-library/build-module/file/view.js
 /**
  * Internal dependencies
  */

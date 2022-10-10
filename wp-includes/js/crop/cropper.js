@@ -466,7 +466,7 @@ this.drawArea();
 Event.stop(e);
 }
 },transformCoords:function(_53,_54,_55,_56){
-var _57=new Array();
+var _57=[];
 if(_53<_54){
 _57[0]=_53;
 _57[1]=_54;

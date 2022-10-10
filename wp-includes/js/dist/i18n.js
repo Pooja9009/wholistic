@@ -550,7 +550,7 @@ function sprintf_sprintf(format) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@tannin/postfix/index.js
+// CONCATENATED MODULE: ./node_modules/@tannin/postfix/index.js
 var PRECEDENCE, OPENERS, TERMINATORS, PATTERN;
 
 /**
@@ -1550,7 +1550,7 @@ const createI18n = (initialData, initialDomain, hooks) => {
   };
 };
 
-;// CONCATENATED MODULE: external ["wp","hooks"]
+// CONCATENATED MODULE: external ["wp","hooks"]
 var external_wp_hooks_namespaceObject = window["wp"]["hooks"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/i18n/build-module/default-i18n.js
 /**
@@ -1700,7 +1700,7 @@ const isRTL = i18n.isRTL.bind(i18n);
 
 const hasTranslation = i18n.hasTranslation.bind(i18n);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/i18n/build-module/index.js
+// CONCATENATED MODULE: ./node_modules/@wordpress/i18n/build-module/index.js
 
 
 

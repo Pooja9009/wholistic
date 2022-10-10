@@ -573,7 +573,7 @@ class WP_Scripts extends WP_Dependencies {
 			return false;
 		}
 
-		/** @var \_WP_Dependency $obj */
+		/** @var _WP_Dependency $obj */
 		$obj = $this->registered[ $handle ];
 
 		if ( ! in_array( 'wp-i18n', $obj->deps, true ) ) {
@@ -613,7 +613,7 @@ class WP_Scripts extends WP_Dependencies {
 	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
 	localeData[""].domain = domain;
 	wp.i18n.setLocaleData( localeData, domain );
-} )( "{$domain}", {$json_translations} );
+} )( "{$domain}", {$json_translations} )
 JS;
 
 		if ( $display ) {

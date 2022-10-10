@@ -29,7 +29,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ build_module; }
 });
 
-;// CONCATENATED MODULE: external ["wp","i18n"]
+// CONCATENATED MODULE: external ["wp","i18n"]
 var external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/nonce.js
 /**
@@ -134,7 +134,7 @@ const createRootURLMiddleware = rootURL => (options, next) => {
 
 /* harmony default export */ var root_url = (createRootURLMiddleware);
 
-;// CONCATENATED MODULE: external ["wp","url"]
+// CONCATENATED MODULE: external ["wp","url"]
 var external_wp_url_namespaceObject = window["wp"]["url"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/preloading.js
 /**
