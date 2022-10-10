@@ -19,23 +19,6 @@ get_header();
 
     <body id="where-to-buy">
         <script type="text/Javascript">
-
-            //             function initMap() {
-//                const myLatLng = { lat: -25.363, lng: 131.044 };
-//                const map = new google.maps.Map(document.getElementById("map"), {
-//               zoom: 4,
-//               center: myLatLng,
-//   });
-
-//   new google.maps.Marker({
-//     position: myLatLng,
-//     map,
-//     title: "Hello World!",
-//   });
-// }
-
-// window.initMap = initMap;
-
             </script>
         <div class="where-banner"
             style="background-image:url('<?php bloginfo("template_directory");?>/img/whereBanner.png">
@@ -280,7 +263,7 @@ get_header();
                     </div>
                 </div>
 
-                <div id="googleMap" style="width:700px; height:355px; margin: 10px 0 0 3px;"> </div>
+                <div id="googleMap"> </div>
                 <script type="text/javascript"
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn4lGEsuCpRyQGQ5TWINi-C3PEtHS0XLc"></script>
                 <script type="text/javascript">

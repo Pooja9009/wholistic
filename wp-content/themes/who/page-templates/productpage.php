@@ -18,7 +18,7 @@ get_header();
 <main id="primary" class="site-main">
 
     <body id="product-page">
-    <!-- <?php
+        <!-- <?php
         $banner = get_field('banner');
         if( $banner ): ?>
         <div class="product-banner-img"
@@ -36,70 +36,50 @@ get_header();
             style="background-image:url('<?php bloginfo("template_directory");?>/img/curvedBgProduct.png">
             <p>No wondering. No guessing. Just quality supplements that give you confidence in your wellness journey.
             </p>
-            <label class="screen-reader-text" for="s">Search for:</label>
-            <input type="text" name="s" placeholder="Search Products" class="search-bar">
+            <div class="search-box">
+                <label class="screen-reader-text" for="s">Search for:</label>
+                <input type="text" name="s" placeholder="Search Products" class="search-bar">
+                <i class="fa fa-search search-icon"></i>
+            </div>
             <div class="filter-buttons">
                 <p style="padding-top:9px">Filter By:</p>
-                <div>
-                <i class="fa fa-close"></i>
-                <button id="bone-joint" onclick="fetchposts()">Bone & Joint</button></div>
-                <div id="postconatiner"></div>
-                <div><button>Foundational</button></div>
-                <div><button>Heart Health</button></div>
-                <div><button>Immune</button></div>
-                <div><button>Men’s Health</button></div>
-                <div><button>Sleep</button></div>
-                <div><button>Vision</button></div>
-                <div><button>Women’s Health</button></div>
+
+
+                <!-- <i class="fa fa-search"></i> -->
+                <!-- <button id="bone-joint" onclick="fetchposts()">Bone & Joint</button> -->
+                <div class="by-button"><button>Bone & Joint</button>
+                    <i class="fa fa-close button-close"></i>
+                </div>
+                <!-- <div id="postconatiner"></div> -->
+                <div class="by-button"><button>Foundational</button>
+                    <i class="fa fa-close button-close"></i>
+                </div>
+                <div class="by-button"><button>Heart Health</button>
+                    <i class="fa fa-close button-close"></i>
+                </div>
+                <div class="by-button"><button>Immune</button>
+                    <i class="fa fa-close button-close"></i>
+                </div>
+                <div class="by-button"><button>Men’s Health</button>
+                    <i class="fa fa-close button-close"></i>
+                </div>
+                <div class="by-button"><button>Sleep</button>
+                    <i class="fa fa-close button-close"></i>
+                </div>
+                <div class="by-button"><button>Vision</button>
+                    <i class="fa fa-close button-close"></i>
+                </div>
+                <div class="by-button"><button>Women’s Health</button>
+                    <i class="fa fa-close button-close"></i>
+                </div>
+
             </div>
         </div>
-        
-
-        <!-- <div class="all-products" id="table-data">
-        
-            <?php
-            $product = get_field('products');
-            if( $product ): ?>
-                <ul class="list" style = "display: flex;
-            flex-wrap: wrap;     justify-content: space-evenly;
-            padding: 0px 50px 0px 50px;">
-                    <?php foreach( $product as $post ): 
-
-                    // Setup this post for WP functions (variable must be named $post).
-                    setup_postdata($post); ?>
-                                   
-                    <div class="live_search" style = "width: 300px; ">
-                        <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg"> 
-                        <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />
-                        <div class="star-icon">
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star-o"></span>
-                            <span class="review"><?php the_field( 'review' ); ?> Reviews</span>
-                        </div>
-                        <h2><?php the_title(); ?></h2>
-                        <p class="product-text"><?php the_field( 'content' ); ?></p>
-                    </div>
-                    <?php endforeach; ?>
-                </ul>
-                <?php 
-                // Reset the global post object so that the rest of the page works correctly.
-                wp_reset_postdata(); ?>
-            <?php endif; ?>
-        
-        </div> -->
-
-
         <div class="all-products">
-        
-            <!-- $product = get_field('products');
-            if( $product ): ?> -->
             <div class="product">
 
-                  <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg"> 
-                  <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />        
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />
 
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -114,8 +94,8 @@ get_header();
                     that...</p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
-           
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/coQ10Product.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -127,11 +107,12 @@ get_header();
                         84 Reviews</span>
                 </div>
                 <h2>COQ10</h2>
-                <p class="product-text">Show your heart some love at the cellular level with highly absorbable,...
+                <p class="product-text">Show your heart some love at the cellular level with highly
+                    absorbable,...
                 </p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -142,7 +123,8 @@ get_header();
                     <span class="review">67 Reviews</span>
                 </div>
                 <h2>D3 + K2</h2>
-                <p class="product-text">WHOLISTICs D3 + K2 provides two essential bone-building nutrients in one...
+                <p class="product-text">WHOLISTICs D3 + K2 provides two essential bone-building nutrients in
+                    one...
                 </p>
             </div>
             <div class="product">
@@ -161,7 +143,7 @@ get_header();
                     body....</p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D32500UIproduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -172,11 +154,12 @@ get_header();
                     <span class="review">57 Reviews</span>
                 </div>
                 <h2>D3 2500 IU</h2>
-                <p class="product-text">Do your vitamin D3 levels need a boost? D3 2500IU packs a potent punch of
+                <p class="product-text">Do your vitamin D3 levels need a boost? D3 2500IU packs a potent punch
+                    of
                     the...</p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/folicAcidProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -187,11 +170,12 @@ get_header();
                     <span class="review">105 Reviews</span>
                 </div>
                 <h2>FOLIC ACID</h2>
-                <p class="product-text">Folic acid is extremely important for your health, especially during...</p>
+                <p class="product-text">Folic acid is extremely important for your health, especially during...
+                </p>
 
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -202,11 +186,12 @@ get_header();
                     <span class="review">51 Reviews</span>
                 </div>
                 <h2>K2</h2>
-                <p class="product-text">Strong bones protect your internal organs and provide support for your...
+                <p class="product-text">Strong bones protect your internal organs and provide support for
+                    your...
                 </p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -221,7 +206,7 @@ get_header();
                     possible,...</p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/lycopeneProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -232,11 +217,12 @@ get_header();
                     <span class="review">9 Reviews</span>
                 </div>
                 <h2>LYCOPENE+</h2>
-                <p class="product-text">Prostate conditions become increasingly common as men age, with up to 90%
+                <p class="product-text">Prostate conditions become increasingly common as men age, with up to
+                    90%
                     of...</p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/magnesiumProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -251,7 +237,7 @@ get_header();
                 </div>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/magnesiumProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -266,7 +252,7 @@ get_header();
                     often...</p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -281,7 +267,7 @@ get_header();
                     support...</p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/tumericProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>
@@ -295,7 +281,7 @@ get_header();
                 <p class="product-text">Turmeric has traditionally been used in herbal medicine to reduce...</p>
             </div>
             <div class="product">
-            <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
+                <img class="hover-img" src="<?php bloginfo("template_directory");?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
                 <div class="star-icon">
                     <span class="fa fa-star "></span>

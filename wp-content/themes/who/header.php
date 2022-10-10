@@ -48,16 +48,16 @@
 
             <nav id="site-navigation" class="main-navigation">
                 <a class="wholistic-logo" href="/who">
-                    <img src="<?php echo get_bloginfo('template_url') ?>/img/wholisticLogo.png" alt="wholistic Logo">
+                    <img src="<?php echo get_bloginfo('template_url') ?>/img/wholisticLogo.png" alt="wholistic Logo" width="89%">
                 </a>
                
                
                 <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'who' ); ?> -->
                 
                 <span class="dashicons dashicons-search hide-above-sm" id="search-sm">
-
-                
+               
                 </span>
+                <!-- <img src="<?php echo get_bloginfo('template_url') ?>/img/searchIcon.svg"> -->
                 <span class="dashicons dashicons-menu menu-icon menu-toggle hide-above-sm" aria-expanded="false"></span>
 
               
@@ -72,8 +72,8 @@
 				)
 			);
 			?>
-            <div id="search-bar" style="display:none">
-                <input id="search-icon" type="search" placeholder="Browse Products">
+            <div id="search-bar" class="search-1">
+                <input id="search-icon"  type="search" placeholder="Browse Products">
                 <i class="fa fa-close" id="search-close" style="cursor:pointer;"></i>
             </div>
          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
@@ -82,29 +82,28 @@
             $(document).ready(function () {
                 $('.search-btn').click(function () {
                     searchShown = true;
-                    $('.menu-menu-1-container').hide();
-                    $("#search-bar").show();
+                    $('.menu-menu-1-container').addClass("menu-hm");
+                    $("#search-bar").addClass("slidedown");
+                 // $('.wholistic-logo').css({"margin-left": "-644px"; , "padding-left": "unset;"});
                 });
                 $('#primary,#search-close').click(function () { 
-                    if(searchShown){
-                        searchShown=false;
-                   $("#search-bar").hide();
-                   $('.menu-menu-1-container').show();
+                   if(searchShown){
+                       searchShown=false;
+                   $("#search-bar").removeClass("slidedown");
+                   $('.menu-menu-1-container').removeClass("menu-hm");
                     }
                 });
                 
             });
             $(document).ready(function () {
                 $('#search-sm').click(function(){
-                    searchShown = true;
-                    $('.menu-icon,#search-sm').hide();
-                    $('#search-bar').show();
+                  
+                    $('.menu-icon,#search-sm').addClass("menu-hm");
+                    $('#search-bar').addClass("slidedown");
                 });
                 $("#primary,#search-close").click(function () {
-                    if(searchShown){
-                        searchShown=false;
-                    $('.menu-icon,#search-sm').show();
-                    }
+                    $('.menu-icon,#search-sm').removeClass("menu-hm");
+                    $("#search-bar").removeClass("slidedown");
                 });
             });
     </script>  
@@ -117,8 +116,6 @@
                 // We add pageYOffset for compatibility with IE.
                 if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
                     document.getElementsByTagName("header")[0].classList.add(className);
-                    // document.getElementsById("#search-icon").style.backgroundColor = "#d0a8a2";
-                    // document.getElementsByClassName(".search-btn").style.color = "black";
                 } else {
                     document.getElementsByTagName("header")[0].classList.remove(className);
                 }

@@ -20,70 +20,35 @@ get_header();
         <div class="slider">
             <div class="slide-track">
                 <div class="slide">
-                <img id="b12" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" />  
+                <img id="b12" src="<?php bloginfo("template_directory"); ?>/img/B12product.png" alt="B12"/>  
                 </div>
                 <div class="slide">
-                <img id="co" src="<?php bloginfo("template_directory"); ?>/img/coQ10Product.png" />
+                <img id="co" src="<?php bloginfo("template_directory"); ?>/img/coQ10Product.png" alt="C0Q10" />
                 </div>
                 <div class="slide">
-                <img id="magnesium" src="<?php bloginfo("template_directory"); ?>/img/magnesiumProduct.png" />
+                <img id="magnesium" src="<?php bloginfo("template_directory"); ?>/img/magnesiumProduct.png" alt="mag" />
                 </div>
                 <div class="slide">
-                <img id="zinc" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
+                <img id="zinc" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" alt="zinc"/>
                 </div>
-                <!-- <div class="slide">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/folicAcidProduct.png" />
-                </div> -->
-                <!-- <div class="slide">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
-                </div> -->
-                <!-- <div class="slide">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
-                </div> -->
-                <!-- <div class="slide">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
-                </div> -->
-                <!-- <div class="slide">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
-                </div> -->
-                <!-- <div class="slide">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
-                </div> -->
-                <!-- <div class="slide">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
-                </div> -->
-                <!-- <div class="slide">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
-                </div> -->
-                <!-- <div class="slide">
-                <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/D3+K2product.png" />
-                </div> -->
+               
             </div>
         </div>
         <div class="slide-show">
        
                 <img id="popup-image"/>
+                <p id="pop-up-text"></p>
                 <i class="fa fa-close" id="close"></i>
                 </div>
-
-
-                <!-- <div class="co-show">
-                <img id="co-img" src="<?php bloginfo("template_directory"); ?>/img/coQ10Product.png" />
-                </div>
-                <div class="ma-show">
-                <img id="magnesium" src="<?php bloginfo("template_directory"); ?>/img/magnesiumProduct.png" />
-                </div>
-                <div class="slide-show">
-                <img id="" src="<?php bloginfo("template_directory"); ?>/img/zincProduct.png" />
-                </div> -->
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script>
             $(document).ready(function () {
                 $('.slide img').click(function () { 
-                  console.log(this);
+                 // console.log(this);
                   $('#popup-image').attr("src", this.src);
-                    $('.slide-show').show(); 
+                  $('#pop-up-text').html(this.alt);
+                    $('.slide-show').show();
                 });
                 $('#close').click(function(){
                     $('.slide-show').hide(); 

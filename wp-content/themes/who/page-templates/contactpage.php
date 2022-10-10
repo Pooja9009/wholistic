@@ -38,7 +38,7 @@ get_header();
                         <label for="phone"></label>
                         <input type="number" id="phone" name="phone" placeholder="Phone Number">
                     </div>
-                    <textarea rows="4" cols="30" placeholder="Message"></textarea>
+                    <textarea id="message" rows="4" cols="30" placeholder="Message"></textarea>
                     <div class=submit>
                         <input type="submit" id="send-button" value="Send">
                     </div>

@@ -27,7 +27,7 @@ get_header();
     <body id="home-page">
         <!-- <div class="banner-img-hover"> -->
         <div class="banner-img-block complete-your-care"
-             style="background-image:url('<?php bloginfo("template_directory"); ?>/img/banner.png')"> 
+             style="background-image:url('<?php bloginfo("template_directory"); ?>/img/Component 28 – 1@2x.png')"> 
             <h1 class=>COMPLETE <br> YOUR CARE</h1>
                 <div class="browse-button">
                     <button>BROWSE THE GOODS</button>
@@ -48,7 +48,7 @@ get_header();
         <div class="curve-image-wrapper"
             style="background-image:url('<?php bloginfo("template_directory"); ?>/img/curvedHomeBackground.svg');">
             <div class="curve-image">
-                <p style="text-align: center; margin-top: 7rem;">We're committed to creating products that are
+                <p id="curve-text">We're committed to creating products that are
                     trustworthy, steeped in crystal-clear
                     scientific proof to
                     give you confidence, clarity and joy in your wellness journey. Whether you have specialized dietary
@@ -92,20 +92,20 @@ get_header();
                 <img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/homepageFirstcard.png">
                 <h3>Start Here</h3>
                 <p>Products to help you discover joy in your wellness journey.</p>
-                <button class="card-button">BROWSE PRODUCTS</button>
+                <button style="margin-top: 3rem" class="card-button">BROWSE PRODUCTS</button>
             </div>
             <div class="cards">
                 <img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/homepageSecondcard.png">
                 <h3>Why Supplement?</h3>
                 <p>Find out why supplements are a key piece of the wellness pie. Learn the ins and outs of
                     supplementation.</p>
-                <button class="card-button">LEARN MORE</button>
+                <button  style="margin-top: 5px" class="card-button">LEARN MORE</button>
             </div>
             <div class="cards">
                 <img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/homepageThirdcard.png">
                 <h3>Find Wholistic Products</h3>
                 <p>Browse Wholistic retailers near you.</p>
-                <button class="card-button">FIND US</button>
+                <button style="margin-top: 3.3rem" class="card-button">FIND US</button>
             </div>
         </div>
         <!-- </div> -->

@@ -4,7 +4,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 800px;
+        height: 470px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -12,8 +12,11 @@
     h1 {
         align-self: center;
         font-size: 4rem;
-        font-weight: 500;
+        font-weight: 400;
         color: #ffece5;
+        text-align: center;
+        text-shadow: 0.08em 0.04em 0.11em rgba(0, 0, 0, 0.4);
+       
     }
 
     .borderLine {
@@ -121,6 +124,9 @@
     }
 }
     @media(max-width:770px) {
+        .about-banner h1 {
+            font-size: 62px;
+        }
        .about-background{
         .row {
              flex-wrap:wrap-reverse;  

@@ -19,7 +19,7 @@ get_header();
 
     <body id="aboutPage">
         <div class="about-banner"
-            style="background-image:url('<?php bloginfo("template_directory"); ?>/img/aboutBanner.png')">
+            style="background-image:url('<?php bloginfo("template_directory"); ?>/img/aboutBanner.png)">
             <h1>WHO ARE WE?</h1>
         </div>
         <div class="borderLine">

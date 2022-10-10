@@ -3,7 +3,7 @@
     position: sticky;
     top: 0px;
     left: 0px;
-    height: 193px;
+    height: 182px;
     font-weight: 500;
     opacity: 1;
     z-index: 1;
@@ -11,13 +11,17 @@
 }
 
 .inverted {
-    background-color: rgba(208,168,162,255);
+    background-color: rgba(208, 168, 162, 255);
     backdrop-filter: blur(43px);
-    #search-icon {
-        background-color: #d0a8a2;
+    .search-1 {
+        background-color:rgba(208, 168, 162, 255);
+        #search-icon {
+            background-color:rgba(208, 168, 162, 255);
+        }
     }
+    
     .search-btn {
-        color:black;
+        color: black;
     }
 }
 
@@ -25,12 +29,20 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 
     .wholistic-logo {
         width: 120px;
-        padding-top: 2rem;
+        padding-top: 37px;
+        padding-left: 70px;
 
     }
+}
+// .menu-menu-1-container {
+//     background-color:  #fcd0c3;
+// }
+.menu-hm {
+    visibility: hidden;
 }
 
 .main-navigation li {
@@ -50,7 +62,9 @@
 .nav-menu li a {
     font-size: 20px;
     color: #282828;
-    font: normal normal 300 18px/22px Oswald;
+    font: normal normal 300 17px/22px Oswald;
+    position: relative;
+    transition: all 0.4s ease-in-out;
 }
 
 .nav-menu li a:hover {
@@ -60,11 +74,11 @@
 
 .menu-icon {
     font-size: 1.5rem !important;
-    color: red;
+    color: #F14946;
 }
 
 .hide-above-sm {
-    color: red;
+    color: #F14946;
 }
 
 .search-btn {
@@ -76,88 +90,232 @@
         font-family: dashicons;
         transform: rotateY(180deg);
         font-weight: 100;
-        padding-right: 0.5rem;
+        // padding-right: 0.5rem;
         cursor: pointer;
+        margin-left: -33px;
+        margin-top: -3px;
     }
 
     a {
         visibility: hidden;
     }
 }
-.input::-webkit-input-placeholder {
-    color: black;
-    font-weight: bold;
-}
+
+// .input::-webkit-input-placeholder {
+//     color: red;
+//     font-weight: bold;
+//     font-size:16px;
+// }
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
-#search-icon {
-    background-color: #FCD0C3;
-    border: none;
-    width: 300px;
 
-    &:focus {
-        outline: none;
+.search-1 {
+    width: 710px;
+    position: absolute;
+    top: -30px;
+    right: 116px;
+    transition: top 0.7s ease-in-out;
+    background-color: #fcd0c3;
+   
+    #search-icon {
+       // background-color: #FCD0C3;
+       background-color: #fcd0c3;
+        border: none;
+        width: 590px;
+        &:focus {
+            outline: none;
+        }
     }
 }
+ .slidedown {
+        top:70px;
+    }
 
-@media(max-width:600px) {
+@media(max-width:650px) {
+    .site-header {
+        position: unset;
+    }
+
+    #home-page .banner-img-block {
+        height: 452px;
+    }
+
+    .main-navigation .wholistic-logo {
+        padding-top: 66px;
+        padding-left: 4px;
+    }
+   
+
+    .site-header {
+        height: 168px;
+
+        .wholistic-logo {
+            width: 97px;
+        }
+    }
     .menu-menu-1-container {
-        width: 87%;
         position: absolute;
-        top: 182px;
+        top: 150px;
+        width: 76%;
+        text-align: left;
         background-color: #fcd0c3;
+        ul {
+            border-top: 3px solid #F14946;
+        }
 
         .nav-menu li {
             padding-top: 0;
+
         }
 
         .nav-menu li a {
             padding: 0.4rem;
+            font-weight: 500;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.03);
         }
 
         .search-btn {
             display: none;
         }
     }
+    .search-1 {
+        width: 181px;
+        position: absolute;
+        top: -69px;
+        right: 46px;
+        transition: top 0.7s ease-in-out;
+        background-color: #fcd0c3;
+        #search-icon {
+            background-color: #fcd0c3;
+            border: none;
+            width: 151px;
+        }
+    }
+    .slidedown {
+        top: 42px;
+    }
+    
 
     #search-icon {
         background-color: #FCD0C3;
         border: none;
         width: 140px;
-}
-.wholistic-logo img {
-    width:90%;
-}
-#search-sm {
-    padding-left: 44px;
-    padding-top: 10px;
-}
-}
-@media (min-width:765px ) and (max-width:800px) {
-    .nav-menu li {
-        padding: 22px 30px 0 0;
+        padding-top: 44px;
     }
-    #primary-menu {
-        padding-left: 5rem;
+
+    .wholistic-logo img {
+        width: 56%;
     }
+
+    #search-sm {
+        padding-left: 93px;
+        padding-top: 51px;
+    }
+
+    .menu-icon {
+        padding-right: 2px;
+        padding-top: 36px;
+    }
+}
+
+@media (min-width:765px) and (max-width:800px) {
+    .site-header {
+        position: unset;
+    }
+
+    #home-page .banner-img-block {
+        height: 459px;
+        padding: 1rem 0 0 3rem;
+    }
+
+    .main-navigation .wholistic-logo {
+        width: 120px;
+        padding-top: 63px;
+        padding-left: 18px;
+    }
+
+    .wholistic-logo img {
+        width: 56%;
+    }
+
+    .menu-icon {
+
+        padding-top: 36px;
+        margin-right: -9px;
+    }
+
+    #search-sm {
+        padding-left: 202px;
+        padding-top: 51px;
+        margin-right: -115px;
+    }
+    .search-1 {
+        width: 200px;
+        position: absolute;
+        top: -28px;
+        right: 116px;
+        transition: top 0.7s ease-in-out;
+        background-color: #fcd0c3;
+        #search-icon {
+            width: 177px;
+        }
+    }
+    .slidedown {
+        top: 80px;
+    }
+
+    .main-navigation li {
+        padding: 1rem 2rem 0 2rem;
+    }
+
+    .menu-menu-1-container {
+
+        position: absolute;
+        top: 150px;
+        width: 76%;
+        text-align: left;
+        background-color: #fcd0c3;
+
+        ul {
+            border-top: 3px solid #F14946;
+        }
+
+        li a {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        a {
+            padding: 0px 5%;
+            border-bottom: 1px solid rgba(0, 0, 0, .03);
+        }
+
+        .search-btn {
+            visibility: hidden;
+        }
+    }
+   
+
 }
 
 //tablet 
 
 @media (min-width:850px) {
     .nav-menu li {
-        padding: 0 3rem 0 0;
+        padding: 1rem 3rem 0 0;
+
     }
 
     .current_page_item a {
         color: #FFECE5 !important;
         border-radius: 37px !important;
         background: #F14946 !important;
-        padding: 4px 20px !important;
+        padding: 7px 20px !important;
         //text-decoration: none;
     }
 }

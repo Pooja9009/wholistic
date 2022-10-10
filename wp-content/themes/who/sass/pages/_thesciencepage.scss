@@ -4,7 +4,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 590px;
+        height: 480px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -14,6 +14,8 @@
         font-size: 4rem;
         font-weight: 400;
         color: #ffece5;
+        text-align: center;
+        text-shadow: 0.08em 0.04em 0.11em rgba(0, 0, 0, 0.4);
     }
 
     .borderLine {
@@ -52,12 +54,24 @@
 
             .card {
                 width: 300px;
-                border: 1px solid grey;
+                border: 1px solid lightgrey;
                 border-radius: 8px;
                 box-shadow: 8px 8px #fcd0c3;
                 width: 286px;
                 height: 420px;
+                overflow:hidden;
                 text-align: center;
+
+                &:hover {
+                    box-shadow: 15px 15px 0px 0px #fcd0c3;
+                }
+                img {
+                    transition: 0.5s;
+                }
+        
+                &:hover img {
+                    transform: scale(1.1);
+                }
                 p,h2 {
                     margin:0rem;
                     text-align: center;
@@ -114,8 +128,22 @@
             box-shadow: 8px 8px #fcd0c3;
             width: 295px;
             height: 372px;
+            overflow: hidden;
             text-align: center;
             background-color: white;
+            transition: box-shadow 300ms ease 0ms;
+
+            &:hover {
+                box-shadow: 15px 15px 0px 0px #fcd0c3;
+            }
+            img {
+                transition: 0.5s;
+            }
+    
+            &:hover img {
+                transform: scale(1.1);
+            }
+          
             p,h2 {
                 margin:0rem;
             }
@@ -166,6 +194,16 @@
             background-color: #fcd0c3;
             color: black;
             cursor: pointer;
+        }
+    }
+    @media (max-width:500px) {
+        .science-banner {
+            height: 380px;
+            background-position: center bottom 0px;
+        }
+        .science-banner h1 {
+            font-size:55px;
+
         }
     }
     @media(min-width:300px) {

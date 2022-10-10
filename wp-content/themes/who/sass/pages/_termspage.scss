@@ -72,17 +72,21 @@ $animationSpeed: 4s;
     height: 327px;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     background-color: whitesmoke;
-
-    // transition: ease 5s;
+#pop-up-text {
+    position: absolute;
+    bottom: 11rem;
+    left: 19rem;
+}
     #close {
         position: absolute;
-        right: 25px;
-        top: 13px;
-        background-color: bisque;
+        right: 33px;
+        top: 17px;
+       
+        font-size: small;
+        background-color:#FCD0C3;
+        border-radius: 142px;
+        height: 9px;
+        width: 8px;
+        padding: 5px;
     }
-
-
-
-
-
 }

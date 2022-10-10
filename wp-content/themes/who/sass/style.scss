@@ -129,6 +129,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import "pages/termspage";
 
+@import "pages/policypage";
+
+@import "animate.css";
+
+
 
 
 * {
@@ -137,7 +142,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	font-size: 20px;
 }
 
-@media (min-width:760px) {
+@media (min-width:780px) {
     .hide-above-sm {
         display: none !important;
 		

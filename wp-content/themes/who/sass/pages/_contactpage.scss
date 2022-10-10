@@ -5,27 +5,46 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60rem;
+   // height: 60rem;
+   height: 1308.9px;
     margin-bottom:-3rem;
     }
     h1 {
         text-align: center;
         color:#F14946;
-        font-size: 2rem;
-        font-weight: 500;
+        font-size: 33px;
+        font-weight: 450;
     }
-    #fname, #lname, #email, #phone,textarea{
-        padding: 0.6rem 0.4rem;
+    #fname, #lname, #email, #phone{
+       
+        padding-right: 103px;
+    padding-top: 6px;
+    padding-bottom: 13px;
+    padding-left: 12px;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    border-width: 1px;
+    border-color: #fcd0c3;
+    margin-right: 0.5rem;
+    margin-bottom: 8px;
+    }
+
+    #message {
+        width: 97%;
         border-radius: 10px 10px 10px 10px;
         overflow: hidden;
         border-width: 1px;
         border-color: #fcd0c3;
-        margin-right: 0.5rem;
     }
+
+
+
+
     ::placeholder {
         padding-left:0.4rem;
        font-size: 15px;
        font-family: 'Oswald', sans-serif;
+       color: #8c8c90;
     }
 //    input:focus {
 //     background-color: grey;
@@ -38,7 +57,8 @@
     .name-info,.mail-contact-info{
         margin-bottom: 0.5rem;
         input:focus {
-            background-color: rgb(218, 191, 195);
+            background-color: #e4d3c8;
+            outline:none;
            }
            input:active {
             border-color: #fcd0c3;
@@ -50,20 +70,59 @@
         background-color:#F14946;
         color:#FCD0C3;
         border-radius: 2rem;
-        padding: 0.8rem  3rem;
+        padding: 0.6rem 2rem;
+    }
+    @media (min-width:765px) and (max-width:800px) {
+     .contact-form {
+            padding-left: 81px;
+            padding-top: 2rem;
+        }
     }
     @media(max-width:425px) {
         .contact-form {
-            padding-left:2rem;
-            width:80%;
-            #fname,#lname,#email,#phone {
-                margin: 0.2rem 0;
-                width: 100%;
-            }
-            .name-info {
-                padding-top:0.2rem;
-                margin-bottom: -0.01rem;
-            }
+            padding-left: 3.5rem;
+            padding-top: 4rem;
+        }
+        h1 {
+            margin-left: -74px;
+            font-size: 32px;
+        }
+        #message {
+            width: 81%;
+        }
+        #send-button {
+            margin-top: 5px;
+    margin-right: 59px;
+
+        }
+        .name-info,.mail-contact-info {
+            margin-bottom: unset;
         }
     }
+    @media(max-width:378px) {
+        .contact-form {
+            padding-left: 2.2rem;
+            padding-top: 4rem;
+        }
+        #message {
+            width: 87%;
+        }
+        #send-button {
+            margin-right: 32px;
+        }
+}
+@media(max-width:322px) {
+    #fname,#lname,#email,#phone {
+        padding-right: 69px;
+    }
+    .contact-form {
+        padding-left: 1.6rem;
+    }
+    #message {
+        width: 88%;
+    }
+
+
+}
+
 }

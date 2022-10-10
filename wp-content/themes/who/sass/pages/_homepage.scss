@@ -19,8 +19,8 @@
         }
 
         h1 {
-            color: white;
-            font-size: 80px;
+           
+            font-size: 73px;
             font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
             font-weight: 400;
             color: #ffece5;
@@ -43,11 +43,6 @@
                 text-align: center;
             }
 
-            .banner-img-block:hover {
-                background-size: 135% auto;
-                transition: 0.7s ease-in-out;
-            }
-
             button:hover {
                 background-color: #fcd0c3;
                 color: black;
@@ -56,6 +51,7 @@
         }
 
     }
+
 
     .borderLine {
         border-bottom: 10px solid #f14946;
@@ -70,7 +66,8 @@
         width: 96%;
 
         p {
-            padding: 0 15%;
+            font-size: 18px;
+            padding: 0 23%;
             margin-bottom: 0.5rem;
         }
 
@@ -90,21 +87,29 @@
         background-repeat: no-repeat;
         background-size: 70%;
         padding-bottom: 10rem;
+        margin-top: -6rem;
 
         .curve-image {
             display: flex;
             width: 60%;
             align-items: center;
-            margin-left: 23%;
+            margin-left: 20%;
+
+            #curve-text {
+                text-align: center;
+                font-size: 18px;
+                padding: 0px 39px;
+                padding-top: 10rem;
+            }
 
             img {
                 position: relative;
                 top: 0;
-                transition: top ease 0.5s;
+                transition: top ease 0.6s;
             }
 
             img:hover {
-                top: -10px;
+                top: -14px;
             }
         }
     }
@@ -125,7 +130,7 @@
         .testimonials-column-wrapper {
             display: flex;
             flex-wrap: wrap;
-           
+
             justify-content: center;
             gap: 4rem;
 
@@ -136,11 +141,11 @@
                 img {
                     position: relative;
                     top: 0;
-                    transition: top ease 0.5s;
+                    transition: top ease 0.2s;
                 }
 
                 img:hover {
-                    top: -12px;
+                    top: -14px;
                 }
 
                 p {
@@ -159,7 +164,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 4rem;
+        gap: 3rem;
         padding: 4rem 0;
     }
 
@@ -167,10 +172,11 @@
         display: flex;
         flex-direction: column;
         //justify-content: space-between;
-        border: 2px solid grey;
+        border: 2px solid lightgray;
         border-radius: 8px;
         box-shadow: 8px 8px #fcd0c3;
-        width: 300px;
+        width: 290px;
+        overflow:hidden;
         height: auto;
         text-align: center;
         transition: box-shadow 300ms ease 0ms;
@@ -184,7 +190,10 @@
         }
 
         h3 {
-            color: #f14946
+            font-weight: 700;
+            font-size: 23px;
+            color: #f14946;
+            text-align: center;
         }
 
         .card-img {
@@ -202,6 +211,13 @@
             margin-left: 0.5rem;
             color: #fcd0c3;
             font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+
+            &:hover {
+                color: #282828;
+                background-image: initial;
+                cursor: pointer;
+                background-color: #fcd0c3;
+            }
         }
     }
 
@@ -213,12 +229,8 @@
             background-position: center bottom 0px;
         }
 
-        .site-header {
-            height: 168px;
-
-            .wholistic-logo {
-                width: 5rem;
-            }
+        .cards {
+            width: 253px;
         }
 
         .banner-img-block h1 {
@@ -239,35 +251,37 @@
             }
         }
     }
-    @media (min-width: 768px) {
-        .banner-img-block {
-            background-size: 105% auto;
-    transition: 0.7s ease-in-out;
-        }
-        .banner-img-block:hover {
-            background-size: 100% auto;
-        }
-    }
+
+    // @media (min-width: 768px) {
+    //     .banner-img-block {
+    //         background-size: 165% auto;
+    // transition: 0.7s ease-in-out;
+    //     }
+    //     .banner-img-block:hover {
+    //         background-size: 100% auto;
+    //     }
+    // }
 
     @media(min-width: 800px) and (max-width: 1500px) {
         .banner-img-block {
-            background-size: 100% auto;
-            transition: 0.7s ease-in-out; 
+            background-size: 110% auto;
+            transition: 0.7s ease-in-out;
             background-position: right 0px bottom 10%;
         }
+
         .banner-img-block:hover {
             background-size: 105% auto;
         }
     }
-    
-    
-    
+
+
+
     @media (max-width: 330px) {
         .curve-image {
             p {
                 width: 125%;
             }
-    
+
             img {
                 width: 15rem;
             }
@@ -296,4 +310,3 @@
     //     }
     // }
 }
-

@@ -5,16 +5,18 @@
         background-repeat: no-repeat;
         background-size: cover;
         justify-content: center;
-        height: 550px;
+        height: 488px;
     }
 
     h1 {
         align-self: center;
         font-size: 5rem;
-        color: white;
+        color: #ffece5;
+        text-align: center;
         font-size: 4rem;
         font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
         font-weight: 400;
+        text-shadow: 0.08em 0.04em 0.11em rgba(0, 0, 0, 0.4);
     }
 
     .borderLine {
@@ -28,20 +30,50 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        justify-content: center;
         align-items: center;
         height: 440px;
         padding-bottom: 3rem;
+        padding-top: 36px;
+
+        .search-box {
+            position: relative;
+            width: 60%;
+
+            .search-icon {
+                position: absolute;
+                right: 26px;
+                top: 10px;
+                transform: rotate(90deg);
+                background-color: #fcd0c3;
+                height: 36px;
+                width: 26px;
+                padding-top: 5px;
+                padding-left: 9px;
+                border-radius: 7px;
+                color: #f25a56;
+                font-size: 18px;
+                //font-weight: 400;
+            }
+        }
 
         .search-bar {
-            width: 55%;
-            padding: 0.4rem;
+            width: 92%;
             border: 1px solid #fcd0c3;
+            padding: 13px 30px;
+        }
+        .search-bar:focus {
+            outline: none;
+        }
+        ::placeholder {
+            font-weight: 500;
+            color: rgb(27, 23, 23);
+        }
+
+        p {
+            font-size: 18px;
         }
     }
-p {
-    font-size: 16px;
-}
+
     .filter-buttons {
         display: flex;
         align-items: center;
@@ -49,97 +81,115 @@ p {
         flex-wrap: wrap;
         margin-top: 2rem;
         box-sizing: unset !important;
-       
-    button {
-        padding: 6px 22px;
-        background-color: #FFFFFF;
-        border-radius: 5px;
-        font-size: 16px;
-        color:#88898D;
-        border-width: 0;
-        font-weight: 300;
-        &:hover {
-            background-color: #fcd0c3;
-        }
-        &:focus {
-            background-color: #f14946;
-            color:white;
+
+        button {
+            padding: 6px 22px;
+            background-color: #FFFFFF;
             border-radius: 5px;
+            font-size: 16px;
+            color: #88898D;
+            border-width: 0;
+            font-weight: 300;
+           
+            &:hover {
+                background-color: #fcd0c3;
+            }
+
+            &:focus {
+                background-color: #f14946;
+                color: white;
+                border-radius: 5px;
+               
+            }
+            &:focus +  i {
+                display:inline;
+            }
+        }
+
+        .by-button {
+            position: relative;
+            i {
+                display:none;
+            }
+           
+        }
+
+        .button-close {
+            display: none;
+            font-size: 11px;
+            background: #2B2A29;
+            border-radius: 51%;
+            color: white;
+            width: 12px;
+            height: 13px;
+            padding-top: 2px;
+            padding-left: 3px;
+            position: absolute;
+            right: 2px;
+            top: -3px;
         }
     }
-     
-
-    
-}
     .all-products {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding: 3rem;
+
         .product {
             width: 17rem;
             margin-bottom: 2rem;
-
-            h2:hover {
-                cursor: pointer;
-                color:#fcd0c3;
-
-            }
+            transition: 0.5s ease-in-out all;
+            // .product-img {
+             // transition: 0.5s ease-in-out all;
+            // }
             .hover-img {
-              border-radius: 20px;
-              display: none;
-         }
-            &:hover .hover-img {
-                display:block;
-                cursor:pointer;
-                width: 300px;
-                height: 350px;
-               
+                border-radius: 20px;
+                display: none;
+                box-shadow: 2px 2px 8px #707070;
+                transition: 0.5s ease-in-out all;
+                //transform: scale(1.1);
             }
-            
-            &:hover .product-img {
-               display:none;
-            }
-            
-            
-            // .hover-img {
-            //     border-radius: 20px;
-            //     display: none;
-            //   }
-              
-            //   &:hover .product-img {
-            //       transform: scale(1.1);
-            //     //   background-image: attr(data-image-src);
-                  
-            //   }
-              
 
+            &:hover .hover-img {
+                display: block;
+                cursor: pointer;
+               width: 300px;
+             height: 350px;
+            }
+            &:hover .product-img {
+                display: none;
+            }
+            &:hover h2 {
+                cursor: pointer;
+                color: #fcd0c3;
+            }
+          
             .product-text {
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 32px;
                 padding: 0px 5px;
             }
+
             .star-icon {
                 font-size: 15px;
+                color: black;
+
                 .review {
                     font-weight: 300;
-                    font-size: 15px;
-                }
-            }
-            }
-           
-        }
-        @media(max-width:450px) {
-            .product-banner-img{
-                h1 {
-                    font-size: 2.8rem;
-                    text-align: center;
+                    font-size: 14px;
                 }
             }
         }
-    
+
     }
 
-    
-    
+    @media(max-width:450px) {
+        .product-banner-img {
+            h1 {
+                font-size: 2.8rem;
+                text-align: center;
+            }
+        }
+    }
+}
