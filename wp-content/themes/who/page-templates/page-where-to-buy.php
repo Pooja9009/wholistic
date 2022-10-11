@@ -9,6 +9,7 @@
 		$address2    = get_field( 'address2' );
 		$address3    = get_field( 'address3' );
 		$coordinates = get_field( 'map' );
+
 		$lat = $coordinates['lat'];
 		$lng = $coordinates['lng'];
 		$storeData[] = compact( 'title', 'address1', 'address2','address3','coordinates', 'lat','lng' );?>

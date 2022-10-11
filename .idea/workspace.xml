@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c862357e-5f80-4e48-b703-eb8e0a61f0c0" name="Changes" comment="try">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/page-where-to-buy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/wheretobuypage.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/wheretobuypage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/sass/pages/_wheretobuypage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/sass/pages/_wheretobuypage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/page-where-to-buy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/page-where-to-buy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/sass/pages/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/sass/pages/_footer.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +118,7 @@
       <workItem from="1665367462176" duration="687000" />
       <workItem from="1665374487346" duration="10451000" />
       <workItem from="1665391954990" duration="1528000" />
-      <workItem from="1665459263014" duration="15919000" />
+      <workItem from="1665459263014" duration="19747000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1661334619995</created>
