@@ -269,13 +269,13 @@ add_action("wp_ajax_nopriv_filter", "filter");
 
 function filter() {
 	var_dump( 'here' );
-//	$cat_ids = $_REQUEST['category'];
+	$cat_ids = $_REQUEST['category'];
 //    $csv_cats = implode(", ", $cat_ids);
 //    echo "Showing Results for (Term ID):".$csv_cats;
     $args = array(
         'post_type' => 'my_product',
         'status' => 'publish',
-//        'category__in' => $cat_ids
+        'category__in' => $cat_ids
     );
     // the query
     $the_query = new WP_Query( $args ); ?>
@@ -297,4 +297,11 @@ function filter() {
 
 }
 
+
+add_filter( 'acf/fields/google_map/api', 'my_acf_google_map_api' );
+function my_acf_google_map_api( $args ) {
+	$args['key'] = 'AIzaSyDtvccU2yCjfCbqiO2T_CIKP2txqGOMfZA';
+
+	return $args;
+}
 

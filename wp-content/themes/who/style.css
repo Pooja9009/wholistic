@@ -1667,17 +1667,18 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 590px;
+	height: 480px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
 #where-to-buy h1 {
 	align-self: center;
-	color: white;
-	font-size: 4rem;
-	font-weight: 500;
+	text-align: center;
+	font-size: 78px;
+	font-weight: 400;
 	color: #ffece5;
+	text-shadow: 0.08em 0.04em 0.11em rgba(0, 0, 0, 0.4);
 }
 
 #where-to-buy .borderLine {
@@ -1685,11 +1686,15 @@ p {
 }
 
 #where-to-buy .map-block {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 	padding-left: 8.5rem;
 	padding-top: 3.5rem;
 }
 
-#where-to-buy .map-block p, #where-to-buy .map-block b {
+#where-to-buy .map-block p,
+#where-to-buy .map-block b {
 	font-size: 13px;
 	line-height: 21px;
 }
@@ -1700,6 +1705,7 @@ p {
 	flex-wrap: wrap;
 	gap: 16px;
 	padding: 0.5rem;
+	width: 986px;
 }
 
 #where-to-buy .map-block .map-first-block label {
@@ -1723,9 +1729,10 @@ p {
 	height: 500px;
 }
 
-#where-to-buy .map-block .map-second-block #map {
-	margin-top: 0.5rem;
-	color: #f14946;
+#where-to-buy .map-block .map-second-block #googleMap {
+	width: 700px;
+	height: 355px;
+	margin: 10px 0 0 3px;
 }
 
 #where-to-buy .map-block .map-second-block .locations {
@@ -1759,6 +1766,7 @@ p {
 	padding: 3rem;
 	flex-wrap: wrap;
 	background-color: #FFECE5;
+	margin-bottom: -25px;
 }
 
 #where-to-buy .last-block h3 {
@@ -1777,15 +1785,42 @@ p {
 	padding: 0.8rem;
 }
 
-@media (max-width: 1030px) {
+@media (min-width: 750px) and (max-width: 900px) {
 	#where-to-buy .map-block {
-		padding: 3rem 1rem 0 1rem;
+		padding-left: 3.5rem;
+	}
+	#where-to-buy .map-block .map-first-block {
+		width: 584px;
+	}
+	#where-to-buy .map-block .map-second-block .locations {
+		width: unset;
+	}
+	#where-to-buy .map-block .map-second-block #googleMap {
+		width: 434px;
 	}
 }
 
-@media (max-width: 1030px) and (max-width: 430px) {
-	#where-to-buy .map-second-block {
+@media (max-width: 450px) {
+	#where-to-buy .map-block {
+		flex-direction: unset;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	#where-to-buy .map-block .map-second-block {
 		flex-direction: column;
+	}
+	#where-to-buy .map-block .map-second-block #googleMap {
+		width: 355px;
+	}
+}
+
+@media (max-width: 400px) {
+	#where-to-buy .map-block {
+		padding-left: 42px;
+		margin-bottom: 50px;
+	}
+	#where-to-buy .map-block .map-second-block #googleMap {
+		width: 289px;
 	}
 }
 

@@ -57,3 +57,18 @@
 }
 // eslint-disable-next-line no-undef
 ( jQuery ) );
+
+//	=================================================================================================================
+
+// jQuery('document').ready(function($) {
+// 	// Google Maps
+//
+// 	function init() {
+// 		// ***HERE I NEED TO PUT MY DATA***
+// 		var mapdata = [(
+// 			name:
+// 			address:
+// 			latlong:
+// 		)]
+// 	}
+// })

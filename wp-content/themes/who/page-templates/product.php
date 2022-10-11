@@ -2,7 +2,6 @@
             flex-wrap: wrap;     justify-content: space-evenly;
             padding: 0px 50px 0px 50px;">
 
-
             <div class="live_search" id="ajax" style="width: 300px; ">
                 <img class="hover-img" src="<?php bloginfo("template_directory"); ?>/img/productHover.jpg">
                 <img class="product-img" src="<?php bloginfo("template_directory"); ?>/img/B12product.png"/>
