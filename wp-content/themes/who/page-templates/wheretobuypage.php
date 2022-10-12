@@ -263,7 +263,7 @@ get_header();
                     </div>
                 </div>
 
-                <div id="googleMap"> </div>
+                <div id="googleMap"> 
                 <script type="text/javascript"
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtvccU2yCjfCbqiO2T_CIKP2txqGOMfZA&libraries=places">
                 </script>
@@ -298,6 +298,16 @@ get_header();
                     console.warn(`ERROR(${err.code}): ${err.message}`);
                 }
                 navigator.geolocation.getCurrentPosition(success, error, options);
+
+
+
+
+
+
+
+
+
+                
 
                 // var map;
                 var grayStyles = [{
@@ -351,31 +361,32 @@ get_header();
 
                 function setMarkers(locations) {
                     var infowindow = new google.maps.InfoWindow();
-
+                     var marker;
                     for (var i = 0; i < locations.length; i++) {
                         var location = locations[i];
                         var myLatLng = new google.maps.LatLng(location[1], location[2]);
                         if (location[0] == 'Start Location') {
-                            var marker = new google.maps.Marker({
+                             marker = new google.maps.Marker({
                                 position: myLatLng,
                                 map: map,
                                 icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
-                                title: location[0],
+                               // title: location[0],
                             });
-                        } else {
-                            var marker = new google.maps.Marker({
+                        } 
+                        else {
+                             marker = new google.maps.Marker({
                                 position: myLatLng,
                                 map: map,
                                 icon: '<?php bloginfo("template_directory"); ?>/img/redMarker.svg',
-                                title: location[0],
+                                //title: location[0],
                             });
                         }
-                        google.maps.event.addListener(marker, 'click', (function(marker) {
+                        google.maps.event.addListener(marker, 'click', (function(marker,i) {
                             return function() {
-                                infowindow.setContent(location[0]);
+                                infowindow.setContent(locations[i][0]);
                                 infowindow.open(map, marker);
                             }
-                        })(marker));
+                        })(marker,i));
 
                         // Push marker to markers array
                         markers.push(marker);
@@ -402,6 +413,7 @@ get_header();
                 }
                 google.maps.event.addDomListener(window, 'load', initialize);
                 </script>
+                </div>
             </div>
         </div>
 
