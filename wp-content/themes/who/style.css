@@ -1888,7 +1888,7 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	padding-left: 8.5rem;
+	padding-left: 7.5rem;
 	padding-top: 3.5rem;
 }
 
@@ -1896,6 +1896,15 @@ textarea {
 #where-to-buy .map-block b {
 	font-size: 13px;
 	line-height: 21px;
+}
+
+#where-to-buy .map-block .pac-item {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+#where-to-buy .map-block .gm-svpc, #where-to-buy .map-block .gm-style-mtc {
+	display: none;
 }
 
 #where-to-buy .map-block .map-first-block {
@@ -1907,12 +1916,24 @@ textarea {
 	width: 986px;
 }
 
+#where-to-buy .map-block .map-first-block ::placeholder {
+	color: white;
+}
+
 #where-to-buy .map-block .map-first-block label {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 #where-to-buy .map-block .map-first-block #location {
-	padding: 0;
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	padding-left: 15px;
+	padding-right: 8px;
+}
+
+#where-to-buy .map-block .map-first-block #location:focus {
+	outline: none;
 }
 
 #where-to-buy .map-block .map-first-block select {
@@ -1920,6 +1941,15 @@ textarea {
 }
 
 #where-to-buy .map-block .map-first-block select option {
+	font-size: 14px;
+}
+
+#where-to-buy .map-block .map-first-block #submit {
+	border: 1px solid #d2d2d2;
+	font-size: 12px;
+}
+
+#where-to-buy .map-block .pac-conatiner {
 	font-size: 14px;
 }
 
@@ -1956,6 +1986,10 @@ textarea {
 
 #where-to-buy .map-block .map-second-block .locations .location-details .direction {
 	color: #f14946;
+}
+
+#where-to-buy .gm-style-iw-d {
+	font-size: 12px !important;
 }
 
 #where-to-buy .last-block {
