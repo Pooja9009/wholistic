@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c862357e-5f80-4e48-b703-eb8e0a61f0c0" name="Changes" comment="try">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/map.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/page-where-to-buy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/page-where-to-buy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/sass/pages/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/sass/pages/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/page-where-to-buy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/SliderLocation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/wheretobuypage.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/wheretobuypage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +68,11 @@
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\twentytwentytwo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.page-where-to-buy.php">
-    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/wordpress/wp-content/themes/index.php" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.SliderLocation.php">
+    <configuration name="SliderLocation.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/acf.php/wp-content/themes/who/page-templates/SliderLocation.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="page-where-to-buy.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/acf.php/wp-content/themes/who/page-templates/page-where-to-buy.php" useBuiltInWebServerPort="true">
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/wordpress/wp-content/themes/index.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="functions.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/wp-content/themes/wholistic/functions.php">
@@ -83,7 +83,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.page-where-to-buy.php" />
+        <item itemvalue="JavaScript Debug.SliderLocation.php" />
         <item itemvalue="PHP Script.product.php" />
         <item itemvalue="PHP Script.functions.php" />
         <item itemvalue="JavaScript Debug.index.php" />
@@ -118,7 +118,8 @@
       <workItem from="1665367462176" duration="687000" />
       <workItem from="1665374487346" duration="10451000" />
       <workItem from="1665391954990" duration="1528000" />
-      <workItem from="1665459263014" duration="19747000" />
+      <workItem from="1665459263014" duration="20789000" />
+      <workItem from="1665546747125" duration="1648000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1661334619995</created>
