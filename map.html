@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <title>Title</title>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+<script>window.stores = [{
+    "ID": 328,
+    "title": "Advanced Health Pharmasave\ufffc",
+    "address1": "5112 50th St ",
+    "address2": "Whitecourt AB T7S 1W3 ",
+    "address3": "Canada",
+    "coordinates": {
+        "address": "5112 50 Street, Whitecourt, AB, Canada",
+        "lat": 54.1419414,
+        "lng": -115.6849459,
+        "zoom": 16,
+        "place_id": "ChIJ54_vJ60smVMRrTPMAZUBDH8",
+        "name": "5112 50 St",
+        "street_number": "5112",
+        "street_name": "50 Street",
+        "street_name_short": "50 St",
+        "city": "Whitecourt",
+        "state": "Alberta",
+        "state_short": "AB",
+        "post_code": "T7S 1V4",
+        "country": "Canada",
+        "country_short": "CA"
+    },
+    "lat": 54.1419414,
+    "lng": -115.6849459
+}, {
+    "ID": 329,
+    "title": "Nutters Everyday\ufffc",
+    "address1": "835A Broadway Avenue",
+    "address2": "Saskatoon SK S7N 1B5",
+    "address3": "Canada",
+    "coordinates": {
+        "address": "P888+V8V, Leknath Marg, Kathmandu 44600, Nepal",
+        "lat": 27.71709333602948,
+        "lng": 85.3159138729553,
+        "zoom": 16,
+        "place_id": "ChIJL3JKLB0Z6zkRF7hWkrNXyMI",
+        "street_name": "Leknath Marg",
+        "city": "Kathmandu",
+        "state": "Bagmati Province",
+        "post_code": "44600",
+        "country": "Nepal",
+        "country_short": "NP"
+    },
+    "lat": 52.11717572868288,
+    "lng":  -106.65649114522991
+}, {
+    "ID": 325,
+    "title": "Homegrown Foods Ltd\ufffc",
+    "address1": "10 - 19 Granite Drive",
+    "address2": "Stony Plain AB T7Z 1V8",
+    "address3": "Canada",
+    "coordinates": {
+        "address": "P888+V8V, Leknath Marg, Kathmandu 44600, Nepal",
+        "lat": 27.71709333602948,
+        "lng": 85.3159138729553,
+        "zoom": 16,
+        "place_id": "ChIJL3JKLB0Z6zkRF7hWkrNXyMI",
+        "street_name": "Leknath Marg",
+        "city": "Kathmandu",
+        "state": "Bagmati Province",
+        "post_code": "44600",
+        "country": "Nepal",
+        "country_short": "NP"
+    },
+    "lat": 53.542820261718745,
+    "lng": -113.98735717340466
+}, {
+    "ID": 324,
+    "title": "Stony Plain Wellness Pharmacy\ufffc",
+    "address1": "106, 5013 48 St.",
+    "address2": "Stony Plain AB T7Z 1L8",
+    "address3": "Canada",
+    "coordinates": {
+        "address": "P888+V8V, Leknath Marg, Kathmandu 44600, Nepal",
+        "lat": 27.71709333602948,
+        "lng": 85.3159138729553,
+        "zoom": 16,
+        "place_id": "ChIJL3JKLB0Z6zkRF7hWkrNXyMI",
+        "street_name": "Leknath Marg",
+        "city": "Kathmandu",
+        "state": "Bagmati Province",
+        "post_code": "44600",
+        "country": "Nepal",
+        "country_short": "NP"
+    },
+    "lat": 53.52933318851337,
+    "lng": -114.00112482216366
+}, {
+    "ID": 326,
+    "title": "Cambrian Pharmacy\ufffc",
+    "address1": "#9 728 Northmount Dr NW",
+    "address2": "Calgary AB T2K 3K2 ",
+    "address3": "Canada",
+    "coordinates": {
+        "address": "P888+V8V, Leknath Marg, Kathmandu 44600, Nepal",
+        "lat": 27.71709333602948,
+        "lng": 85.3159138729553,
+        "zoom": 16,
+        "place_id": "ChIJL3JKLB0Z6zkRF7hWkrNXyMI",
+        "street_name": "Leknath Marg",
+        "city": "Kathmandu",
+        "state": "Bagmati Province",
+        "post_code": "44600",
+        "country": "Nepal",
+        "country_short": "NP"
+    },
+    "lat": 51.082343518094326,
+    "lng": -114.09278316449762
+},{
+    "ID": 327,
+    "title": "Thrive Naturals\ufffc",
+    "address1": "2454 Dobbin Road",
+    "address2": "West Kelowna BC V4T 1K5",
+    "address3": "Canada",
+    "coordinates": {
+        "address": "P888+V8V, Leknath Marg, Kathmandu 44600, Nepal",
+        "lat": 27.71709333602948,
+        "lng": 85.3159138729553,
+        "zoom": 16,
+        "place_id": "ChIJL3JKLB0Z6zkRF7hWkrNXyMI",
+        "street_name": "Leknath Marg",
+        "city": "Kathmandu",
+        "state": "Bagmati Province",
+        "post_code": "44600",
+        "country": "Nepal",
+        "country_short": "NP"
+    },
+    "lat": 49.829154979548186,
+    "lng": -119.62867469332048
+}]</script>
+
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtvccU2yCjfCbqiO2T_CIKP2txqGOMfZA"></script>
+
+<div id="map"></div>
+<script>
+
+
+    //create a map
+    var map = new google.maps.Map(document.getElementById('map'), {
+        //from navigator
+        center: {lat: 52, lng: -105},
+        zoom: 4
+    });
+
+    //create markers
+    for (let i = 0; i < stores.length; i++) {
+        const latLng = {lat: +stores[i].lat, lng: +stores[i].lng};
+       const marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+        });
+
+        //create info window, click events etc for each marker as required
+        const infowindow = new google.maps.InfoWindow();
+        google.maps.event.addListener(marker, 'click', (function(marker,i) {
+            return function() {
+
+                // info window.setContent(stores[i].title);
+                infowindow.setContent(`<div id="infowindow">
+                            ${stores[i].title}, ${stores[i].address1}, ${stores[i].address2}, ${stores[i].address3}</div>`)
+                infowindow.open(map, marker);
+            }
+
+        })(marker,i));
+    }
+
+
+
+</script>
+</body>
+</html>

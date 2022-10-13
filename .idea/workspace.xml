@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c862357e-5f80-4e48-b703-eb8e0a61f0c0" name="Changes" comment="try">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/map.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wordpress.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wordpress.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/page-where-to-buy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/SliderLocation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/SliderLocation.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/SliderLocation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/map.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/map.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/who/page-templates/wheretobuypage.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/who/page-templates/wheretobuypage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -119,7 +124,8 @@
       <workItem from="1665374487346" duration="10451000" />
       <workItem from="1665391954990" duration="1528000" />
       <workItem from="1665459263014" duration="20789000" />
-      <workItem from="1665546747125" duration="1648000" />
+      <workItem from="1665546747125" duration="22203000" />
+      <workItem from="1665632011909" duration="3565000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1661334619995</created>
